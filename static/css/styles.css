@@ -1,0 +1,31 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+}
+#search-input {
+	width: 300px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#search-results {
+	list-style: none;
+	padding: 0;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	max-height: 200px;
+	overflow-y: auto;
+}
+#search-results li {
+	padding: 10px;
+	border-bottom: 1px solid #f0f0f0;
+	cursor: pointer;
+}
+#search-results li:last-child {
+	border-bottom: none;
+}
+#search-results li:hover {
+	background-color: #f0f0f0;
+}
