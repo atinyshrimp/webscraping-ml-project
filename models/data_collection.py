@@ -1,12 +1,28 @@
 import requests
 from flask import jsonify
 import os
+import json
 from dotenv import load_dotenv
 load_dotenv()
 
 GOOGLE_PLACES_API_URL = "https://places.googleapis.com/v1/places:searchNearby"
 
 def get_nearby_locations(lat, lon, isTest=True):
+    """Retrieves nearby locations based on latitude and longitude.
+
+    Args:
+        lat (float): Latitude of the location.
+        lon (float): Longitude of the location.
+        isTest (bool, optional): Whether to use test data or make an API call. Defaults to True.
+
+    Returns:
+        list: A list of nearby places (in test mode) or a JSON response from Google Places API.
+    """
+    if (isTest):
+        with open("static/json/nearby_test.json", encoding="utf8") as file:
+            data = json.load(file)
+        return jsonify(data["places"])
+        
     try:
         headers = {
             "Authorization": f"Bearer {os.environ["GOOGLE_PLACES_API_KEY"]}",

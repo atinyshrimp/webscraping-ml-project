@@ -1,4 +1,5 @@
 const input = document.getElementById("search-input");
+const testButton = document.getElementById("test-button");
 const resultsContainer = document.getElementById("search-results");
 
 const handleInputChange = async () => {
@@ -65,3 +66,14 @@ const debounce = (func, delay) => {
 const debouncedHandleInputChange = debounce(handleInputChange, 300);
 
 input.addEventListener("input", debouncedHandleInputChange);
+testButton.addEventListener("click", async () => {
+	// Fetch nearby locations
+	const response = await fetch(
+		`/nearby?lat=48.86739085085168&lon=2.3346872797624187`
+	);
+	const nearbyResults = await response.json();
+
+	// Display found locations
+	console.log("Nearby places:", nearbyResults);
+	alert(`Found ${nearbyResults.length} places around Maru Café!`);
+});

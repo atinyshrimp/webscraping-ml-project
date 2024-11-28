@@ -1,0 +1,1640 @@
+{
+	"places": [
+		{
+			"id": "ChIJTV8lQ0Jv5kcRKvgCMAfO6Ec",
+			"formattedAddress": "44 Rue des Petits Champs, 75002 Paris, France",
+			"location": {
+				"latitude": 48.8673402,
+				"longitude": 2.3347856
+			},
+			"rating": 3.3,
+			"googleMapsUri": "https://maps.google.com/?cid=5181617901555349546",
+			"displayName": {
+				"text": "Confiserie Tetrel",
+				"languageCode": "fr"
+			},
+			"primaryType": "grocery_store",
+			"reviews": [
+				{
+					"name": "places/ChIJTV8lQ0Jv5kcRKvgCMAfO6Ec/reviews/ChZDSUhNMG9nS0VJQ0FnSURuaktySWJnEAE",
+					"relativePublishTimeDescription": "il y a un mois",
+					"rating": 5,
+					"text": {
+						"text": "J'avoue être surprise des commentaires. Je suis rentrée dans la boutique par hasard cet après-midi. La propriétaire de la boutique a été très sympathique et beaucoup dans l'échange, pourtant je n'ai pas acheté grand chose. La boutique a ce côté rétro que j'adore et tous les bonbons qui rappellent l'enfance. J'y retournerai !",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "J'avoue être surprise des commentaires. Je suis rentrée dans la boutique par hasard cet après-midi. La propriétaire de la boutique a été très sympathique et beaucoup dans l'échange, pourtant je n'ai pas acheté grand chose. La boutique a ce côté rétro que j'adore et tous les bonbons qui rappellent l'enfance. J'y retournerai !",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Joséphine Adjagbenon",
+						"uri": "https://www.google.com/maps/contrib/101856607949555147014/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW5DvWVblmBBzwOAx2xDVBWa8IH7dQJiMz287cs1W4a-gP100R-=s128-c0x00000000-cc-rp-mo-ba3"
+					},
+					"publishTime": "2024-10-03T18:14:20.827531Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURuaktySWJnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURuaktySWJnEAE!2m1!1s0x47e66f4243255f4d:0x47e8ce073002f82a"
+				},
+				{
+					"name": "places/ChIJTV8lQ0Jv5kcRKvgCMAfO6Ec/reviews/ChdDSUhNMG9nS0VJQ0FnSUNMa19DVTRnRRAB",
+					"relativePublishTimeDescription": "il y a 5 mois",
+					"rating": 5,
+					"text": {
+						"text": "J'aime beaucoup cette boutique. Excellents produits et très beau choix. Je recommande notamment les marrons glacés et la crème de marron, qui étaient délicieux !\nC'est le lieu idéal si vous cherchez par exemple à faire de beaux cadeaux pour les fêtes ou une occasion.\n\nJe ne partage pas du tout les avis négatifs donnés par d'autres personnes.\n\nJe travaille dans le quartier qui est très animé et passe devant la boutique tous les jours. Oui, la boutique est très jolie et gardée dans son jus. Mais il s'agit d'une boutique et non d'un musée. Il est clairement indiqué sur la porte d'entrée que les photos sont strictement interdites et qu'il ne faut pas toucher les produits, donc les personnes \"surprises\" sont de mauvaise foi. Le gérant est libre de fixer les règles qui lui conviennent et il faut respecter les lieux et le personnel.\nEn tant que cliente, je respecte et apprécie ces règles car le service est efficace et je ne suis pas opportunnée. Je n'ai pas envie de me retrouver sur les réseaux sociaux d'inconnus en achetant mes caramels et co.\n\nBonne continuation !",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "J'aime beaucoup cette boutique. Excellents produits et très beau choix. Je recommande notamment les marrons glacés et la crème de marron, qui étaient délicieux !\nC'est le lieu idéal si vous cherchez par exemple à faire de beaux cadeaux pour les fêtes ou une occasion.\n\nJe ne partage pas du tout les avis négatifs donnés par d'autres personnes.\n\nJe travaille dans le quartier qui est très animé et passe devant la boutique tous les jours. Oui, la boutique est très jolie et gardée dans son jus. Mais il s'agit d'une boutique et non d'un musée. Il est clairement indiqué sur la porte d'entrée que les photos sont strictement interdites et qu'il ne faut pas toucher les produits, donc les personnes \"surprises\" sont de mauvaise foi. Le gérant est libre de fixer les règles qui lui conviennent et il faut respecter les lieux et le personnel.\nEn tant que cliente, je respecte et apprécie ces règles car le service est efficace et je ne suis pas opportunnée. Je n'ai pas envie de me retrouver sur les réseaux sociaux d'inconnus en achetant mes caramels et co.\n\nBonne continuation !",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "space 88",
+						"uri": "https://www.google.com/maps/contrib/116905221284967182300/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIXLwyj2kHLtAnx6bUCP_BGtauUQbTROqB1PkKvATf7737-_A=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-06-22T20:17:57.312701Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNMa19DVTRnRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNMa19DVTRnRRAB!2m1!1s0x47e66f4243255f4d:0x47e8ce073002f82a"
+				},
+				{
+					"name": "places/ChIJTV8lQ0Jv5kcRKvgCMAfO6Ec/reviews/ChZDSUhNMG9nS0VJQ0FnSUNyNXVub0VREAE",
+					"relativePublishTimeDescription": "il y a 4 mois",
+					"rating": 1,
+					"text": {
+						"text": "Super condescendante et raciste. On paye pour 100gr de confiserie mais elle préfère nous donner moins parce que je suis venue avec mon amie étrangère.\nPasser votre chemin, la boutique est très jolie mais la vendeuse est tellement détestable que je regrette déjà mon achat.\nTous les produits sont très chers surtout pour le service honteux.\nCordialement.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Super condescendante et raciste. On paye pour 100gr de confiserie mais elle préfère nous donner moins parce que je suis venue avec mon amie étrangère.\nPasser votre chemin, la boutique est très jolie mais la vendeuse est tellement détestable que je regrette déjà mon achat.\nTous les produits sont très chers surtout pour le service honteux.\nCordialement.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Yutong P",
+						"uri": "https://www.google.com/maps/contrib/116936955437381830815/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXXORCKjxl-ZfsjuPO-kQSJanMW8HBrYsj0dH76UKEWpSw5lxLY=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-07-06T18:00:25.646593Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNyNXVub0VREAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNyNXVub0VREAE!2m1!1s0x47e66f4243255f4d:0x47e8ce073002f82a"
+				},
+				{
+					"name": "places/ChIJTV8lQ0Jv5kcRKvgCMAfO6Ec/reviews/ChdDSUhNMG9nS0VJQ0FnSUR6dk9XXzRnRRAB",
+					"relativePublishTimeDescription": "il y a 5 mois",
+					"rating": 5,
+					"text": {
+						"text": "Je ne suis absolument pas d'accord avec les commentaires négatifs, deux fois que nous venons dans cette jolie boutique, qui nous replonge en enfance, deux fois que nous sommes chaleureusement accueillis, prenez le temps de discuter avec cette dame et son collègue, vous verrez qu'ils sont charmants et très commerçants. Nous recommandons les bonbons à la réglisse et nous y reviendrons en acheter avec grand plaisir.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Je ne suis absolument pas d'accord avec les commentaires négatifs, deux fois que nous venons dans cette jolie boutique, qui nous replonge en enfance, deux fois que nous sommes chaleureusement accueillis, prenez le temps de discuter avec cette dame et son collègue, vous verrez qu'ils sont charmants et très commerçants. Nous recommandons les bonbons à la réglisse et nous y reviendrons en acheter avec grand plaisir.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Monchaux Cathy",
+						"uri": "https://www.google.com/maps/contrib/108788099225434661862/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJv_hf8-k0IvcAYSOiMEM0hNZi9ryNcCgC0FPQhkbPB85Byxg=s128-c0x00000000-cc-rp-mo-ba3"
+					},
+					"publishTime": "2024-06-08T14:29:13.607712Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUR6dk9XXzRnRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUR6dk9XXzRnRRAB!2m1!1s0x47e66f4243255f4d:0x47e8ce073002f82a"
+				},
+				{
+					"name": "places/ChIJTV8lQ0Jv5kcRKvgCMAfO6Ec/reviews/ChdDSUhNMG9nS0VJQ0FnSURkdnNLWnFBRRAB",
+					"relativePublishTimeDescription": "il y a un mois",
+					"rating": 1,
+					"text": {
+						"text": "Personnel EXTRÊMEMENT désagréable. ET RACISTES. (Conversation bien rigolote à base de réponses avis Google Maps à suivre comme un épisode Netflix) (à méditer)\n\n[CORRECTION APRÈS RÉPONSE DE LA BOUTIQUE — MARS 2024]\n—\n« Seulement lorsque les clients se comportent de manière grossière. » que je cite ici si jamais ils décident de modifier leur réponse à mon avis :\n\nC’est bien culotté de sortir un tel mensonge pour se défendre quand d’autres personnes que moi témoignent leur mauvaise expérience ? Arrêtez-vous dans votre métier si l’hospitalité ne vous convient pas.\n\n[RÉPONSE N°2 — OCTOBRE 2024]\n\nOh que c’est ironique de répondre à votre commentaire après 3 mois ! De se renvoyer ces balles comme de petits enfants… quelle belle nostalgie me rappelant la naïveté, les jolies couleurs, et des bonbons bien écœurants produits avec beaucoup de haine et d’amertume.\n\n« Il s'agit d'élégance et de travail. »\n\n…Où se trouve l’élégance en question ? Car ce n’était pas dans les principes des autres, ni des miens, qu’un tel accueil fasse parti des bonnes étiquettes pour présenter un art.\n\nPar ailleurs, j’ai entendu que vous teniez également des propos... RACISTES. Visant surtout les personnes asiatiques, super courageux de prendre cette mentalité quand le commerce se situe dans un quartier représenté par trois cultures de l’Asie de l’Est, n’est-ce pas ?\n\nJ’ai un tas de commentaires à ajouter, mais ce serait perdre mon temps précieux de rédiger un long paragraphe décrivant l’horreur que présente cette boutique, même si ce n’est que pour attirer de l’attention pour vous ridiculiser.\n\nJe m’effondrerai peut-être en larmes si votre commerce fait faillite à côté des concurrents qui réussissent bien avec les personnels heureux d’accueillir toutes personnes et de présenter cet univers qui paraît si doux, surtout aux plus jeunes… les larmes de tristesse m’embrasseront sans fin.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Personnel EXTRÊMEMENT désagréable. ET RACISTES. (Conversation bien rigolote à base de réponses avis Google Maps à suivre comme un épisode Netflix) (à méditer)\n\n[CORRECTION APRÈS RÉPONSE DE LA BOUTIQUE — MARS 2024]\n—\n« Seulement lorsque les clients se comportent de manière grossière. » que je cite ici si jamais ils décident de modifier leur réponse à mon avis :\n\nC’est bien culotté de sortir un tel mensonge pour se défendre quand d’autres personnes que moi témoignent leur mauvaise expérience ? Arrêtez-vous dans votre métier si l’hospitalité ne vous convient pas.\n\n[RÉPONSE N°2 — OCTOBRE 2024]\n\nOh que c’est ironique de répondre à votre commentaire après 3 mois ! De se renvoyer ces balles comme de petits enfants… quelle belle nostalgie me rappelant la naïveté, les jolies couleurs, et des bonbons bien écœurants produits avec beaucoup de haine et d’amertume.\n\n« Il s'agit d'élégance et de travail. »\n\n…Où se trouve l’élégance en question ? Car ce n’était pas dans les principes des autres, ni des miens, qu’un tel accueil fasse parti des bonnes étiquettes pour présenter un art.\n\nPar ailleurs, j’ai entendu que vous teniez également des propos... RACISTES. Visant surtout les personnes asiatiques, super courageux de prendre cette mentalité quand le commerce se situe dans un quartier représenté par trois cultures de l’Asie de l’Est, n’est-ce pas ?\n\nJ’ai un tas de commentaires à ajouter, mais ce serait perdre mon temps précieux de rédiger un long paragraphe décrivant l’horreur que présente cette boutique, même si ce n’est que pour attirer de l’attention pour vous ridiculiser.\n\nJe m’effondrerai peut-être en larmes si votre commerce fait faillite à côté des concurrents qui réussissent bien avec les personnels heureux d’accueillir toutes personnes et de présenter cet univers qui paraît si doux, surtout aux plus jeunes… les larmes de tristesse m’embrasseront sans fin.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Ziqin Xu",
+						"uri": "https://www.google.com/maps/contrib/108168670051055009665/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVvz6EcIL3vFFxNobTFZ2ouivby_MAoq1bybIT-TXfGFtNZstXY=s128-c0x00000000-cc-rp-mo-ba4"
+					},
+					"publishTime": "2024-10-15T09:47:58.661330Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURkdnNLWnFBRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURkdnNLWnFBRRAB!2m1!1s0x47e66f4243255f4d:0x47e8ce073002f82a"
+				}
+			]
+		},
+		{
+			"id": "ChIJC87TpDpu5kcR2SnOXrLFX-A",
+			"formattedAddress": "44 Rue des Petits Champs, 75002 Paris, France",
+			"location": {
+				"latitude": 48.8673402,
+				"longitude": 2.3347856
+			},
+			"rating": 3.7,
+			"googleMapsUri": "https://maps.google.com/?cid=16167858557168789977",
+			"displayName": {
+				"text": "Epicerie De Choix Vins Fins",
+				"languageCode": "fr"
+			},
+			"primaryType": "grocery_store",
+			"reviews": [
+				{
+					"name": "places/ChIJC87TpDpu5kcR2SnOXrLFX-A/reviews/ChdDSUhNMG9nS0VJQ0FnSURUcnZDaW1BRRAB",
+					"relativePublishTimeDescription": "il y a 6 mois",
+					"rating": 2,
+					"text": {
+						"text": "Très belle boutique de l'extérieur que j'aurais bien voulu découvrir avant que la vendeuse ne me fasse faire demi-tour. En effet, à peine entrée dans le magasin, je n'ai pas le droit à un bonjour mais à un agressif \"NO PICTURES PLEASE\" ?? Je tiens à dire que j'avais seulement mon téléphone à la main.. comme 90% des gens à Paris quoi.. Je lui montre donc mon téléphone en lui disant de regarder d'elle même que je n'étais PAS en train de prendre une photo... Même les clients autour me regardaient gênés pour moi de la situation. Pour couronner le tout, au lieu de s'excuser, elle me répond seulement par un \"d'accord, c'est parce qu'il y a du monde\".. Eh beh.. Je comprends que cela puisse être embêtant pour vous si au quotidien vous avez affaire à des gens qui prennent en photos votre boutique alors que vous n'aimez pas ça, mais avant de parler soyez au moins sûre du faîte que vos clients prennent vraiment une photo avant d'accuser quelqu'un de la sorte, en plus du faite qu'il y a une façon de dire les choses. En espérant vous avoir fait prendre conscience de cela. Néanmoins, bonne continuation pour votre boutique qui est jolie.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Très belle boutique de l'extérieur que j'aurais bien voulu découvrir avant que la vendeuse ne me fasse faire demi-tour. En effet, à peine entrée dans le magasin, je n'ai pas le droit à un bonjour mais à un agressif \"NO PICTURES PLEASE\" ?? Je tiens à dire que j'avais seulement mon téléphone à la main.. comme 90% des gens à Paris quoi.. Je lui montre donc mon téléphone en lui disant de regarder d'elle même que je n'étais PAS en train de prendre une photo... Même les clients autour me regardaient gênés pour moi de la situation. Pour couronner le tout, au lieu de s'excuser, elle me répond seulement par un \"d'accord, c'est parce qu'il y a du monde\".. Eh beh.. Je comprends que cela puisse être embêtant pour vous si au quotidien vous avez affaire à des gens qui prennent en photos votre boutique alors que vous n'aimez pas ça, mais avant de parler soyez au moins sûre du faîte que vos clients prennent vraiment une photo avant d'accuser quelqu'un de la sorte, en plus du faite qu'il y a une façon de dire les choses. En espérant vous avoir fait prendre conscience de cela. Néanmoins, bonne continuation pour votre boutique qui est jolie.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "aiden05",
+						"uri": "https://www.google.com/maps/contrib/117245042349306317352/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLjoac_7TY4j1cWBhUVqpub2tjfcb7Ier9U6Vap7Tsoia2YvA=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-05-24T19:21:05.282475Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURUcnZDaW1BRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURUcnZDaW1BRRAB!2m1!1s0x47e66e3aa4d3ce0b:0xe05fc5b25ece29d9"
+				},
+				{
+					"name": "places/ChIJC87TpDpu5kcR2SnOXrLFX-A/reviews/ChdDSUhNMG9nS0VJQ0FnSURSX3NHdGpRRRAB",
+					"relativePublishTimeDescription": "il y a un an",
+					"rating": 4,
+					"text": {
+						"text": "Lieu très beau et pleins de confiserie en tout genre",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Lieu très beau et pleins de confiserie en tout genre",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Sara Mallet",
+						"uri": "https://www.google.com/maps/contrib/113307910484562777376/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUqV8jUCjrUF5e-jm31OC037Bok-VGRm8Msd_cNpTNX-VWomM0J=s128-c0x00000000-cc-rp-mo-ba6"
+					},
+					"publishTime": "2023-04-26T13:03:31.595077Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURSX3NHdGpRRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURSX3NHdGpRRRAB!2m1!1s0x47e66e3aa4d3ce0b:0xe05fc5b25ece29d9"
+				},
+				{
+					"name": "places/ChIJC87TpDpu5kcR2SnOXrLFX-A/reviews/ChdDSUhNMG9nS0VJQ0FnSURUZ3JhLW5nRRAB",
+					"relativePublishTimeDescription": "il y a 6 mois",
+					"rating": 5,
+					"text": {
+						"text": "Belle boutique avec un personnel adorable, les bonbons qu'ils vendent sont délicieux",
+						"languageCode": "fr-FR"
+					},
+					"originalText": {
+						"text": "Beautiful shop with adorable staff, the candies they sell are delicious",
+						"languageCode": "en"
+					},
+					"authorAttribution": {
+						"displayName": "jjajjang kyu",
+						"uri": "https://www.google.com/maps/contrib/103301192717143385849/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX_jgp90kb7LdjzTIOlCFhltOs97jhrAkms2OmKj3CzlucXiFSAoQ=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-05-23T12:22:13.800491Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURUZ3JhLW5nRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURUZ3JhLW5nRRAB!2m1!1s0x47e66e3aa4d3ce0b:0xe05fc5b25ece29d9"
+				}
+			]
+		},
+		{
+			"id": "ChIJq_j6pDpu5kcRIG3-sw3P0zc",
+			"formattedAddress": "44 Rue des Petits Champs, 75002 Paris, France",
+			"location": {
+				"latitude": 48.8673402,
+				"longitude": 2.3347856
+			},
+			"rating": 4.4,
+			"googleMapsUri": "https://maps.google.com/?cid=4022786549933305120",
+			"displayName": {
+				"text": "Courty et Fils",
+				"languageCode": "fr"
+			},
+			"reviews": [
+				{
+					"name": "places/ChIJq_j6pDpu5kcRIG3-sw3P0zc/reviews/ChZDSUhNMG9nS0VJQ0FnSUMzaXFYZ0JBEAE",
+					"relativePublishTimeDescription": "il y a 3 semaines",
+					"rating": 5,
+					"text": {
+						"text": "Armurier d'excellent conseil qui a pris le temps de m'expliquer les différences de conception entre plusieurs modèles pour guider mon choix du meilleur outil. Cela vaut 100x plus que de regarder des vidéos YouTube ou parcourir des sites marchands.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Armurier d'excellent conseil qui a pris le temps de m'expliquer les différences de conception entre plusieurs modèles pour guider mon choix du meilleur outil. Cela vaut 100x plus que de regarder des vidéos YouTube ou parcourir des sites marchands.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "RENOUARD CONSTANT",
+						"uri": "https://www.google.com/maps/contrib/117630554678185828995/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocL5V1ORDv-eMYc-pOi7uO1Y58rHYtGC7RxJ6a0nLccFZj3aYw=s128-c0x00000000-cc-rp-mo-ba2"
+					},
+					"publishTime": "2024-11-04T14:04:07.414448Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUMzaXFYZ0JBEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUMzaXFYZ0JBEAE!2m1!1s0x47e66e3aa4faf8ab:0x37d3cf0db3fe6d20"
+				},
+				{
+					"name": "places/ChIJq_j6pDpu5kcRIG3-sw3P0zc/reviews/ChdDSUhNMG9nS0VJQ0FnSUNub1p1cWtRRRAB",
+					"relativePublishTimeDescription": "il y a 2 mois",
+					"rating": 1,
+					"text": {
+						"text": "A fuir, mal reçu  pas conseillé, vraiment passer votre chemin. A la limite grossier.changer de métier",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "A fuir, mal reçu  pas conseillé, vraiment passer votre chemin. A la limite grossier.changer de métier",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Danielle DG",
+						"uri": "https://www.google.com/maps/contrib/115369901216482498213/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJBNRuUV_ikUPyV_7eHIPDI1dljj-rGTuR6a94t1OpIZDKPIg=s128-c0x00000000-cc-rp-mo-ba2"
+					},
+					"publishTime": "2024-09-26T19:26:29.362156Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNub1p1cWtRRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNub1p1cWtRRRAB!2m1!1s0x47e66e3aa4faf8ab:0x37d3cf0db3fe6d20"
+				},
+				{
+					"name": "places/ChIJq_j6pDpu5kcRIG3-sw3P0zc/reviews/ChZDSUhNMG9nS0VJQ0FnSUREanFuZVFnEAE",
+					"relativePublishTimeDescription": "il y a 7 mois",
+					"rating": 1,
+					"text": {
+						"text": "Allez ailleurs. La qualité et le service ici sont mauvais. Ils refusent d'échanger ou de rembourser ce qui est contraire à la loi française comme indiqué par les autres critiques. N'Y ALLEZ PAS.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Allez ailleurs. La qualité et le service ici sont mauvais. Ils refusent d'échanger ou de rembourser ce qui est contraire à la loi française comme indiqué par les autres critiques. N'Y ALLEZ PAS.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Nathan Copan",
+						"uri": "https://www.google.com/maps/contrib/108974674970474025195/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJjvMgu0Wx26cg2NOxIi8rRXN9GHGK7PNFsBIiOQjIyxzHHkw=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-04-09T12:48:10.328819Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUREanFuZVFnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUREanFuZVFnEAE!2m1!1s0x47e66e3aa4faf8ab:0x37d3cf0db3fe6d20"
+				},
+				{
+					"name": "places/ChIJq_j6pDpu5kcRIG3-sw3P0zc/reviews/ChZDSUhNMG9nS0VJQ0FnSUN4MU1YWmJnEAE",
+					"relativePublishTimeDescription": "il y a un an",
+					"rating": 1,
+					"text": {
+						"text": "Mauvaise connaissance de la gamme Shun chez Kai.\nÀ la limite c’est pardonnable.\nPar contre, service exécrable, et pratique business jamais vues…(on me demande de déposer un acompte pour un article dont on ne sait pas me confirmer le prix 😂).\nJe vais commander le couteau online, ça sera plus simple, plus clair, et surtout moins désagréable.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Mauvaise connaissance de la gamme Shun chez Kai.\nÀ la limite c’est pardonnable.\nPar contre, service exécrable, et pratique business jamais vues…(on me demande de déposer un acompte pour un article dont on ne sait pas me confirmer le prix 😂).\nJe vais commander le couteau online, ça sera plus simple, plus clair, et surtout moins désagréable.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Loik FERNANDES",
+						"uri": "https://www.google.com/maps/contrib/110042615597044976025/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUSjqzDHS0iS1hF58lJ_HYkuXU6AJxpK2gzaniRAs_QCS3u-JUT=s128-c0x00000000-cc-rp-mo-ba4"
+					},
+					"publishTime": "2023-05-11T13:16:21.066076Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUN4MU1YWmJnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUN4MU1YWmJnEAE!2m1!1s0x47e66e3aa4faf8ab:0x37d3cf0db3fe6d20"
+				},
+				{
+					"name": "places/ChIJq_j6pDpu5kcRIG3-sw3P0zc/reviews/ChdDSUhNMG9nS0VJQ0FnSURHNTlpOHlnRRAB",
+					"relativePublishTimeDescription": "il y a 2 ans",
+					"rating": 1,
+					"text": {
+						"text": "Le personne qui était présente ce samedi matin n'avait visiblement pas envie de travailler, aucune sympathie et son discours a été incroyablement désagréable.\nJe ne comprends pas qu'on puisse travailler dans le commerce avec pignon sur rue si on ne supporte pas la clientèle.\nJ'y ai déjà acheté et fait aiguiser plusieurs couteaux mais ce sera mon dernier passage.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Le personne qui était présente ce samedi matin n'avait visiblement pas envie de travailler, aucune sympathie et son discours a été incroyablement désagréable.\nJe ne comprends pas qu'on puisse travailler dans le commerce avec pignon sur rue si on ne supporte pas la clientèle.\nJ'y ai déjà acheté et fait aiguiser plusieurs couteaux mais ce sera mon dernier passage.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Cyril Pless",
+						"uri": "https://www.google.com/maps/contrib/114785272744307277696/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjV2tHrZSrMbezhQyCSM1BMaq02yNUh0mGMi96BlfeHnHPwOGlT8=s128-c0x00000000-cc-rp-mo-ba4"
+					},
+					"publishTime": "2021-12-11T20:03:17.029288Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURHNTlpOHlnRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURHNTlpOHlnRRAB!2m1!1s0x47e66e3aa4faf8ab:0x37d3cf0db3fe6d20"
+				}
+			]
+		},
+		{
+			"id": "ChIJ-fh1pDpu5kcRYY5cGmWGgWE",
+			"formattedAddress": "1 Rue Méhul, 75002 Paris, France",
+			"location": {
+				"latitude": 48.867438899999996,
+				"longitude": 2.3346006999999998
+			},
+			"rating": 5,
+			"googleMapsUri": "https://maps.google.com/?cid=7026044662466776673",
+			"displayName": {
+				"text": "Son et Lumière",
+				"languageCode": "fr"
+			},
+			"reviews": [
+				{
+					"name": "places/ChIJ-fh1pDpu5kcRYY5cGmWGgWE/reviews/ChdDSUhNMG9nS0VJQ0FnSURYbm9lX2dBRRAB",
+					"relativePublishTimeDescription": "il y a un mois",
+					"rating": 5,
+					"authorAttribution": {
+						"displayName": "Consuelo Train",
+						"uri": "https://www.google.com/maps/contrib/112740836539557333842/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKq15Wdbp1gm0r19LfketvjOn1k0vrqBJ6VlU9I8l1Q3IEsiw=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-10-27T17:13:25.545804Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURYbm9lX2dBRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURYbm9lX2dBRRAB!2m1!1s0x47e66e3aa475f8f9:0x618186651a5c8e61"
+				},
+				{
+					"name": "places/ChIJ-fh1pDpu5kcRYY5cGmWGgWE/reviews/ChdDSUhNMG9nS0VJQ0FnSUNkZzR6aW1nRRAB",
+					"relativePublishTimeDescription": "il y a 9 mois",
+					"rating": 5,
+					"authorAttribution": {
+						"displayName": "charaf eddine Boussalem",
+						"uri": "https://www.google.com/maps/contrib/103890446479628992485/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocK4NQdzTbT9Vj3JFB_j7Jb7yF3_OMpwJLubdl6cJF8_fCMJvw=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-02-17T17:52:26.442731Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNkZzR6aW1nRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNkZzR6aW1nRRAB!2m1!1s0x47e66e3aa475f8f9:0x618186651a5c8e61"
+				},
+				{
+					"name": "places/ChIJ-fh1pDpu5kcRYY5cGmWGgWE/reviews/ChdDSUhNMG9nS0VJQ0FnSUNXMXNTTmhnRRAB",
+					"relativePublishTimeDescription": "il y a 2 ans",
+					"rating": 5,
+					"authorAttribution": {
+						"displayName": "justin almeida",
+						"uri": "https://www.google.com/maps/contrib/100725103160639639263/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVFnKBm1p1vHA8duO638oGuZqibB1pMlOlDZvkn-DMU-uWoOTFGRg=s128-c0x00000000-cc-rp-mo-ba4"
+					},
+					"publishTime": "2022-02-26T07:27:25.507734Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNXMXNTTmhnRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNXMXNTTmhnRRAB!2m1!1s0x47e66e3aa475f8f9:0x618186651a5c8e61"
+				}
+			]
+		},
+		{
+			"id": "ChIJbw_BBRpu5kcR01fnNMn7fYo",
+			"formattedAddress": "10 Rue Treilhard, 75008 Paris, France",
+			"location": {
+				"latitude": 48.867381099999996,
+				"longitude": 2.3345549
+			},
+			"rating": 5,
+			"googleMapsUri": "https://maps.google.com/?cid=9979409190917461971",
+			"displayName": {
+				"text": "The Boson Project",
+				"languageCode": "fr"
+			},
+			"primaryType": "government_office",
+			"reviews": [
+				{
+					"name": "places/ChIJbw_BBRpu5kcR01fnNMn7fYo/reviews/ChdDSUhNMG9nS0VJQ0FnSUNpNzVpQzFnRRAB",
+					"relativePublishTimeDescription": "il y a 4 ans",
+					"rating": 5,
+					"text": {
+						"text": "Pour avoir eu la chance de vous entendre Mme Duez. Bravo pour votre engagement et les messages que vous portez.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Pour avoir eu la chance de vous entendre Mme Duez. Bravo pour votre engagement et les messages que vous portez.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Ludovic Bernard",
+						"uri": "https://www.google.com/maps/contrib/101278524819094658660/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVkCnfElfxGUiuufZpZpPouKpahLOdKjpBCt9ToqSFnnba754U=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2020-11-19T13:42:53.991053Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNpNzVpQzFnRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNpNzVpQzFnRRAB!2m1!1s0x47e66e1a05c10f6f:0x8a7dfbc934e757d3"
+				},
+				{
+					"name": "places/ChIJbw_BBRpu5kcR01fnNMn7fYo/reviews/ChZDSUhNMG9nS0VJQ0FnSUR5eGJUcGZnEAE",
+					"relativePublishTimeDescription": "il y a 3 ans",
+					"rating": 5,
+					"authorAttribution": {
+						"displayName": "Maximilien Gaget",
+						"uri": "https://www.google.com/maps/contrib/117247435057412611360/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWRbh2nXB-IeMqMgtkrl1CIM6yoc3-yYRCTRRxvFJAHSU4b_JHq=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2021-03-13T18:52:56.929847Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUR5eGJUcGZnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUR5eGJUcGZnEAE!2m1!1s0x47e66e1a05c10f6f:0x8a7dfbc934e757d3"
+				}
+			]
+		},
+		{
+			"id": "ChIJZ9loWWdy5kcRfteGPaKbj7M",
+			"formattedAddress": "10 Rue des Moulins, 75001 Paris, France",
+			"location": {
+				"latitude": 48.867379299999996,
+				"longitude": 2.3345539
+			},
+			"googleMapsUri": "https://maps.google.com/?cid=12938731375577978750",
+			"displayName": {
+				"text": "Biplano",
+				"languageCode": "fr"
+			}
+		},
+		{
+			"id": "ChIJKb43-zRu5kcROJLnBw8NkQk",
+			"formattedAddress": "1 Rue Méhul, 75002 Paris, France",
+			"location": {
+				"latitude": 48.867453999999995,
+				"longitude": 2.3346191999999997
+			},
+			"googleMapsUri": "https://maps.google.com/?cid=689346576172683832",
+			"displayName": {
+				"text": "Cepheïd Consulting",
+				"languageCode": "fr"
+			},
+			"primaryType": "consultant"
+		},
+		{
+			"id": "ChIJv8rNvJ5v5kcRDcvtGNEtlYw",
+			"formattedAddress": "46 Rue des Petits Champs, 75002 Paris, France",
+			"location": {
+				"latitude": 48.867418300000004,
+				"longitude": 2.3345564
+			},
+			"rating": 4.1,
+			"googleMapsUri": "https://maps.google.com/?cid=10130053312929450765",
+			"displayName": {
+				"text": "TABAC LE VENTADOUR",
+				"languageCode": "fr"
+			},
+			"primaryType": "bar",
+			"reviews": [
+				{
+					"name": "places/ChIJv8rNvJ5v5kcRDcvtGNEtlYw/reviews/ChdDSUhNMG9nS0VJQ0FnSUQtakw3THdBRRAB",
+					"relativePublishTimeDescription": "il y a 2 ans",
+					"rating": 4,
+					"text": {
+						"text": "Un Bar-Tabac dans le quartier japonais qui me sert de cantine à midi. Les prix sont plus que raisonnables 👍. Le service est toujours impeccable. Le bât qui blesse c’est que par moment il y a un manque de maîtrise de la cuisson des aliments. Et lorsqu’ils sont débordés (notamment avec la terrasse l’été) l’attente peut être un tantinet long. Mais le rapport qualité prix est top et c’est ce qui importe !",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Un Bar-Tabac dans le quartier japonais qui me sert de cantine à midi. Les prix sont plus que raisonnables 👍. Le service est toujours impeccable. Le bât qui blesse c’est que par moment il y a un manque de maîtrise de la cuisson des aliments. Et lorsqu’ils sont débordés (notamment avec la terrasse l’été) l’attente peut être un tantinet long. Mais le rapport qualité prix est top et c’est ce qui importe !",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "yuzu teppi",
+						"uri": "https://www.google.com/maps/contrib/118235795373812737562/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjV7AugB3jzKj1QU-Eb-_t6WZtHWct-9sU_OSUyfWz284DyfkYZz=s128-c0x00000000-cc-rp-mo-ba7"
+					},
+					"publishTime": "2022-11-22T22:44:03.945653Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUQtakw3THdBRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUQtakw3THdBRRAB!2m1!1s0x47e66f9ebccdcabf:0x8c952dd118edcb0d"
+				},
+				{
+					"name": "places/ChIJv8rNvJ5v5kcRDcvtGNEtlYw/reviews/ChdDSUhNMG9nS0VJQ0FnSUMzc3VTR3VRRRAB",
+					"relativePublishTimeDescription": "il y a 3 semaines",
+					"rating": 5,
+					"text": {
+						"text": "Je suis un fidèle du Ventadour. Je n’ai jamais été déçu. J’apprécie l’ambiance sympathique, le service chaleureux, la qualité des plats faits maison et ce, de l’entrée au dessert (ce qui est rare), les prix tout à fait raisonnables. Bref, je n’ai qu’une chose à ajouter: allez-y en toute confiance !",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Je suis un fidèle du Ventadour. Je n’ai jamais été déçu. J’apprécie l’ambiance sympathique, le service chaleureux, la qualité des plats faits maison et ce, de l’entrée au dessert (ce qui est rare), les prix tout à fait raisonnables. Bref, je n’ai qu’une chose à ajouter: allez-y en toute confiance !",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Thierry",
+						"uri": "https://www.google.com/maps/contrib/111987732780640687645/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJPVWbksYQ3Uq2LmoKuGlKszDHAXp3yah8ze9mYomYthAM-Kg=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-11-04T10:21:42.504784Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUMzc3VTR3VRRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUMzc3VTR3VRRRAB!2m1!1s0x47e66f9ebccdcabf:0x8c952dd118edcb0d"
+				},
+				{
+					"name": "places/ChIJv8rNvJ5v5kcRDcvtGNEtlYw/reviews/ChZDSUhNMG9nS0VJQ0FnSURuc3NTR1dREAE",
+					"relativePublishTimeDescription": "il y a un mois",
+					"rating": 5,
+					"text": {
+						"text": "Service d'une qualité exceptionnelle (bière disponible en 30secondes top chrono grâce aux capacités exceptionnelles de hadrien)\n\nQue ce soit pour le café ou la bière du goûter, ils seront toujours à votre écoute.\n\nLe collectif swanso/tristan/Tim gratifie ce pmu de la mansion EXCELLENCE",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Service d'une qualité exceptionnelle (bière disponible en 30secondes top chrono grâce aux capacités exceptionnelles de hadrien)\n\nQue ce soit pour le café ou la bière du goûter, ils seront toujours à votre écoute.\n\nLe collectif swanso/tristan/Tim gratifie ce pmu de la mansion EXCELLENCE",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Tim Mary",
+						"uri": "https://www.google.com/maps/contrib/109191759882182850467/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWagj1ZGyGwG_-ZmIkhu-TBjPuEuMqDA_L46cyNcHgqbrojiaQ=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-10-04T19:06:41.710715Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURuc3NTR1dREAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURuc3NTR1dREAE!2m1!1s0x47e66f9ebccdcabf:0x8c952dd118edcb0d"
+				},
+				{
+					"name": "places/ChIJv8rNvJ5v5kcRDcvtGNEtlYw/reviews/ChZDSUhNMG9nS0VJQ0FnSURiNDVlRkVnEAE",
+					"relativePublishTimeDescription": "il y a 3 mois",
+					"rating": 5,
+					"text": {
+						"text": "La petite serveuse était souriante, accueillante. Le service est très efficace. Bar sympa pour prendre un verre en terrasse avec un prix avantageux en happy hour.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "La petite serveuse était souriante, accueillante. Le service est très efficace. Bar sympa pour prendre un verre en terrasse avec un prix avantageux en happy hour.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "s f w h",
+						"uri": "https://www.google.com/maps/contrib/117947369775118992564/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWliMdy5D8umdS_VTDBVkJSf1T9aKyQLPHxBugLWkZVirR71j4=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-08-09T01:26:07.110375Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURiNDVlRkVnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURiNDVlRkVnEAE!2m1!1s0x47e66f9ebccdcabf:0x8c952dd118edcb0d"
+				},
+				{
+					"name": "places/ChIJv8rNvJ5v5kcRDcvtGNEtlYw/reviews/ChZDSUhNMG9nS0VJQ0FnSURiN0lIOFZ3EAE",
+					"relativePublishTimeDescription": "il y a 3 mois",
+					"rating": 1,
+					"text": {
+						"text": "Je ne sais pas si l’attitude de la serveur était liée au fait qu’on était étrangers mais elle était limite odieuse avec nous sans raison apparente. Vu les commentaires c’est récurrent donc je suis dans l’obligation de prévenir nos clients.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Je ne sais pas si l’attitude de la serveur était liée au fait qu’on était étrangers mais elle était limite odieuse avec nous sans raison apparente. Vu les commentaires c’est récurrent donc je suis dans l’obligation de prévenir nos clients.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Lili San",
+						"uri": "https://www.google.com/maps/contrib/116355027811358224343/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJWjHYwM2y3LaIG0hmxVx2oQleupTsnQZlAS6BDWUJDNw4pqw=s128-c0x00000000-cc-rp-mo-ba3"
+					},
+					"publishTime": "2024-08-02T21:25:10.005488Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURiN0lIOFZ3EAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURiN0lIOFZ3EAE!2m1!1s0x47e66f9ebccdcabf:0x8c952dd118edcb0d"
+				}
+			]
+		},
+		{
+			"id": "ChIJDwRSpDpu5kcRh1_dgG5NzSA",
+			"formattedAddress": "2 Rue Méhul, 75002 Paris, France",
+			"location": {
+				"latitude": 48.867416,
+				"longitude": 2.3348339
+			},
+			"rating": 1,
+			"googleMapsUri": "https://maps.google.com/?cid=2363630516443111303",
+			"displayName": {
+				"text": "PREVALYS Evaluation des risques",
+				"languageCode": "fr"
+			},
+			"reviews": [
+				{
+					"name": "places/ChIJDwRSpDpu5kcRh1_dgG5NzSA/reviews/ChdDSUhNMG9nS0VJQ0FnSURHcXByMjFBRRAB",
+					"relativePublishTimeDescription": "il y a 3 ans",
+					"rating": 1,
+					"text": {
+						"text": "Ma proposé un code promo car je n'ai pas eu beaucoup d'hospitalisation. Je suis assez surpris qu'une mutuel puisse obtenir ce genre d'information, alors que je ne suis pas client chez eux. Je me permettrais de faire un signalement a la Cnil pour non respect de la Rgpd.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Ma proposé un code promo car je n'ai pas eu beaucoup d'hospitalisation. Je suis assez surpris qu'une mutuel puisse obtenir ce genre d'information, alors que je ne suis pas client chez eux. Je me permettrais de faire un signalement a la Cnil pour non respect de la Rgpd.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "flahauw vincent",
+						"uri": "https://www.google.com/maps/contrib/112408856776580193922/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjV9hit5aCuy_K5hybyOLxEehX_gHNZJ8TiCxhmABYhvJM3BGRGb=s128-c0x00000000-cc-rp-mo-ba2"
+					},
+					"publishTime": "2021-11-24T11:26:02.119142Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURHcXByMjFBRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURHcXByMjFBRRAB!2m1!1s0x47e66e3aa452040f:0x20cd4d6e80dd5f87"
+				},
+				{
+					"name": "places/ChIJDwRSpDpu5kcRh1_dgG5NzSA/reviews/ChdDSUhNMG9nS0VJQ0FnSURNOTc2ZXFRRRAB",
+					"relativePublishTimeDescription": "il y a 4 ans",
+					"rating": 1,
+					"text": {
+						"text": "spécialiste du spam",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "spécialiste du spam",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "François (“La Boutique Luxe”)",
+						"uri": "https://www.google.com/maps/contrib/116741333872987308307/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUtZ-tb9LcDvpllrL5hM0yltAFRvJf2guOogE2xFM9CIYA8RUx6AA=s128-c0x00000000-cc-rp-mo-ba2"
+					},
+					"publishTime": "2020-01-15T17:17:14.247784Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURNOTc2ZXFRRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURNOTc2ZXFRRRAB!2m1!1s0x47e66e3aa452040f:0x20cd4d6e80dd5f87"
+				},
+				{
+					"name": "places/ChIJDwRSpDpu5kcRh1_dgG5NzSA/reviews/ChZDSUhNMG9nS0VJQ0FnSUNTcFlXN0xnEAE",
+					"relativePublishTimeDescription": "il y a 3 ans",
+					"rating": 1,
+					"authorAttribution": {
+						"displayName": "Henri Castagnet",
+						"uri": "https://www.google.com/maps/contrib/101941700898952486942/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLIxiuvfA67oeUwIICGeq95EHIrWdFprgOtgapK7NpQBIPQZQ=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2020-12-16T13:53:22.337694Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNTcFlXN0xnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNTcFlXN0xnEAE!2m1!1s0x47e66e3aa452040f:0x20cd4d6e80dd5f87"
+				}
+			]
+		},
+		{
+			"id": "ChIJ3xwXuzpu5kcR2LUw04bOrTY",
+			"formattedAddress": "42 Rue des Petits Champs, 75002 Paris, France",
+			"location": {
+				"latitude": 48.8673042,
+				"longitude": 2.3348948
+			},
+			"rating": 3.8,
+			"googleMapsUri": "https://maps.google.com/?cid=3940032327483176408",
+			"displayName": {
+				"text": "Joseph",
+				"languageCode": "fr"
+			},
+			"primaryType": "bakery",
+			"reviews": [
+				{
+					"name": "places/ChIJ3xwXuzpu5kcR2LUw04bOrTY/reviews/ChdDSUhNMG9nS0VJQ0FnSUNuZ1plZzdBRRAB",
+					"relativePublishTimeDescription": "il y a 2 mois",
+					"rating": 1,
+					"text": {
+						"text": "Ce matin, à 7h30, le pain au chocolat et les croissants qui m'ont été vendus étaient rassis. Probablement de la veille. Dommage pour la dernière boulangerie non japonaise du quartier",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Ce matin, à 7h30, le pain au chocolat et les croissants qui m'ont été vendus étaient rassis. Probablement de la veille. Dommage pour la dernière boulangerie non japonaise du quartier",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Jean-Noël Botella",
+						"uri": "https://www.google.com/maps/contrib/111493159651919722506/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU4Ksb-s7JFEdgi8DGMw7Z4a7y2Mz-_07OTv8_jdBuXdcLFOnMW=s128-c0x00000000-cc-rp-mo-ba6"
+					},
+					"publishTime": "2024-09-26T16:16:21.553811Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNuZ1plZzdBRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNuZ1plZzdBRRAB!2m1!1s0x47e66e3abb171cdf:0x36adce86d330b5d8"
+				},
+				{
+					"name": "places/ChIJ3xwXuzpu5kcR2LUw04bOrTY/reviews/ChdDSUhNMG9nS0VJQ0FnSUREMnJUNG1nRRAB",
+					"relativePublishTimeDescription": "il y a une semaine",
+					"rating": 2,
+					"text": {
+						"text": "1,5€ le pain au chocolat 😂😂 on croit rêver surtout qu’il sont très gras … et arrêtez avec vos caisse automatique !!! L’humain ça fait pas de\nMal (et le calcul mental aussi) ! Bonjour et au revoir ne sont pas des mots dans le vocabulaire des hommes qui y hissent surtout si vous êtes une cliente femme ! A fuir de toute urgence",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "1,5€ le pain au chocolat 😂😂 on croit rêver surtout qu’il sont très gras … et arrêtez avec vos caisse automatique !!! L’humain ça fait pas de\nMal (et le calcul mental aussi) ! Bonjour et au revoir ne sont pas des mots dans le vocabulaire des hommes qui y hissent surtout si vous êtes une cliente femme ! A fuir de toute urgence",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Esther Jaffredo",
+						"uri": "https://www.google.com/maps/contrib/103938689874833650108/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU6Gv3tRMO-OS-Vi56jdtSMH64HsB-eSwXdCW1ymINMJtpDbPhM=s128-c0x00000000-cc-rp-mo-ba3"
+					},
+					"publishTime": "2024-11-19T09:03:45.180660Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUREMnJUNG1nRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUREMnJUNG1nRRAB!2m1!1s0x47e66e3abb171cdf:0x36adce86d330b5d8"
+				},
+				{
+					"name": "places/ChIJ3xwXuzpu5kcR2LUw04bOrTY/reviews/ChdDSUhNMG9nS0VJQ0FnSUNYanZ2a2pBRRAB",
+					"relativePublishTimeDescription": "il y a un mois",
+					"rating": 1,
+					"text": {
+						"text": "Alala cliente depuis presque 10 ans car je vis juste en face , j’en ai des choses a dire ! On commence par quoi? Le fait que tout est surgeler ou le fait que le monsieur qui Est la depuis des annees Est tellement desagreable , meprisant dans sont regard et sa facon de parler . Mais il sait tres bien avec qui agir comme sa ou pas , limite voir RACISTE Et je pese mes mots !!!!!!!!!! sinon la baguette tradition Est genial 🥰 BYE",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Alala cliente depuis presque 10 ans car je vis juste en face , j’en ai des choses a dire ! On commence par quoi? Le fait que tout est surgeler ou le fait que le monsieur qui Est la depuis des annees Est tellement desagreable , meprisant dans sont regard et sa facon de parler . Mais il sait tres bien avec qui agir comme sa ou pas , limite voir RACISTE Et je pese mes mots !!!!!!!!!! sinon la baguette tradition Est genial 🥰 BYE",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "By Mae",
+						"uri": "https://www.google.com/maps/contrib/102167812236579122869/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJWPSE8j9U-DipoPDfNBdftXxci8Wyo5SrsJsVA-Ug6oAr3W1g=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-10-16T15:45:15.693896Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNYanZ2a2pBRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNYanZ2a2pBRRAB!2m1!1s0x47e66e3abb171cdf:0x36adce86d330b5d8"
+				},
+				{
+					"name": "places/ChIJ3xwXuzpu5kcR2LUw04bOrTY/reviews/ChdDSUhNMG9nS0VJQ0FnSURUX1B1NDRBRRAB",
+					"relativePublishTimeDescription": "il y a 6 mois",
+					"rating": 1,
+					"text": {
+						"text": "De passage dans le quartier j’achète un sandwich au thon et une part de flan d’une banalité confondante soit dit en passant…. Mais la raison principale de ma note c’est le refus de la caissière de me donner un petit sachet papier pour glisser mon flan (je devais faire quelques pas avec le sandwich dans un étui carton et le flan juste recouvert d’un papier). J’ai totalement halluciné !!!! Mais Paris est la ville où tout est possible même le pire ! À fuir. À ce que je sache un sachet papier qui sert à emballer les viennoiseries ne doit pas beaucoup entamer la marge de cette boulangerie….",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "De passage dans le quartier j’achète un sandwich au thon et une part de flan d’une banalité confondante soit dit en passant…. Mais la raison principale de ma note c’est le refus de la caissière de me donner un petit sachet papier pour glisser mon flan (je devais faire quelques pas avec le sandwich dans un étui carton et le flan juste recouvert d’un papier). J’ai totalement halluciné !!!! Mais Paris est la ville où tout est possible même le pire ! À fuir. À ce que je sache un sachet papier qui sert à emballer les viennoiseries ne doit pas beaucoup entamer la marge de cette boulangerie….",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "PATRICIA F",
+						"uri": "https://www.google.com/maps/contrib/102481275267802480231/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJt76EZtK0Fh6ppyL1vNuIU0XIicbkmEsXPkOgvXWgRRQxjGw=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-05-23T11:43:38.998608Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURUX1B1NDRBRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURUX1B1NDRBRRAB!2m1!1s0x47e66e3abb171cdf:0x36adce86d330b5d8"
+				},
+				{
+					"name": "places/ChIJ3xwXuzpu5kcR2LUw04bOrTY/reviews/ChZDSUhNMG9nS0VJQ0FnSUNYNnFDSUhnEAE",
+					"relativePublishTimeDescription": "il y a un mois",
+					"rating": 1,
+					"text": {
+						"text": "Attention horrible.  Le vieil homme à la caisse est un homme grincheux qui a un service épouvantable et les 3 ouvriers m'ont ri au nez 3 fois pour avoir commandé un café au lait.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Attention horrible.  Le vieil homme à la caisse est un homme grincheux qui a un service épouvantable et les 3 ouvriers m'ont ri au nez 3 fois pour avoir commandé un café au lait.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Facundo Sanchez Aubinel",
+						"uri": "https://www.google.com/maps/contrib/106374751813854048778/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU3YAMYJQv1o4mF2L1VTODUZ5pYzflaAmLDmPzax1hbIxkvZw=s128-c0x00000000-cc-rp-mo-ba4"
+					},
+					"publishTime": "2024-10-15T09:52:11.459943Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNYNnFDSUhnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNYNnFDSUhnEAE!2m1!1s0x47e66e3abb171cdf:0x36adce86d330b5d8"
+				}
+			]
+		},
+		{
+			"id": "ChIJl3E3Hq9v5kcRmv-gYMiGTu4",
+			"formattedAddress": "57 Rue des Petits Champs, 75001 Paris, France",
+			"location": {
+				"latitude": 48.867225000000005,
+				"longitude": 2.3346389999999997
+			},
+			"rating": 4.1,
+			"googleMapsUri": "https://maps.google.com/?cid=17171810624383025050",
+			"displayName": {
+				"text": "Maru",
+				"languageCode": "fr"
+			},
+			"primaryType": "cafe",
+			"reviews": [
+				{
+					"name": "places/ChIJl3E3Hq9v5kcRmv-gYMiGTu4/reviews/ChZDSUhNMG9nS0VJQ0FnSUQzOElUUVhBEAE",
+					"relativePublishTimeDescription": "il y a 2 semaines",
+					"rating": 3,
+					"text": {
+						"text": "A notre arrivée,  pas de gaufres salé ou sucré, juste les curry. De l'avis de ceux qui en mangeaient,  c'est très bon.\nLes gâteaux du chefs japonais sont excellent et méritent vraiment d'y goûter.  On a adoré celui en fleurs de cerisier et en feuille.  Les 2 autres ont été très aimé par 3 personnes sur 4. Attention,  cœur en haricots  rouge! Par contre, le cookies matcha... je cherche encore le matcha.  L'americano façon maru était fade et la boisson au oreo avait juste un goût chocolat. Par contre,  les thé matcha sont visiblement très bon. Excellent ambiance,  on a adoré les décors et la possibilité dd travailler sur place. Attention, une marche abîmé et les WC était pas très propre.\nMais malgré  tout,  le concept est sympa et rien que pour le chef japonais cela vaut le détour.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "A notre arrivée,  pas de gaufres salé ou sucré, juste les curry. De l'avis de ceux qui en mangeaient,  c'est très bon.\nLes gâteaux du chefs japonais sont excellent et méritent vraiment d'y goûter.  On a adoré celui en fleurs de cerisier et en feuille.  Les 2 autres ont été très aimé par 3 personnes sur 4. Attention,  cœur en haricots  rouge! Par contre, le cookies matcha... je cherche encore le matcha.  L'americano façon maru était fade et la boisson au oreo avait juste un goût chocolat. Par contre,  les thé matcha sont visiblement très bon. Excellent ambiance,  on a adoré les décors et la possibilité dd travailler sur place. Attention, une marche abîmé et les WC était pas très propre.\nMais malgré  tout,  le concept est sympa et rien que pour le chef japonais cela vaut le détour.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Florence Jade",
+						"uri": "https://www.google.com/maps/contrib/111183957674148482617/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW9wSVAB4arzld36ert2iLdrECrv8lRWIC56dY9Fy9r_UpPmZqH=s128-c0x00000000-cc-rp-mo-ba3"
+					},
+					"publishTime": "2024-11-11T13:09:04.297618Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUQzOElUUVhBEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUQzOElUUVhBEAE!2m1!1s0x47e66faf1e377197:0xee4e86c860a0ff9a"
+				},
+				{
+					"name": "places/ChIJl3E3Hq9v5kcRmv-gYMiGTu4/reviews/ChZDSUhNMG9nS0VJQ0FnSUQ3djVXVVlnEAE",
+					"relativePublishTimeDescription": "il y a 3 mois",
+					"rating": 4,
+					"text": {
+						"text": "Découverte de saveurs inédites ! Une expérience que je ne regrette pas d'avoir vécu. C'était très copieux !\nLe restaurant est très beau.\n\nNéanmoins je n'ai pas spécialement apprécié les saveurs, ce ne sont que des goûts personnels. Mais les personnes qui ont testé avec moi étaient du même avis. Peut-être un peu cher.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Découverte de saveurs inédites ! Une expérience que je ne regrette pas d'avoir vécu. C'était très copieux !\nLe restaurant est très beau.\n\nNéanmoins je n'ai pas spécialement apprécié les saveurs, ce ne sont que des goûts personnels. Mais les personnes qui ont testé avec moi étaient du même avis. Peut-être un peu cher.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Eric Tindel",
+						"uri": "https://www.google.com/maps/contrib/103494838729071915710/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIAgjTmrn13odPRH7g4exHQdXU1UNpc7BuTRdUpdq4VGiJHGg=s128-c0x00000000-cc-rp-mo-ba3"
+					},
+					"publishTime": "2024-08-30T12:47:57.288929Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUQ3djVXVVlnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUQ3djVXVVlnEAE!2m1!1s0x47e66faf1e377197:0xee4e86c860a0ff9a"
+				},
+				{
+					"name": "places/ChIJl3E3Hq9v5kcRmv-gYMiGTu4/reviews/ChdDSUhNMG9nS0VJQ0FnSUNMNjlPWmpRRRAB",
+					"relativePublishTimeDescription": "il y a 5 mois",
+					"rating": 5,
+					"text": {
+						"text": "Une superbe expérience, un personnel aux petits soins et des plats bien généreux et jolis. Les boissons sont très bonnes et le choix du lait est possible. Je recommande fortement pour essayer des petits plats dont on a pas forcément l’habitude ! Tout est raisonnable niveau prix.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Une superbe expérience, un personnel aux petits soins et des plats bien généreux et jolis. Les boissons sont très bonnes et le choix du lait est possible. Je recommande fortement pour essayer des petits plats dont on a pas forcément l’habitude ! Tout est raisonnable niveau prix.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Lapetite Baleine",
+						"uri": "https://www.google.com/maps/contrib/111902179626906726750/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXmvbhbkDAGpWyE6gCyr2QTkTZMekcV5D17eVzuD8F3Mv3g6Xk=s128-c0x00000000-cc-rp-mo-ba4"
+					},
+					"publishTime": "2024-06-26T08:18:55.678131Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNMNjlPWmpRRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNMNjlPWmpRRRAB!2m1!1s0x47e66faf1e377197:0xee4e86c860a0ff9a"
+				},
+				{
+					"name": "places/ChIJl3E3Hq9v5kcRmv-gYMiGTu4/reviews/ChdDSUhNMG9nS0VJQ0FnSUNuNV9Xc3JnRRAB",
+					"relativePublishTimeDescription": "il y a un mois",
+					"rating": 4,
+					"text": {
+						"text": "Le personnel est sympathique et courtois. Le service assez rapide. La nourriture est bonne pour le côté café. Je voulais tester le Temaris à emporter mais ça ne se fait pas le soir. (D’où le 4* et non pas 5). Ce n’est pas précisé non plus que le soir ce n’est pas possible, il serait utile de l’afficher.\n\nLa déco est superbe et calme. On ressent bien le côté Japon.\n\nSeul petit bémol, le côté café est ultra bruyant quand il y a du monde en plus ds bruits des machines.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Le personnel est sympathique et courtois. Le service assez rapide. La nourriture est bonne pour le côté café. Je voulais tester le Temaris à emporter mais ça ne se fait pas le soir. (D’où le 4* et non pas 5). Ce n’est pas précisé non plus que le soir ce n’est pas possible, il serait utile de l’afficher.\n\nLa déco est superbe et calme. On ressent bien le côté Japon.\n\nSeul petit bémol, le côté café est ultra bruyant quand il y a du monde en plus ds bruits des machines.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Béatrice Maloi",
+						"uri": "https://www.google.com/maps/contrib/114002960503176848346/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUZQJHROATQEM21Wgb_14VT2OFyBRwqCaYjSqRGgjLaivPb4yP2=s128-c0x00000000-cc-rp-mo-ba5"
+					},
+					"publishTime": "2024-09-30T20:54:07.445258Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNuNV9Xc3JnRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNuNV9Xc3JnRRAB!2m1!1s0x47e66faf1e377197:0xee4e86c860a0ff9a"
+				},
+				{
+					"name": "places/ChIJl3E3Hq9v5kcRmv-gYMiGTu4/reviews/ChZDSUhNMG9nS0VJQ0FnSURYcnVXZE1nEAE",
+					"relativePublishTimeDescription": "il y a un mois",
+					"rating": 5,
+					"text": {
+						"text": "Le restaurant était vraiment délicieux. Un peu d’attente devant car il n’y a pas beaucoup de tables. Cependant tout était très bon et copieux. Les saveurs étaient vraiment au rendez-vous. Nous avons adoré ! Le service est rapide une fois dedans et le personnel est adorable.\nLes prix sont tout a fait corrects. Il faut vraiment gouter le croffel au poulet ! Vous ne regretterez absolument pas !",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Le restaurant était vraiment délicieux. Un peu d’attente devant car il n’y a pas beaucoup de tables. Cependant tout était très bon et copieux. Les saveurs étaient vraiment au rendez-vous. Nous avons adoré ! Le service est rapide une fois dedans et le personnel est adorable.\nLes prix sont tout a fait corrects. Il faut vraiment gouter le croffel au poulet ! Vous ne regretterez absolument pas !",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Lama Rose",
+						"uri": "https://www.google.com/maps/contrib/100277167751003408823/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU6HCAIxFfIsxlCJ8g8surIPOF_d8rC52pksKwoOMuPOk6DjBw=s128-c0x00000000-cc-rp-mo-ba4"
+					},
+					"publishTime": "2024-10-27T12:59:56.396752Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURYcnVXZE1nEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURYcnVXZE1nEAE!2m1!1s0x47e66faf1e377197:0xee4e86c860a0ff9a"
+				}
+			]
+		},
+		{
+			"id": "ChIJ3xwXuzpu5kcR5Mr3XmMR6SQ",
+			"formattedAddress": "42 Rue des Petits Champs, 75002 Paris, France",
+			"location": {
+				"latitude": 48.8673568,
+				"longitude": 2.3349268999999997
+			},
+			"googleMapsUri": "https://maps.google.com/?cid=2659676173431720676",
+			"displayName": {
+				"text": "S.m.j.d",
+				"languageCode": "fr"
+			},
+			"primaryType": "store"
+		},
+		{
+			"id": "ChIJYUweozpu5kcRTyO2eRFXxJU",
+			"formattedAddress": "2 Rue Dalayrac, 75002 Paris, France",
+			"location": {
+				"latitude": 48.867462100000004,
+				"longitude": 2.3349205
+			},
+			"rating": 4.2,
+			"googleMapsUri": "https://maps.google.com/?cid=10791846339654591311",
+			"displayName": {
+				"text": "Café Dalayrac",
+				"languageCode": "fr"
+			},
+			"primaryType": "restaurant",
+			"reviews": [
+				{
+					"name": "places/ChIJYUweozpu5kcRTyO2eRFXxJU/reviews/ChRDSUhNMG9nS0VJQ0FnSURYMzd0dRAB",
+					"relativePublishTimeDescription": "il y a 3 semaines",
+					"rating": 4,
+					"text": {
+						"text": "Très bon accueil, plats simples et savoureux. La cuisson à point du steak de thon était une perfection. Le dos de cabillaud avec sa purée à tomate était un délice. À refaire.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Très bon accueil, plats simples et savoureux. La cuisson à point du steak de thon était une perfection. Le dos de cabillaud avec sa purée à tomate était un délice. À refaire.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "zohir Alouache",
+						"uri": "https://www.google.com/maps/contrib/110513656086556009285/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLoGy8rvAp_5UDmxplZ6ze3sAE8IDoIw16V1AnrYrjZ5tTAyg=s128-c0x00000000-cc-rp-mo-ba2"
+					},
+					"publishTime": "2024-11-01T13:02:08.417600Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChRDSUhNMG9nS0VJQ0FnSURYMzd0dRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChRDSUhNMG9nS0VJQ0FnSURYMzd0dRAB!2m1!1s0x47e66e3aa31e4c61:0x95c4571179b6234f"
+				},
+				{
+					"name": "places/ChIJYUweozpu5kcRTyO2eRFXxJU/reviews/ChZDSUhNMG9nS0VJQ0FnSUNUcU9idmF3EAE",
+					"relativePublishTimeDescription": "il y a 6 mois",
+					"rating": 5,
+					"text": {
+						"text": "Un petit café bien sympa, le cadre est génial à l’abri des grandes routes et des bruits de moteurs.\nPour ce qui est de la nourriture après être passé plusieurs fois je peux vous assurer qu’il n’y a aucun plats/desserts à passer !\nLe service est au top avec des serveurs/ses souriantes et agréable qui sont toujours à l’écoute.\nSi vous voulez venir passer un petit moment bien sympathique hors de la foule de Paris c’est l’endroit idéal !",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Un petit café bien sympa, le cadre est génial à l’abri des grandes routes et des bruits de moteurs.\nPour ce qui est de la nourriture après être passé plusieurs fois je peux vous assurer qu’il n’y a aucun plats/desserts à passer !\nLe service est au top avec des serveurs/ses souriantes et agréable qui sont toujours à l’écoute.\nSi vous voulez venir passer un petit moment bien sympathique hors de la foule de Paris c’est l’endroit idéal !",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Oceane Meflahi",
+						"uri": "https://www.google.com/maps/contrib/114587101544672586390/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKaVY6mIREZwP8oinoECwjSsxjiiuCRx_mMR74Xa0BLhTu5Fw=s128-c0x00000000-cc-rp-mo-ba3"
+					},
+					"publishTime": "2024-05-10T12:44:52.561273Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNUcU9idmF3EAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNUcU9idmF3EAE!2m1!1s0x47e66e3aa31e4c61:0x95c4571179b6234f"
+				},
+				{
+					"name": "places/ChIJYUweozpu5kcRTyO2eRFXxJU/reviews/ChdDSUhNMG9nS0VJQ0FnSUNUcUo3NC1RRRAB",
+					"relativePublishTimeDescription": "il y a 6 mois",
+					"rating": 5,
+					"text": {
+						"text": "Si vous venez sur Paris et que vous voulez passez un petit moment en toute tranquillité il n’y a pas meilleur endroit qu’ici !\nJe suis venue plusieurs fois maintenant et je n’ai jamais été déçue que ce soit par le service ou les plats.\nSi je dois vous recommander une chose ce sont les tartes, quelques soit le fruit elles sont toujours délicieuses :)\nLe service est rapide l’équipe est souriante et accueillante, un vrai havre de paix.\nSi vous avez l’opportunité de venir n’hésitez pas.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Si vous venez sur Paris et que vous voulez passez un petit moment en toute tranquillité il n’y a pas meilleur endroit qu’ici !\nJe suis venue plusieurs fois maintenant et je n’ai jamais été déçue que ce soit par le service ou les plats.\nSi je dois vous recommander une chose ce sont les tartes, quelques soit le fruit elles sont toujours délicieuses :)\nLe service est rapide l’équipe est souriante et accueillante, un vrai havre de paix.\nSi vous avez l’opportunité de venir n’hésitez pas.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Manon Jumpertz",
+						"uri": "https://www.google.com/maps/contrib/111230285204469511107/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX90Vut398B4vAT2QHmzIeKcTMQDv1JgqxwGW8HbvU5a0Se3RiA_w=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-05-10T12:52:34.965341Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNUcUo3NC1RRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNUcUo3NC1RRRAB!2m1!1s0x47e66e3aa31e4c61:0x95c4571179b6234f"
+				},
+				{
+					"name": "places/ChIJYUweozpu5kcRTyO2eRFXxJU/reviews/ChZDSUhNMG9nS0VJQ0FnSUNaZ01HYmJnEAE",
+					"relativePublishTimeDescription": "il y a un an",
+					"rating": 5,
+					"text": {
+						"text": "Lieu incroyablement parisien ! Mélange de tradition et de modernité ! Le vrai Paris comme on aime ..! La cuisine est excellente, et l’accueil est familial et très souriant ☺️ en famille, entre amis, à n’importe quelle heure ! Même les plats végétariens sont à la carte 🥗 super 👍🏻",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Lieu incroyablement parisien ! Mélange de tradition et de modernité ! Le vrai Paris comme on aime ..! La cuisine est excellente, et l’accueil est familial et très souriant ☺️ en famille, entre amis, à n’importe quelle heure ! Même les plats végétariens sont à la carte 🥗 super 👍🏻",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "mahe lucie",
+						"uri": "https://www.google.com/maps/contrib/117977858631384635481/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVbiinhhGrUwLZelMBV9iGjCai5lm3jLTWPk92eti59f47dH46B=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2023-09-01T17:18:56.942119Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNaZ01HYmJnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNaZ01HYmJnEAE!2m1!1s0x47e66e3aa31e4c61:0x95c4571179b6234f"
+				},
+				{
+					"name": "places/ChIJYUweozpu5kcRTyO2eRFXxJU/reviews/ChZDSUhNMG9nS0VJQ0FnSURuekt2Q1VnEAE",
+					"relativePublishTimeDescription": "il y a un mois",
+					"rating": 1,
+					"text": {
+						"text": "Lors de ma récente visite pour le dîner, j'ai commandé du cabillaud provençal, et c'était une véritable catastrophe. Le poisson était incroyablement caoutchouteux, de très mauvaise qualité et mal préparé. C'était immangeable et je suis choquée qu'un restaurant puisse servir un plat si mal exécuté. Après une expérience aussi désastreuse, je ne reviendrai certainement jamais !",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Lors de ma récente visite pour le dîner, j'ai commandé du cabillaud provençal, et c'était une véritable catastrophe. Le poisson était incroyablement caoutchouteux, de très mauvaise qualité et mal préparé. C'était immangeable et je suis choquée qu'un restaurant puisse servir un plat si mal exécuté. Après une expérience aussi désastreuse, je ne reviendrai certainement jamais !",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Lara Hofman",
+						"uri": "https://www.google.com/maps/contrib/104018996413852843258/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX-sx_WQUr9v6H8HU7T5Nmr8qEUfQF4q59jox9KLftg4e2yXv9H5Q=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-10-03T21:03:42.895678Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURuekt2Q1VnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURuekt2Q1VnEAE!2m1!1s0x47e66e3aa31e4c61:0x95c4571179b6234f"
+				}
+			]
+		},
+		{
+			"id": "ChIJqebYYmhv5kcRGasDQccx8Dk",
+			"formattedAddress": "55 Rue des Petits Champs, 75001 Paris, France",
+			"location": {
+				"latitude": 48.867200499999996,
+				"longitude": 2.3347507
+			},
+			"rating": 4.5,
+			"googleMapsUri": "https://maps.google.com/?cid=4174891586431462169",
+			"displayName": {
+				"text": "The Alley Opéra",
+				"languageCode": "en"
+			},
+			"primaryType": "tea_house",
+			"reviews": [
+				{
+					"name": "places/ChIJqebYYmhv5kcRGasDQccx8Dk/reviews/ChdDSUhNMG9nS0VJQ0FnSUNucXI2RV9BRRAB",
+					"relativePublishTimeDescription": "il y a 2 mois",
+					"rating": 4,
+					"text": {
+						"text": "Un des meilleurs Bubble Tea, j'ai l'habitude d'y aller et je suis très rarement déçu. [Qlq fois, il y a un mauvais dosage sur le sucre (peu alors que le pourcentage est correct)]. Personnel correct.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Un des meilleurs Bubble Tea, j'ai l'habitude d'y aller et je suis très rarement déçu. [Qlq fois, il y a un mauvais dosage sur le sucre (peu alors que le pourcentage est correct)]. Personnel correct.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Alliyah",
+						"uri": "https://www.google.com/maps/contrib/110249770708692291262/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocL0b01Cln1OSObQJqUjLqi-MlgTiVzihKCUgoEOcY0OW6bwZPc=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-09-24T23:43:50.011875Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNucXI2RV9BRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNucXI2RV9BRRAB!2m1!1s0x47e66f6862d8e6a9:0x39f031c74103ab19"
+				},
+				{
+					"name": "places/ChIJqebYYmhv5kcRGasDQccx8Dk/reviews/ChdDSUhNMG9nS0VJQ0FnSUM3X191UDRBRRAB",
+					"relativePublishTimeDescription": "il y a 3 mois",
+					"rating": 4,
+					"text": {
+						"text": "En fonction du bbt que tu choisis ton avis diffère. Autant le brown sugar est bon et a du goût autant le peach oolong est juste absolument fade !\nLe lait tu le ressens mais la pêche ?? Je la cherche toujours.\nUn verre de lait avec des tapiocas, pas ouf.\nJ’imagine que vous avez une très grandeeee clientèle mais faites des cartes de fidélité\n! Toutes les concurrences en font mais pas vous ? Ça donne pas envie de revenir encore moins pour un bbt fade. Je suis déçue.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "En fonction du bbt que tu choisis ton avis diffère. Autant le brown sugar est bon et a du goût autant le peach oolong est juste absolument fade !\nLe lait tu le ressens mais la pêche ?? Je la cherche toujours.\nUn verre de lait avec des tapiocas, pas ouf.\nJ’imagine que vous avez une très grandeeee clientèle mais faites des cartes de fidélité\n! Toutes les concurrences en font mais pas vous ? Ça donne pas envie de revenir encore moins pour un bbt fade. Je suis déçue.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "oceanblvd",
+						"uri": "https://www.google.com/maps/contrib/114196207090028604697/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXu-LrUdyLUIKIAnlN0vLx2-QwDFaJ1I1O7DD-uFpQrVyNru83X=s128-c0x00000000-cc-rp-mo-ba5"
+					},
+					"publishTime": "2024-08-19T21:13:54.224391Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUM3X191UDRBRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUM3X191UDRBRRAB!2m1!1s0x47e66f6862d8e6a9:0x39f031c74103ab19"
+				},
+				{
+					"name": "places/ChIJqebYYmhv5kcRGasDQccx8Dk/reviews/ChdDSUhNMG9nS0VJQ0FnSUM3eE8yazJRRRAB",
+					"relativePublishTimeDescription": "il y a 3 mois",
+					"rating": 1,
+					"text": {
+						"text": "D'habitude j'adore cette enseigne mais cette fois J'ai pris un bubble tea crème brûlé, c'était absolument affreux ! Aucun goût uniquement du lait pas beaucoup de perles de tapioca et un petit contenant je n'ai pas senti le sirop crème brûlée ni le thé j'ai failli revenir demander un remboursement , je ne sais pas si c'etait une erreur dans la préparation mais c'était abjecte on m'a vendu un verre de lait tout simplement, franchement pour 7 euros vous pouvez avoir beaucoup mieux dans un autre magasin...\nÀ éviter 👎🏽",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "D'habitude j'adore cette enseigne mais cette fois J'ai pris un bubble tea crème brûlé, c'était absolument affreux ! Aucun goût uniquement du lait pas beaucoup de perles de tapioca et un petit contenant je n'ai pas senti le sirop crème brûlée ni le thé j'ai failli revenir demander un remboursement , je ne sais pas si c'etait une erreur dans la préparation mais c'était abjecte on m'a vendu un verre de lait tout simplement, franchement pour 7 euros vous pouvez avoir beaucoup mieux dans un autre magasin...\nÀ éviter 👎🏽",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Line Tln",
+						"uri": "https://www.google.com/maps/contrib/111164007076502257472/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU2xHOLppFwfyOFz92YahAZ844ITRbf25lZVXx0HMMrKmRsaK0d=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-08-12T16:12:41.246394Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUM3eE8yazJRRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUM3eE8yazJRRRAB!2m1!1s0x47e66f6862d8e6a9:0x39f031c74103ab19"
+				},
+				{
+					"name": "places/ChIJqebYYmhv5kcRGasDQccx8Dk/reviews/ChdDSUhNMG9nS0VJQ0FnSUNIdzh2VzBnRRAB",
+					"relativePublishTimeDescription": "il y a 2 mois",
+					"rating": 5,
+					"text": {
+						"text": "Un incontournable quand je passe par Opéra ! Ce sont les meilleurs bubble tea que je connaisse. Le service peut évidemment être ralenti quand il y a du monde (ce qui arrive souvent en soirée), mais c'est assez rapide malgré tout.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Un incontournable quand je passe par Opéra ! Ce sont les meilleurs bubble tea que je connaisse. Le service peut évidemment être ralenti quand il y a du monde (ce qui arrive souvent en soirée), mais c'est assez rapide malgré tout.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "nina",
+						"uri": "https://www.google.com/maps/contrib/103369699346140257809/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocI_I2hbofaWguXFJ1FgPm_tVz8tCAZ7Rl_1HDiV_7ZR-oLXVJo=s128-c0x00000000-cc-rp-mo-ba4"
+					},
+					"publishTime": "2024-09-08T07:50:14.302154Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNIdzh2VzBnRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNIdzh2VzBnRRAB!2m1!1s0x47e66f6862d8e6a9:0x39f031c74103ab19"
+				},
+				{
+					"name": "places/ChIJqebYYmhv5kcRGasDQccx8Dk/reviews/ChdDSUhNMG9nS0VJQ0FnSUNMNjRManBBRRAB",
+					"relativePublishTimeDescription": "il y a 5 mois",
+					"rating": 4,
+					"text": {
+						"text": "Le Bubble tea crème brûlée est mon préféré chez The Alley. Attention à l’attente pendant les heures de pointe, parfois victime de son succès.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Le Bubble tea crème brûlée est mon préféré chez The Alley. Attention à l’attente pendant les heures de pointe, parfois victime de son succès.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "My ChefSociety",
+						"uri": "https://www.google.com/maps/contrib/107065708432871441128/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUeEqJlzn8TwFvu2J7LjlCErk1eJ3Kzna-QAkpQ61O_aclbsR8=s128-c0x00000000-cc-rp-mo-ba3"
+					},
+					"publishTime": "2024-06-23T07:31:55.052633Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNMNjRManBBRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNMNjRManBBRRAB!2m1!1s0x47e66f6862d8e6a9:0x39f031c74103ab19"
+				}
+			]
+		},
+		{
+			"id": "ChIJA4VctTFu5kcRzrujLRoa19A",
+			"formattedAddress": "55 Rue des Petits Champs, 75001 Paris, France",
+			"location": {
+				"latitude": 48.8672033,
+				"longitude": 2.3347694
+			},
+			"rating": 5,
+			"googleMapsUri": "https://maps.google.com/?cid=15048525379618978766",
+			"displayName": {
+				"text": "Agence Casanova",
+				"languageCode": "fr"
+			},
+			"reviews": [
+				{
+					"name": "places/ChIJA4VctTFu5kcRzrujLRoa19A/reviews/ChdDSUhNMG9nS0VJQ0FnSUNYd3FQVGd3RRAB",
+					"relativePublishTimeDescription": "il y a un mois",
+					"rating": 5,
+					"text": {
+						"text": "un grand merci à Madi qui a su répondre à mes demandes dans l’urgence , Très professionnel très à l’écoute au besoin et qui a le sens du détail.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "un grand merci à Madi qui a su répondre à mes demandes dans l’urgence , Très professionnel très à l’écoute au besoin et qui a le sens du détail.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Jerry Berthaux",
+						"uri": "https://www.google.com/maps/contrib/101853216290284729494/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKpnUGAHbaiNc1G5HJQ9Xpf1uGfVxPhd96q89YeRisMg5kYTQ=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-10-14T13:40:28.144213Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNYd3FQVGd3RRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNYd3FQVGd3RRAB!2m1!1s0x47e66e31b55c8503:0xd0d71a1a2da3bbce"
+				},
+				{
+					"name": "places/ChIJA4VctTFu5kcRzrujLRoa19A/reviews/ChdDSUhNMG9nS0VJQ0FnSUNSaktHUDZBRRAB",
+					"relativePublishTimeDescription": "il y a un an",
+					"rating": 5,
+					"text": {
+						"text": "Super professionnel",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Super professionnel",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "agathe guyot",
+						"uri": "https://www.google.com/maps/contrib/115581618376151878013/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJLakvLsHULGMb2-KsX0TwesPWeNTatrQjNEg9i_wwNdPaiRA=s128-c0x00000000-cc-rp-mo-ba3"
+					},
+					"publishTime": "2023-03-26T18:52:30.075645Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNSaktHUDZBRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNSaktHUDZBRRAB!2m1!1s0x47e66e31b55c8503:0xd0d71a1a2da3bbce"
+				},
+				{
+					"name": "places/ChIJA4VctTFu5kcRzrujLRoa19A/reviews/ChZDSUhNMG9nS0VJQ0FnSURpLXJ2amZnEAE",
+					"relativePublishTimeDescription": "il y a 3 ans",
+					"rating": 5,
+					"text": {
+						"text": "SUPERBE EQUIPE !!",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "SUPERBE EQUIPE !!",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "JB Acteur Comédien",
+						"uri": "https://www.google.com/maps/contrib/117497695331705403712/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXI_K42KIFdC6Btemm5cwHTfD11KMLmkAiIPQzf1QwCilY6OqHF=s128-c0x00000000-cc-rp-mo-ba5"
+					},
+					"publishTime": "2020-12-02T22:22:56.390548Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURpLXJ2amZnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURpLXJ2amZnEAE!2m1!1s0x47e66e31b55c8503:0xd0d71a1a2da3bbce"
+				},
+				{
+					"name": "places/ChIJA4VctTFu5kcRzrujLRoa19A/reviews/ChZDSUhNMG9nS0VJQ0FnSURhN09mcEFREAE",
+					"relativePublishTimeDescription": "il y a 3 ans",
+					"rating": 5,
+					"authorAttribution": {
+						"displayName": "Jana Noel",
+						"uri": "https://www.google.com/maps/contrib/116355082735681328523/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ4HMMPSioA5rDlynqDwSmhJCflJ3d2j-_tqXypeYVCUeie4Q=s128-c0x00000000-cc-rp-mo-ba3"
+					},
+					"publishTime": "2021-08-16T20:23:22.512837Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURhN09mcEFREAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURhN09mcEFREAE!2m1!1s0x47e66e31b55c8503:0xd0d71a1a2da3bbce"
+				}
+			]
+		},
+		{
+			"id": "ChIJ2TwqpDpu5kcReVNEK3dRB8U",
+			"formattedAddress": "59 Rue des Petits Champs, 75001 Paris, France",
+			"location": {
+				"latitude": 48.8672623,
+				"longitude": 2.3344666999999997
+			},
+			"rating": 3.3,
+			"googleMapsUri": "https://maps.google.com/?cid=14197405922577634169",
+			"displayName": {
+				"text": "Baya - Paris Pyramides - Coworking, Location de bureau & Salle de réunion",
+				"languageCode": "fr"
+			},
+			"reviews": [
+				{
+					"name": "places/ChIJ2TwqpDpu5kcReVNEK3dRB8U/reviews/ChZDSUhNMG9nS0VJQ0FnSUNEdXVQR0xnEAE",
+					"relativePublishTimeDescription": "il y a 8 mois",
+					"rating": 1,
+					"text": {
+						"text": "A fuir : 7 mois que l’on attend le remboursement de notre dépôt de garantie malgré nos relances ! Les commerciales, charmantes au moment de signer le bail, vous expliquent après votre départ, sans aucune vergogne, que vous devrez envoyer de nombreux recommandés avant que ne soit éventuellement pris en compte votre demande…",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "A fuir : 7 mois que l’on attend le remboursement de notre dépôt de garantie malgré nos relances ! Les commerciales, charmantes au moment de signer le bail, vous expliquent après votre départ, sans aucune vergogne, que vous devrez envoyer de nombreux recommandés avant que ne soit éventuellement pris en compte votre demande…",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Ad News",
+						"uri": "https://www.google.com/maps/contrib/109805331116477261201/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocInlX3LuI3zXCF0HxOv7Y4KZlXC2Q5NY_5H1NJM04144tm8Ug=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-03-27T09:28:07.188960Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNEdXVQR0xnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNEdXVQR0xnEAE!2m1!1s0x47e66e3aa42a3cd9:0xc50751772b445379"
+				},
+				{
+					"name": "places/ChIJ2TwqpDpu5kcReVNEK3dRB8U/reviews/ChZDSUhNMG9nS0VJQ0FnSURScHRlRFd3EAE",
+					"relativePublishTimeDescription": "il y a un an",
+					"rating": 1,
+					"text": {
+						"text": "Seul point positif : le quartier, central et animé. Sinon, centre d'affaires à l'ancienne, sinistre, cloisonné, avec une déco et du mobilier ringards, sans aucun échange entre locataires ni animation par des événements. Le bureau comme dans les années 50. Pratiques frauduleuses : on attend des mois le remboursement du dépôt de garantie lorsqu'on quitte les lieux.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Seul point positif : le quartier, central et animé. Sinon, centre d'affaires à l'ancienne, sinistre, cloisonné, avec une déco et du mobilier ringards, sans aucun échange entre locataires ni animation par des événements. Le bureau comme dans les années 50. Pratiques frauduleuses : on attend des mois le remboursement du dépôt de garantie lorsqu'on quitte les lieux.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Waheb Lekhal",
+						"uri": "https://www.google.com/maps/contrib/102979475491654739611/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWy8mG8eyoCoAj5XdnSAlbtQO8p3roS7fDtK_hI-6fnl9buEKU=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2023-05-05T09:31:33.041666Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURScHRlRFd3EAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURScHRlRFd3EAE!2m1!1s0x47e66e3aa42a3cd9:0xc50751772b445379"
+				},
+				{
+					"name": "places/ChIJ2TwqpDpu5kcReVNEK3dRB8U/reviews/ChdDSUhNMG9nS0VJQ0FnSURCaFB2M19nRRAB",
+					"relativePublishTimeDescription": "il y a un an",
+					"rating": 3,
+					"text": {
+						"text": "Les locaux sont propres mais le service lors d'un séminaire n'était pas au top.\nPlus d'eau pour la bouilloire qui ne marchait qu'à mi temps.,obligé d'aller chercher au robinet des toilettes pas d'indication des WC,l'accueil n'est pas des plus agréable....bref j'ai connu mieux mais ça aurait pu être pire .",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Les locaux sont propres mais le service lors d'un séminaire n'était pas au top.\nPlus d'eau pour la bouilloire qui ne marchait qu'à mi temps.,obligé d'aller chercher au robinet des toilettes pas d'indication des WC,l'accueil n'est pas des plus agréable....bref j'ai connu mieux mais ça aurait pu être pire .",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Soadso",
+						"uri": "https://www.google.com/maps/contrib/115100002420925979043/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUBREtuGdzYTdHx9wqKxOUjIegMn6fo2n5daa7fvld6NHKCLS9ZAg=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2023-01-11T17:12:11.016498Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURCaFB2M19nRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURCaFB2M19nRRAB!2m1!1s0x47e66e3aa42a3cd9:0xc50751772b445379"
+				},
+				{
+					"name": "places/ChIJ2TwqpDpu5kcReVNEK3dRB8U/reviews/ChdDSUhNMG9nS0VJQ0FnSUNBMjREWThBRRAB",
+					"relativePublishTimeDescription": "il y a 6 ans",
+					"rating": 5,
+					"text": {
+						"text": "Venue pour une formation : belle salle, des pauses servies matin et après midi, portes fermées le midi, propreté très bien, situé dans un quartier vivant, proche des transports en commun.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Venue pour une formation : belle salle, des pauses servies matin et après midi, portes fermées le midi, propreté très bien, situé dans un quartier vivant, proche des transports en commun.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Valerie R",
+						"uri": "https://www.google.com/maps/contrib/103557394604161736983/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXVjpe_nIQPOwjUKaNiS_ej4vACdrjvNCB2BNGzVvqe4jaSeBY=s128-c0x00000000-cc-rp-mo-ba5"
+					},
+					"publishTime": "2018-01-04T23:19:13.239Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNBMjREWThBRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNBMjREWThBRRAB!2m1!1s0x47e66e3aa42a3cd9:0xc50751772b445379"
+				},
+				{
+					"name": "places/ChIJ2TwqpDpu5kcReVNEK3dRB8U/reviews/ChZDSUhNMG9nS0VJQ0FnSUNBcGRybllnEAE",
+					"relativePublishTimeDescription": "il y a 7 ans",
+					"rating": 2,
+					"text": {
+						"text": "Mise à disposition de locaux équipés.\nBien placé",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Mise à disposition de locaux équipés.\nBien placé",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Yves Roussel",
+						"uri": "https://www.google.com/maps/contrib/105567646617445630630/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXS3Q7BSGrPdGfTQii2aSDHRIcK4Ka6ZK3pfKb-RF3w3kTT77Mhgw=s128-c0x00000000-cc-rp-mo-ba3"
+					},
+					"publishTime": "2017-03-18T07:10:12.118Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNBcGRybllnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNBcGRybllnEAE!2m1!1s0x47e66e3aa42a3cd9:0xc50751772b445379"
+				}
+			]
+		},
+		{
+			"id": "ChIJBecFLj9v5kcRiIL-Fctw0tA",
+			"formattedAddress": "42 Rue des Petits Champs, 75002 Paris, France",
+			"location": {
+				"latitude": 48.86729,
+				"longitude": 2.3349359
+			},
+			"rating": 3.5,
+			"googleMapsUri": "https://maps.google.com/?cid=15047213322547921544",
+			"displayName": {
+				"text": "Baboo Tea Opera",
+				"languageCode": "fr"
+			},
+			"primaryType": "tea_house",
+			"reviews": [
+				{
+					"name": "places/ChIJBecFLj9v5kcRiIL-Fctw0tA/reviews/ChZDSUhNMG9nS0VJQ0FnSURYLTdQS1dnEAE",
+					"relativePublishTimeDescription": "il y a 4 semaines",
+					"rating": 5,
+					"text": {
+						"text": "Même après 7 commande de bubble tea la femme à la caisse est resté très aimable et très gentil en plus de ça le matcha la bas est très bon 😇😇😇",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Même après 7 commande de bubble tea la femme à la caisse est resté très aimable et très gentil en plus de ça le matcha la bas est très bon 😇😇😇",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Detx 13",
+						"uri": "https://www.google.com/maps/contrib/106516809045017377071/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXyphSC2usiZ-Tvp6BSC8RKl76B7Xp_KC0OwgdoPxbwfYAR_Fsy=s128-c0x00000000-cc-rp-mo-ba3"
+					},
+					"publishTime": "2024-10-31T13:11:21.555467Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURYLTdQS1dnEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURYLTdQS1dnEAE!2m1!1s0x47e66f3f2e05e705:0xd0d270cb15fe8288"
+				},
+				{
+					"name": "places/ChIJBecFLj9v5kcRiIL-Fctw0tA/reviews/ChdDSUhNMG9nS0VJQ0FnSURIeE1DMzRnRRAB",
+					"relativePublishTimeDescription": "il y a 2 mois",
+					"rating": 4,
+					"text": {
+						"text": "Bon bubble tea aux fruits, on nous a servi cordialement, parfait pour un pause.\nFourchette de prix habituelle pour cette boisson.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Bon bubble tea aux fruits, on nous a servi cordialement, parfait pour un pause.\nFourchette de prix habituelle pour cette boisson.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Constance Navarre",
+						"uri": "https://www.google.com/maps/contrib/108583175216223732475/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJLjX6VMSAVpUSynRrNxUeS-SS7WEwNpmPqEORdt4K3Q2p-dA=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-09-12T14:23:57.336041Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURIeE1DMzRnRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURIeE1DMzRnRRAB!2m1!1s0x47e66f3f2e05e705:0xd0d270cb15fe8288"
+				},
+				{
+					"name": "places/ChIJBecFLj9v5kcRiIL-Fctw0tA/reviews/ChdDSUhNMG9nS0VJQ0FnSUNacU9QSW9nRRAB",
+					"relativePublishTimeDescription": "il y a un an",
+					"rating": 4,
+					"text": {
+						"text": "J’ai testé pour la première fois, et c’est pas trop mal franchement je m’attendais pas à ça. Nous avons pris 3 goûts différents, saveur banane, matcha latte, chocolat. Et franchement les 3 avait du goût, c’est pas le meilleur qu’on puisse trouver mais je recommande. Il y a deux tailles comme vous pouvez le voir le petit c’est 6€ et le grand 7€ (avec les perles de tapioca à 0.50€). Juste bémol mais comme la plupart des shop de bbt C’est les perles qui ne sont pas incluses directement donc pensez bien à les ajouter si vous en voulez !\nSinon le goût banane je vous le recommande il est vrmt pas mal ! Et le matcha c’est un classique juste je trouve que y’a pas beaucoup de matcha, et le chocolat un classique aussi qui passe crème 😊",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "J’ai testé pour la première fois, et c’est pas trop mal franchement je m’attendais pas à ça. Nous avons pris 3 goûts différents, saveur banane, matcha latte, chocolat. Et franchement les 3 avait du goût, c’est pas le meilleur qu’on puisse trouver mais je recommande. Il y a deux tailles comme vous pouvez le voir le petit c’est 6€ et le grand 7€ (avec les perles de tapioca à 0.50€). Juste bémol mais comme la plupart des shop de bbt C’est les perles qui ne sont pas incluses directement donc pensez bien à les ajouter si vous en voulez !\nSinon le goût banane je vous le recommande il est vrmt pas mal ! Et le matcha c’est un classique juste je trouve que y’a pas beaucoup de matcha, et le chocolat un classique aussi qui passe crème 😊",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Naoly",
+						"uri": "https://www.google.com/maps/contrib/101387369751723673556/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUaRGQDoJqFUMednY8l2eaIegtXDjb8D7pwlkX347U-c4hK1Dny=s128-c0x00000000-cc-rp-mo-ba4"
+					},
+					"publishTime": "2023-09-03T10:22:32.350524Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNacU9QSW9nRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNacU9QSW9nRRAB!2m1!1s0x47e66f3f2e05e705:0xd0d270cb15fe8288"
+				},
+				{
+					"name": "places/ChIJBecFLj9v5kcRiIL-Fctw0tA/reviews/ChZDSUhNMG9nS0VJQ0FnSUNIalpYcURBEAE",
+					"relativePublishTimeDescription": "il y a 2 mois",
+					"rating": 2,
+					"text": {
+						"text": "Les jus ne sont pas des jus mais du sirops et de l’eau et les bubble teas a peine frais. Je déplore que les perles soient en supplément et sans avertissement de la vendeuse (non asiatique). Je déplore l’attitude de cette dernière : froide et antipathique, elle nous a lâché le verre avec condescendance et expéditif pour se ruer sur son téléphone. Ça sera la dernière fois.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Les jus ne sont pas des jus mais du sirops et de l’eau et les bubble teas a peine frais. Je déplore que les perles soient en supplément et sans avertissement de la vendeuse (non asiatique). Je déplore l’attitude de cette dernière : froide et antipathique, elle nous a lâché le verre avec condescendance et expéditif pour se ruer sur son téléphone. Ça sera la dernière fois.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Seng Neav",
+						"uri": "https://www.google.com/maps/contrib/101092264017567078386/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIu_rX4iP9OUM6FaoGVcdD7pl8mWnSjEtkRZ0z96wLfC5qKJw=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2024-09-07T13:04:35.280201Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNIalpYcURBEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNIalpYcURBEAE!2m1!1s0x47e66f3f2e05e705:0xd0d270cb15fe8288"
+				},
+				{
+					"name": "places/ChIJBecFLj9v5kcRiIL-Fctw0tA/reviews/ChdDSUhNMG9nS0VJQ0FnSUNqaG9iWTRRRRAB",
+					"relativePublishTimeDescription": "il y a 7 mois",
+					"rating": 1,
+					"text": {
+						"text": "L'attitude du service est très froide et ils ne prennent pas l'initiative de donner des factures et des reçus. Il faut les leur demander.  J'ai déjà acheté du thé au lait dans ce magasin une fois. Quand je suis revenu cette fois, j'ai découvert que le thé au lait chaud infusé en quelques secondes était très froid et que les perles semblaient avoir été trempées pendant longtemps, ce qui donnait un résultat collant. texture.  Résumé : Non recommandé",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "L'attitude du service est très froide et ils ne prennent pas l'initiative de donner des factures et des reçus. Il faut les leur demander.  J'ai déjà acheté du thé au lait dans ce magasin une fois. Quand je suis revenu cette fois, j'ai découvert que le thé au lait chaud infusé en quelques secondes était très froid et que les perles semblaient avoir été trempées pendant longtemps, ce qui donnait un résultat collant. texture.  Résumé : Non recommandé",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "MIYO AKIMOTO",
+						"uri": "https://www.google.com/maps/contrib/107672735885158778982/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWQKPXVm3mvJBWhOSPOhWLsfA2ffMsYVBRDLb2lgHEMvt-3kn2q=s128-c0x00000000-cc-rp-mo-ba3"
+					},
+					"publishTime": "2024-04-20T18:17:13.852257Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNqaG9iWTRRRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNqaG9iWTRRRRAB!2m1!1s0x47e66f3f2e05e705:0xd0d270cb15fe8288"
+				}
+			]
+		},
+		{
+			"id": "ChIJt9-Vpjpu5kcRW8LeOpRQbL0",
+			"formattedAddress": "46 Rue des Petits Champs, 75002 Paris, France",
+			"location": {
+				"latitude": 48.867468099999996,
+				"longitude": 2.3344317
+			},
+			"googleMapsUri": "https://maps.google.com/?cid=13649373168226189915",
+			"displayName": {
+				"text": "Snc Hinata",
+				"languageCode": "fr"
+			},
+			"primaryType": "restaurant"
+		},
+		{
+			"id": "ChIJq6qmqDpu5kcRXCfm7HscaYs",
+			"formattedAddress": "59 Rue des Petits Champs, 75001 Paris, France",
+			"location": {
+				"latitude": 48.8672502,
+				"longitude": 2.3344668
+			},
+			"googleMapsUri": "https://maps.google.com/?cid=10045591762407663452",
+			"displayName": {
+				"text": "I Planet",
+				"languageCode": "fr"
+			},
+			"primaryType": "point_of_interest"
+		},
+		{
+			"id": "ChIJ-wYqpDpu5kcRqAhs8whQyLY",
+			"formattedAddress": "59 Rue des Petits Champs, 75001 Paris, France",
+			"location": {
+				"latitude": 48.8672336,
+				"longitude": 2.3344465
+			},
+			"rating": 4.2,
+			"googleMapsUri": "https://maps.google.com/?cid=13170865109618919592",
+			"displayName": {
+				"text": "Marionnaud-Parfumerie",
+				"languageCode": "fr"
+			},
+			"primaryType": "clothing_store",
+			"reviews": [
+				{
+					"name": "places/ChIJ-wYqpDpu5kcRqAhs8whQyLY/reviews/ChdDSUhNMG9nS0VJQ0FnSUNweThpei1BRRAB",
+					"relativePublishTimeDescription": "il y a un an",
+					"rating": 5,
+					"text": {
+						"text": "Sans aucun doute ma parfumerie préférée ! Les conseillères sont toujours à l'écoute et disponibles, le sourire est de rigueur et la bonne humeur règne dans ce magasin, c'est un vrai moment de plaisir que d'y faire ses achats. Elles connaissent parfaitement les produits ainsi que la peau et orientent toujours vers la solution ! Des vrais pros, une atmosphère reposante et parfumée, on a envie d'y rester ! Mention spéciale à la responsable pour son dynamisme, son sourire et son professionnalisme, l'élément clé de cette boutique.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Sans aucun doute ma parfumerie préférée ! Les conseillères sont toujours à l'écoute et disponibles, le sourire est de rigueur et la bonne humeur règne dans ce magasin, c'est un vrai moment de plaisir que d'y faire ses achats. Elles connaissent parfaitement les produits ainsi que la peau et orientent toujours vers la solution ! Des vrais pros, une atmosphère reposante et parfumée, on a envie d'y rester ! Mention spéciale à la responsable pour son dynamisme, son sourire et son professionnalisme, l'élément clé de cette boutique.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Véronique ATIBARD",
+						"uri": "https://www.google.com/maps/contrib/102522518655217549751/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocI13NsmxAA8pJ88NRaVnTg92JrvPQzxw5rh0iRo4R78lnPQFA=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2023-08-10T12:37:58.011656Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNweThpei1BRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNweThpei1BRRAB!2m1!1s0x47e66e3aa42a06fb:0xb6c85008f36c08a8"
+				},
+				{
+					"name": "places/ChIJ-wYqpDpu5kcRqAhs8whQyLY/reviews/ChdDSUhNMG9nS0VJQ0FnSUR6eV9YU2dnRRAB",
+					"relativePublishTimeDescription": "il y a 5 mois",
+					"rating": 5,
+					"text": {
+						"text": "Personnel très accueillant et souriant.\nMerci pour votre accueil !",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Personnel très accueillant et souriant.\nMerci pour votre accueil !",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Jaja",
+						"uri": "https://www.google.com/maps/contrib/111586905376049522653/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLH2pXqjrP_TE_I3qKe23tMauO-FGH-A6C-lSVSeK7F1WWdLA=s128-c0x00000000-cc-rp-mo-ba4"
+					},
+					"publishTime": "2024-06-12T12:18:03.423242Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUR6eV9YU2dnRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUR6eV9YU2dnRRAB!2m1!1s0x47e66e3aa42a06fb:0xb6c85008f36c08a8"
+				},
+				{
+					"name": "places/ChIJ-wYqpDpu5kcRqAhs8whQyLY/reviews/ChdDSUhNMG9nS0VJQ0FnSUNwLTZyOV93RRAB",
+					"relativePublishTimeDescription": "il y a un an",
+					"rating": 1,
+					"text": {
+						"text": "Je reviens vers vous concernant le désagrément de ce matin: je me suis rendu à la parfumerie voulant acheter un parfum, la vendeuse n'a pas voulu me vendre le parfum pas car je voulais payer en espèce et elle n'avait pas le rendu de la monnaie et à donc exigé que l'aille faire la monnaie ailleurs.\nPar la suite la responsable est arrivé et après avoir expliqué la situation m'a répondu si \"je m'étais mal réveillé\"\nC'est inadmissible, le service client est déplorable, je suis déçu, je suis client depuis de nombreuses années et je trouve que ce n'est vraiment pas normal.\n\nOscar Canoa",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Je reviens vers vous concernant le désagrément de ce matin: je me suis rendu à la parfumerie voulant acheter un parfum, la vendeuse n'a pas voulu me vendre le parfum pas car je voulais payer en espèce et elle n'avait pas le rendu de la monnaie et à donc exigé que l'aille faire la monnaie ailleurs.\nPar la suite la responsable est arrivé et après avoir expliqué la situation m'a répondu si \"je m'étais mal réveillé\"\nC'est inadmissible, le service client est déplorable, je suis déçu, je suis client depuis de nombreuses années et je trouve que ce n'est vraiment pas normal.\n\nOscar Canoa",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Oscaar cg",
+						"uri": "https://www.google.com/maps/contrib/100407814543784630895/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLm0MJvcxcFhEWX1sn6VDVqPd5L6OFZvknA5jMIi-rtXF8Tdw=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2023-08-11T10:25:31.415620Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNwLTZyOV93RRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNwLTZyOV93RRAB!2m1!1s0x47e66e3aa42a06fb:0xb6c85008f36c08a8"
+				},
+				{
+					"name": "places/ChIJ-wYqpDpu5kcRqAhs8whQyLY/reviews/ChZDSUhNMG9nS0VJQ0FnSUNweTVDM2NBEAE",
+					"relativePublishTimeDescription": "il y a un an",
+					"rating": 5,
+					"text": {
+						"text": "Super !\nCe magasin Marionnaud est incroyable,\nIl est spacieux a su répondre à l'intégralité de mes attentes !\nJ'ai également demandé des conseils à la Responsable Christelle qui m'a aidé à la perfection !\nElle sait faire de l'humour tout en gardant son sérieux et faire de très bon conseils.\nJe recommande grandement ce magasin !",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Super !\nCe magasin Marionnaud est incroyable,\nIl est spacieux a su répondre à l'intégralité de mes attentes !\nJ'ai également demandé des conseils à la Responsable Christelle qui m'a aidé à la perfection !\nElle sait faire de l'humour tout en gardant son sérieux et faire de très bon conseils.\nJe recommande grandement ce magasin !",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "pjvfrench",
+						"uri": "https://www.google.com/maps/contrib/104605686531413245712/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJlZVR_V2fA4NwGZZZ2M-HprjQ9HU6VbcJTMUsr5JbLqFYD4w=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2023-08-10T12:31:52.030520Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNweTVDM2NBEAE&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNweTVDM2NBEAE!2m1!1s0x47e66e3aa42a06fb:0xb6c85008f36c08a8"
+				},
+				{
+					"name": "places/ChIJ-wYqpDpu5kcRqAhs8whQyLY/reviews/ChdDSUhNMG9nS0VJQ0FnSUNodVAyVGdRRRAB",
+					"relativePublishTimeDescription": "il y a un an",
+					"rating": 5,
+					"text": {
+						"text": "Très bon service. Les conseillères sont très professionnelles et gentilles. L’équipe souriante. J’ai trouvé les produits efficaces grâce à vos conseils. Je pense à ce Marionnaud chaque fois que j’ai besoin les beautés et parfums.",
+						"languageCode": "fr"
+					},
+					"originalText": {
+						"text": "Très bon service. Les conseillères sont très professionnelles et gentilles. L’équipe souriante. J’ai trouvé les produits efficaces grâce à vos conseils. Je pense à ce Marionnaud chaque fois que j’ai besoin les beautés et parfums.",
+						"languageCode": "fr"
+					},
+					"authorAttribution": {
+						"displayName": "Phuong Thu",
+						"uri": "https://www.google.com/maps/contrib/107181325765488303301/reviews",
+						"photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIwtyQazJ3I5Kx2HGbyrMWosUjJZEn5LzuJgE5wyDh_yjG0WQ=s128-c0x00000000-cc-rp-mo"
+					},
+					"publishTime": "2023-02-04T23:21:21.630579Z",
+					"flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNodVAyVGdRRRAB&d=17924085&t=1",
+					"googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNodVAyVGdRRRAB!2m1!1s0x47e66e3aa42a06fb:0xb6c85008f36c08a8"
+				}
+			]
+		}
+	]
+}
