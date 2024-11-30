@@ -73,7 +73,7 @@ class NearbyLocations():
             }
 
             req_data = {
-                "includedPrimaryTypes": ["restaurant"],
+                "includedPrimaryTypes": self.__get_location_types(),
                 "locationRestriction": {
                     "circle": {
                         "center": {
@@ -95,6 +95,19 @@ class NearbyLocations():
         
         except requests.RequestException as e:
             return jsonify({"error": str(e)}), 500
+    
+    def __get_location_types(self):
+        """Returns a list of location types supported by the Google Places API and relevant to the project
+
+        Returns:
+            list: A list of types (string) of locations.
+        """
+        locations = []
+        with open("static/txt/location_types.txt") as file:
+            for line in file:
+                locations.append(line.strip('\n'))
+                
+        return locations
     
     @property
     def locations(self):
