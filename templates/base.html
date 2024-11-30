@@ -3,6 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Leaflet.js CSS -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+		/>
 		<link
 			rel="stylesheet"
 			href="{{ url_for('static', filename='css/styles.css') }}"
@@ -10,10 +15,15 @@
 		<title>Tourist Scam Detector</title>
 	</head>
 	<body>
-		<!-- <h1>Tourist Scam Detector</h1> -->
-		<input type="text" id="search-input" placeholder="Type to search..." />
-		<button id="test-button">Test</button>
+		<h1>Tourist Scam Detector</h1>
+		<!-- Search Bar -->
+		<input type="text" id="search-input" placeholder="Type a location..." />
+		<button id="test-button">Search</button>
 		<ul id="search-results"></ul>
-		<script src="{{ url_for('static', filename='js/search.js') }}"></script>
+		<!-- Map Container -->
+		<div id="map" style="height: 500px; margin-top: 20px"></div>
+		<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+		<!-- Leaflet.js JavaScript -->
+		<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
 	</body>
 </html>

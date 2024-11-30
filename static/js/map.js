@@ -41,9 +41,11 @@ const handleInputChange = async () => {
 				window.alert(`${latitude}, ${longitude}`);
 
 				// Fetch nearby locations
-				const nearbyResults = await fetch(
+				const nearbyResponse = await fetch(
 					`/nearby?lat=${latitude}&lon=${longitude}`
 				);
+
+				const nearbyResults = await nearbyResponse.json();
 
 				// Display found locations
 				console.log("Nearby places:", nearbyResults);
@@ -65,15 +67,54 @@ const debounce = (func, delay) => {
 
 const debouncedHandleInputChange = debounce(handleInputChange, 300);
 
-input.addEventListener("input", debouncedHandleInputChange);
-testButton.addEventListener("click", async () => {
-	// Fetch nearby locations
-	const response = await fetch(
-		`/nearby?lat=48.86739085085168&lon=2.3346872797624187`
-	);
-	const nearbyResults = await response.json();
+document.addEventListener("DOMContentLoaded", () => {
+	// Initialize the map centered at a default location
+	const map = L.map("map").setView([48.8566, 2.3522], 12); // Paris as default
 
-	// Display found locations
-	console.log("Nearby places:", nearbyResults);
-	alert(`Found ${nearbyResults.length} places around Maru Café!`);
+	// Add the OpenStreetMap tiles
+	L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+		attribution:
+			'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	}).addTo(map);
+
+	// Function to update map markers based on locations
+	const updateMap = (locations) => {
+		// Clear existing markers
+		map.eachLayer((layer) => {
+			if (layer instanceof L.Marker) {
+				map.removeLayer(layer);
+			}
+		});
+
+		// Add markers for each location
+		locations.forEach((loc) => {
+			const [lon, lat] = [loc.location.longitude, loc.location.latitude];
+			L.marker([lat, lon])
+				.addTo(map)
+				.bindPopup(`<b>${loc.displayName.text}</b>`);
+		});
+
+		// Fit map bounds to markers
+		const bounds = L.latLngBounds(
+			locations.map((loc) => [loc.location.latitude, loc.location.longitude])
+		);
+		map.fitBounds(bounds);
+	};
+
+	input.addEventListener("input", debouncedHandleInputChange);
+	testButton.addEventListener("click", async () => {
+		// Fetch nearby locations
+		const response = await fetch(
+			`/nearby?lat=48.86739085085168&lon=2.3346872797624187`
+		);
+		const nearbyResults = await response.json();
+
+		// Display found locations
+		console.log("Nearby places:", nearbyResults);
+
+		// Update the map with nearby locations
+		updateMap(nearbyResults);
+
+		alert(`Found ${nearbyResults.length} places around Maru Café!`);
+	});
 });
