@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		// Add markers for each location
 		locations.forEach((loc) => {
 			const [lon, lat] = [loc.location.longitude, loc.location.latitude];
-			L.marker([lat, lon])
+			L.marker([lat, lon], { riseOnHover: true })
 				.addTo(map)
 				.bindPopup(`<b>${loc.displayName.text}</b>`);
 		});
