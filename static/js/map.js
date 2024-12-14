@@ -7,10 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	const map = L.map("map").setView([48.8566, 2.3522], 12); // Paris as default
 
 	// Add the OpenStreetMap tiles
-	L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-		attribution:
-			'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	}).addTo(map);
+	L.tileLayer(
+		"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+		{
+			attribution: "© OpenStreetMap contributors, © CARTO",
+		}
+	).addTo(map);
 
 	// Function to update map markers based on locations
 	const updateMap = (lat, lon, locations) => {
