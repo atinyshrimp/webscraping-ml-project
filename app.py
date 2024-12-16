@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, jsonify
-from models.data_collection import NearbyLocations
 import requests
 import pandas as pd
 import math

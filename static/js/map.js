@@ -1,16 +1,32 @@
+/** Map.js - Handles map display, search functionality, and dynamic restaurant results.
+ *
+ *
+ * Features:
+ * - Initializes a Leaflet map with OpenStreetMap tiles.
+ * - Dynamically fetches nearby places and renders them as cards.
+ * - Updates the map with markers, circles, and popup information.
+ * - Highlights map markers when hovering over restaurant cards.
+ * - Provides a dynamic search bar with suggestion functionality.
+ */
+
+// Element References
 const input = document.getElementById("search-input");
 const testButton = document.getElementById("test-button");
 const resultsContainer = document.getElementById("search-results");
 const radiusRange = document.getElementById("radius-range");
 const radiusLabel = document.getElementById("selected-radius");
+const restaurantList = document.getElementById("restaurant-list");
 
-let currentLat, currentLon;
+// Global Variables
+let currentLat, currentLon; // Stores the currently selected latitude and longitude
+let map; // Reference to the Leaflet map instance
 
+/** Initialize the Map */
 document.addEventListener("DOMContentLoaded", () => {
-	// Initialize the map centered at a default location
-	const map = L.map("map").setView([0, 0], 2); // Initial world view
+	// Set up the map centered on a default location
+	map = L.map("map").setView([0, 0], 2); // Initial world view
 
-	// Add the OpenStreetMap tiles
+	// Load OpenStreetMap tiles using Carto Light theme
 	L.tileLayer(
 		"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
 		{
@@ -18,90 +34,138 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	).addTo(map);
 
-	// Function to fetch places within a radius
-	async function fetchNearbyPlaces(lat, lon, radius) {
-		try {
-			const response = await fetch(
-				`/search_nearby?lat=${lat}&lon=${lon}&radius=${radius}`
-			);
-			const places = await response.json();
-			console.table(places);
+	// Event Listeners
+	setupSearchInput();
+	setupRadiusInput();
 
-			// Update results list
-			const restaurantList = document.getElementById("restaurant-list");
-			// Generate cards dynamically
-			restaurantList.innerHTML = places
-				.map(
-					(place) => `
-                <div class="restaurant-card" data-lat="${
-									place.latitude
-								}" data-lon="${place.longitude}">
-                    <!-- Restaurant Image -->
-                    <img src="${
-											place.img || "https://via.placeholder.com/300x200"
-										}" alt="${place.name}" />
+	// Default radius value
+	radiusRange.value = 10;
+});
 
-                    <!-- Favorite and Check Icons -->
-                    <div class="card-icons">
-                        <a href=${
-													place.google_directions_link
-												} target="_blank"><i class="fa-regular fa-map"></i></a>
-                    </div>
+/** Fetch nearby places and update the map and UI.
+ *
+ * @param {number} lat - Latitude of the selected location.
+ * @param {number} lon - Longitude of the selected location.
+ * @param {number} radius - Search radius in kilometers.
+ */
+async function fetchNearbyPlaces(lat, lon, radius) {
+	try {
+		const response = await fetch(
+			`/search_nearby?lat=${lat}&lon=${lon}&radius=${radius}`
+		);
+		const places = await response.json();
+		console.table(places);
 
-                    <!-- Restaurant Content -->
-                    <div class="restaurant-content">
-                        <div>
-                            <span class="distinction">${"✿".repeat(
-															place.distinctions != -1 ? place.distinctions : 0
-														)}</span>
-                        </div>
-                        <h3>${place.name}</h3>
-                        <p>${place.google_address}</p>
-                        <p>⭐ ${place.google_rating || "N/A"}</p>
-                        <p class="tags">${"$".repeat(
-													place.priceCategory || 3
-												)} · ${place.type || "Cuisine"}</p>
-                    </div>
-					<a href=${place.website_uri} class="link" target="_blank"></a>
-                </div>
-            `
-				)
-				.join("");
+		// Render restaurant cards
+		renderRestaurantCards(places);
 
-			// Clear existing markers
-			map.eachLayer((layer) => {
-				if (layer instanceof L.Marker || layer instanceof L.Circle) {
-					map.removeLayer(layer);
-				}
-			});
-
-			// Add a circle to the map to visualize the radius
-			L.circle([lat, lon], {
-				color: "red",
-				fillColor: "#f03",
-				fillOpacity: 0.2,
-				radius: radius * 1e3,
-			}).addTo(map);
-
-			// Update map with markers
-			places.forEach((place) => {
-				const marker = L.marker([place.latitude, place.longitude])
-					.addTo(map)
-					.bindPopup(
-						`<strong>${place.name}</strong><br>${place.location} • ${place.type}<br>⭐ ${place.google_rating}`
-					);
-			});
-
-			// Fit map to markers
-			const bounds = places.map((place) =>
-				L.latLng(place.latitude, place.longitude)
-			);
-			map.fitBounds(bounds);
-		} catch (error) {
-			console.error("Error fetching nearby places:", error);
-		}
+		// Update map: clear old markers, add circle, and add new markers
+		updateMapMarkers(places, lat, lon, radius);
+	} catch (error) {
+		console.error("Error fetching nearby places:", error);
 	}
+}
 
+/** Render the restaurant cards in the UI.
+ *
+ * @param {Array} places - List of places returned from the server.
+ */
+function renderRestaurantCards(places) {
+	restaurantList.innerHTML = places
+		.map(
+			(place) => `
+            <div class="restaurant-card" data-lat="${
+							place.latitude
+						}" data-lon="${place.longitude}">
+                <!-- Restaurant Image -->
+                <img src="${
+									place.img || "https://via.placeholder.com/300x200"
+								}" alt="${place.name}" />
+
+                <!-- Direction Icon -->
+                <div class="card-icons">
+                    <a href="${place.google_directions_link}" target="_blank">
+                        <i class="fa-regular fa-map"></i>
+                    </a>
+                </div>
+
+                <!-- Restaurant Content -->
+                <div class="restaurant-content">
+                    <div>
+                        <span class="distinction">${"✿".repeat(
+													place.distinctions != -1 ? place.distinctions : 0
+												)}</span>
+                    </div>
+                    <h3>${place.name}</h3>
+                    <p>${place.google_address}</p>
+                    <p>⭐ ${place.google_rating || "N/A"}</p>
+                    <p class="tags">${"$".repeat(place.priceCategory || 3)} · ${
+				place.type || "Cuisine"
+			}</p>
+                </div>
+			<a href=${place.website_uri} class="link" target="_blank"></a>
+            </div>`
+		)
+		.join("");
+}
+
+/** Update the map with new markers and a radius circle.
+ *
+ * @param {Array} places - List of places to display.
+ * @param {number} lat - Latitude of the center location.
+ * @param {number} lon - Longitude of the center location.
+ * @param {number} radius - Radius to visualize.
+ */
+function updateMapMarkers(places, lat, lon, radius) {
+	// Clear existing markers and circles
+	map.eachLayer((layer) => {
+		if (layer instanceof L.Marker || layer instanceof L.Circle) {
+			map.removeLayer(layer);
+		}
+	});
+
+	// Add a circle to the map
+	L.circle([lat, lon], {
+		color: "red",
+		fillColor: "#f03",
+		fillOpacity: 0.2,
+		radius: radius * 1e3,
+	}).addTo(map);
+
+	// Add markers
+	const markers = [];
+	places.forEach((place) => {
+		const marker = L.marker([place.latitude, place.longitude])
+			.addTo(map)
+			.bindPopup(
+				`<strong>${place.name}</strong><br>${place.location} • ${place.type}<br>⭐ ${place.google_rating}`
+			);
+		markers.push(marker);
+	});
+
+	// Add hover interactions
+	document.querySelectorAll(".restaurant-card").forEach((card, index) => {
+		card.addEventListener("mouseenter", () => {
+			// map.setView(markers[index].getLatLng(), 15); // Zoom in
+			markers[index].openPopup(); // Show popup
+		});
+
+		card.addEventListener("mouseleave", () => {
+			markers[index].closePopup();
+		});
+	});
+
+	// Fit map to markers
+	const bounds = places.map((place) =>
+		L.latLng(place.latitude, place.longitude)
+	);
+	map.fitBounds(bounds);
+}
+
+/** Attach event listeners for the search bar input.
+ *
+ */
+function setupSearchInput() {
 	const handleInputChange = async () => {
 		const query = input.value;
 
@@ -114,14 +178,14 @@ document.addEventListener("DOMContentLoaded", () => {
 			const response = await fetch(`/search?q=${query}`);
 			const results = await response.json();
 
+			// Display search suggestions
 			resultsContainer.innerHTML = results
 				.map(
 					(result) =>
 						`<li class="suggestion-item"
 							data-lat="${result.geometry.coordinates[1]}" 
 							data-lon="${result.geometry.coordinates[0]}"
-							data-name="${result.properties.name}"
-						>
+							data-name="${result.properties.name}">
 							${result.properties.name}, ${
 							result.properties.city || result.properties.country
 						}
@@ -129,29 +193,18 @@ document.addEventListener("DOMContentLoaded", () => {
 				)
 				.join("");
 
-			// Attach click listeners to each suggestion
+			// Handle suggestion click
 			document.querySelectorAll(".suggestion-item").forEach((item) => {
 				item.addEventListener("click", async (event) => {
-					// Get data from the clicked item
 					const selectedName = event.target.dataset.name;
-					const latitude = parseFloat(event.target.dataset.lat);
-					const longitude = parseFloat(event.target.dataset.lon);
-					const radius = parseInt(
-						document.getElementById("radius-range").value
-					);
+					currentLat = parseFloat(event.target.dataset.lat);
+					currentLon = parseFloat(event.target.dataset.lon);
+					const radius = parseInt(radiusRange.value);
 
-					input.value = selectedName; // Fill the input with the selected suggestion
-					resultsContainer.innerHTML = ""; // Clear the suggestions
-					// window.alert(`${latitude}, ${longitude}`);
+					input.value = selectedName;
+					resultsContainer.innerHTML = ""; // Clear suggestions
 
-					currentLat = latitude;
-					currentLon = longitude;
-
-					console.log(
-						`${selectedName} located at (${currentLat}, ${currentLon})`
-					);
-
-					await fetchNearbyPlaces(latitude, longitude, radius);
+					await fetchNearbyPlaces(currentLat, currentLon, radius);
 				});
 			});
 		} catch (err) {
@@ -159,21 +212,18 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	};
 
-	const debounce = (func, delay) => {
-		let timeout;
-		return (...args) => {
-			clearTimeout(timeout);
-			timeout = setTimeout(() => func(...args), delay);
-		};
-	};
+	const debouncedInputChange = debounce(handleInputChange, 300);
+	input.addEventListener("input", debouncedInputChange);
+}
 
-	const debouncedHandleInputChange = debounce(handleInputChange, 300);
-
-	input.addEventListener("input", debouncedHandleInputChange);
+/** Attach event listeners for radius range input.
+ *
+ */
+function setupRadiusInput() {
 	radiusRange.addEventListener("input", () => {
 		radiusLabel.innerText = radiusRange.value;
 	});
-	radiusRange.value = 10;
+
 	radiusRange.addEventListener("change", async () => {
 		if (currentLat && currentLon) {
 			await fetchNearbyPlaces(
@@ -183,4 +233,18 @@ document.addEventListener("DOMContentLoaded", () => {
 			);
 		}
 	});
-});
+}
+
+/** Debounce function to improve performance of input handling.
+ *
+ * @param {Function} func - Function to debounce.
+ * @param {number} delay - Delay in milliseconds.
+ * @returns {Function}
+ */
+function debounce(func, delay) {
+	let timeout;
+	return (...args) => {
+		clearTimeout(timeout);
+		timeout = setTimeout(() => func(...args), delay);
+	};
+}
