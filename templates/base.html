@@ -98,7 +98,20 @@
 			</div>
 
 			<!-- Results Section -->
-			<div class="restaurant-list" id="restaurant-list"></div>
+			<div id="restaurant-list-container">
+				<!-- Sorting Dropdown -->
+				<div id="sorting-container">
+					<label for="sort-options">Sort By:</label>
+					<select id="sort-options">
+						<option value="distance" selected>Distance (Nearest First)</option>
+						<option value="rating">Rating (High to Low)</option>
+						<option value="price">Price (Low to High)</option>
+					</select>
+				</div>
+
+				<!-- Restaurant Cards -->
+				<div id="restaurant-list"></div>
+			</div>
 
 			<!-- Map Section -->
 			<div id="map"></div>

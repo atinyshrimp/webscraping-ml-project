@@ -142,32 +142,53 @@ body {
 }
 
 /* General Container */
-.restaurant-list {
-	width: 30%;
+/* Sorting Container */
+/* Sticky Sorting Container */
+#sorting-container {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
-	justify-content: center; /* Center the cards */
-	align-items: flex-start; /* Prevent stretching */
-	padding: 20px;
+	justify-content: end;
+	position: sticky; /* Makes the container stick to the top */
+	top: 0; /* Sticks to the top of its parent container */
+	background-color: #f9f9f9; /* Match the background color */
+	z-index: 10; /* Ensures it stays above other content */
+	padding: 10px; /* Add padding for better spacing */
+	border-bottom: 1px solid #ddd; /* Optional: Add a subtle border for clarity */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for depth */
+}
+
+/* Restaurant List Section */
+#restaurant-list-container {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
 	background-color: #f9f9f9;
-	min-height: 100px; /* Set a minimum height to avoid the container collapsing */
+	padding: 0px 10px 10px 10px;
 	overflow-y: auto;
 }
 
-/* Restaurant Card */
+#restaurant-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	align-items: flex-start;
+	min-height: 100px; /* Prevent collapsing when empty */
+	background-color: #f9f9f9;
+}
+
+/* Restaurant Cards */
 .restaurant-card {
 	width: 300px;
+	background-color: #fff;
 	border-radius: 15px;
 	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-	background-color: #fff;
 	overflow: hidden;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	transition: transform 0.2s ease-in-out;
 	cursor: pointer;
-	display: flex; /* Ensure content inside behaves well */
-	flex-direction: column; /* Stack content vertically */
-	justify-content: space-between; /* Prevent card stretching */
 }
 
 .restaurant-card:hover {

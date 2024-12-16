@@ -20,6 +20,7 @@ const restaurantList = document.getElementById("restaurant-list");
 // Global Variables
 let currentLat, currentLon; // Stores the currently selected latitude and longitude
 let map; // Reference to the Leaflet map instance
+let places = [];
 
 /** Initialize the Map */
 document.addEventListener("DOMContentLoaded", () => {
@@ -40,6 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Default radius value
 	radiusRange.value = 10;
+
+	document.getElementById("sort-options").addEventListener("change", () => {
+		// Trigger re-render with the current list of places
+		renderRestaurantCards(places);
+	});
 });
 
 /** Fetch nearby places and update the map and UI.
@@ -53,14 +59,15 @@ async function fetchNearbyPlaces(lat, lon, radius) {
 		const response = await fetch(
 			`/search_nearby?lat=${lat}&lon=${lon}&radius=${radius}`
 		);
-		const places = await response.json();
+		const fetchedPlaces = await response.json();
+		places = fetchedPlaces;
 		console.table(places);
 
 		// Render restaurant cards
 		renderRestaurantCards(places);
 
-		// Update map: clear old markers, add circle, and add new markers
-		updateMapMarkers(places, lat, lon, radius);
+		// // Update map: clear old markers, add circle, and add new markers
+		// updateMapMarkers(places, lat, lon, radius);
 	} catch (error) {
 		console.error("Error fetching nearby places:", error);
 	}
@@ -71,7 +78,38 @@ async function fetchNearbyPlaces(lat, lon, radius) {
  * @param {Array} places - List of places returned from the server.
  */
 function renderRestaurantCards(places) {
-	restaurantList.innerHTML = places
+	// Sorting based on user selection
+	const sortBy = document.getElementById("sort-options").value;
+	const sortedPlaces = [...places]; // Create a copy to avoid mutating the original array
+
+	if (sortBy === "rating") {
+		sortedPlaces.sort(
+			(a, b) => (b.google_rating || 0) - (a.google_rating || 0)
+		);
+	} else if (sortBy === "price") {
+		sortedPlaces.sort(
+			(a, b) => (a.priceCategory || 0) - (b.priceCategory || 0)
+		);
+	} else if (sortBy === "distance" && currentLat && currentLon) {
+		// Sort by distance if latitude and longitude are available
+		sortedPlaces.sort((a, b) => {
+			const distA = calculateDistance(
+				currentLat,
+				currentLon,
+				a.latitude,
+				a.longitude
+			);
+			const distB = calculateDistance(
+				currentLat,
+				currentLon,
+				b.latitude,
+				b.longitude
+			);
+			return distA - distB;
+		});
+	}
+
+	restaurantList.innerHTML = sortedPlaces
 		.map(
 			(place) => `
             <div class="restaurant-card" data-lat="${
@@ -107,6 +145,36 @@ function renderRestaurantCards(places) {
             </div>`
 		)
 		.join("");
+
+	updateMapMarkers(
+		sortedPlaces,
+		currentLat,
+		currentLon,
+		parseInt(radiusRange.value)
+	);
+}
+
+/** Calculate distance between two points (Haversine formula).
+ *
+ * @param {number} lat1 - Latitude of point 1.
+ * @param {number} lon1 - Longitude of point 1.
+ * @param {number} lat2 - Latitude of point 2.
+ * @param {number} lon2 - Longitude of point 2.
+ * @returns {number} Distance in kilometers.
+ */
+function calculateDistance(lat1, lon1, lat2, lon2) {
+	const R = 6371; // Earth's radius in km
+	const dLat = ((lat2 - lat1) * Math.PI) / 180;
+	const dLon = ((lon2 - lon1) * Math.PI) / 180;
+
+	const a =
+		Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+		Math.cos((lat1 * Math.PI) / 180) *
+			Math.cos((lat2 * Math.PI) / 180) *
+			Math.sin(dLon / 2) *
+			Math.sin(dLon / 2);
+	const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+	return R * c;
 }
 
 /** Update the map with new markers and a radius circle.
