@@ -15,6 +15,12 @@
 			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 			crossorigin="anonymous"
 		/>
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+
 		<link
 			rel="stylesheet"
 			href="{{ url_for('static', filename='css/styles.css') }}"
@@ -92,35 +98,7 @@
 			</div>
 
 			<!-- Results Section -->
-			<div class="results">
-				<!-- <div class="result-card">
-					<img
-						src="https://axwwgrkdco.cloudimg.io/v7/__gmpics3__/bad4c6b0176d467ebe8b6ddcb1cb815e.jpg"
-						alt="Restaurant Image"
-					/>
-					<div class="card-content">
-						<h4>La Paix</h4>
-						<p>Tokyo, Japan</p>
-						<p>⭐ 4.5 (435 reviews)</p>
-						<p>$$$</p>
-						<p class="highlight">Limited-time deal</p>
-					</div>
-				</div>
-
-				<div class="result-card">
-					<img
-						src="https://axwwgrkdco.cloudimg.io/v7/__gmpics3__/badcf9794b4142799f74a448dd3bcaf0.jpg"
-						alt="Restaurant Image"
-					/>
-					<div class="card-content">
-						<h4>L'Or Q'Idée</h4>
-						<p>Pontoise, France</p>
-						<p>⭐ 4.8 (512 reviews)</p>
-						<p>€€€€</p>
-						<p class="highlight">Highly rated</p>
-					</div>
-				</div> -->
-			</div>
+			<div class="restaurant-list" id="restaurant-list"></div>
 
 			<!-- Map Section -->
 			<div id="map"></div>

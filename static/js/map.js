@@ -28,22 +28,43 @@ document.addEventListener("DOMContentLoaded", () => {
 			console.table(places);
 
 			// Update results list
-			const results = document.getElementsByClassName("results")[0];
-			results.innerHTML = places
+			const restaurantList = document.getElementById("restaurant-list");
+			// Generate cards dynamically
+			restaurantList.innerHTML = places
 				.map(
 					(place) => `
-				<li class="result-item" data-lat="${place.latitude || 0}" data-lon="${
-						place.longitude || 0
-					}">
-					<h4>${place.name || "Unknown Name"}</h4>
-					<p>${place.type}</p>
-					<p>${place.google_address || "Address not available"}</p>
-					<p>⭐ ${place.google_rating || "N/A"} (${
-						place.distinctions != -1 ? place.distinctions : 0
-					} Michelin Stars)</p>
-					<a href="${place.website_uri || "#"}" target="_blank">Website</a>
-				</li>
-			`
+                <div class="restaurant-card" data-lat="${
+									place.latitude
+								}" data-lon="${place.longitude}">
+                    <!-- Restaurant Image -->
+                    <img src="${
+											place.img || "https://via.placeholder.com/300x200"
+										}" alt="${place.name}" />
+
+                    <!-- Favorite and Check Icons -->
+                    <div class="card-icons">
+                        <a href=${
+													place.google_directions_link
+												} target="_blank"><i class="fa-regular fa-map"></i></a>
+                    </div>
+
+                    <!-- Restaurant Content -->
+                    <div class="restaurant-content">
+                        <div>
+                            <span class="distinction">${"✿".repeat(
+															place.distinctions != -1 ? place.distinctions : 0
+														)}</span>
+                        </div>
+                        <h3>${place.name}</h3>
+                        <p>${place.google_address}</p>
+                        <p>⭐ ${place.google_rating || "N/A"}</p>
+                        <p class="tags">${"$".repeat(
+													place.priceCategory || 3
+												)} · ${place.type || "Cuisine"}</p>
+                    </div>
+					<a href=${place.website_uri} class="link" target="_blank"></a>
+                </div>
+            `
 				)
 				.join("");
 
