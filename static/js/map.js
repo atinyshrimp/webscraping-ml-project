@@ -92,6 +92,8 @@ function renderRestaurantCards(places) {
 	}
 
 	restaurantList.style.display = "flex"; // Show restaurant list
+	emptyPlaceholder.style.display = "none"; // Hide placeholder
+
 	if (sortBy === "rating") {
 		sortedPlaces.sort(
 			(a, b) => (b.google_rating || 0) - (a.google_rating || 0)
