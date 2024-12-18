@@ -81,7 +81,17 @@ function renderRestaurantCards(places) {
 	// Sorting based on user selection
 	const sortBy = document.getElementById("sort-options").value;
 	const sortedPlaces = [...places]; // Create a copy to avoid mutating the original array
+	const emptyPlaceholder = document.getElementById("empty-placeholder");
 
+	// Show placeholder if no places are returned
+	if (places.length === 0) {
+		restaurantList.innerHTML = ""; // Clear any existing content
+		restaurantList.style.display = "none"; // Hide restaurant list
+		emptyPlaceholder.style.display = "block"; // Show placeholder
+		return;
+	}
+
+	restaurantList.style.display = "flex"; // Show restaurant list
 	if (sortBy === "rating") {
 		sortedPlaces.sort(
 			(a, b) => (b.google_rating || 0) - (a.google_rating || 0)

@@ -142,10 +142,10 @@ body {
 }
 
 /* General Container */
-/* Sorting Container */
 /* Sticky Sorting Container */
 #sorting-container {
 	display: flex;
+	align-content: center;
 	justify-content: end;
 	position: sticky; /* Makes the container stick to the top */
 	top: 0; /* Sticks to the top of its parent container */
@@ -154,6 +154,15 @@ body {
 	padding: 10px; /* Add padding for better spacing */
 	border-bottom: 1px solid #ddd; /* Optional: Add a subtle border for clarity */
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for depth */
+}
+
+#sort-options {
+	padding: 2px;
+	border: 1px solid #ddd;
+	background-color: #f8f9fa;
+	border-radius: 5px;
+	margin-left: 0.5rem; /* Push the sort options to the right */
+	cursor: pointer; /* Change cursor to pointer for better UX */
 }
 
 /* Restaurant List Section */
@@ -167,13 +176,23 @@ body {
 }
 
 #restaurant-list {
-	display: flex;
+	display: none; /* Hidden by default */
 	flex-wrap: wrap;
 	gap: 20px;
 	justify-content: center;
 	align-items: flex-start;
 	min-height: 100px; /* Prevent collapsing when empty */
 	background-color: #f9f9f9;
+}
+
+#empty-placeholder {
+	text-align: center;
+	height: 100%;
+	font-size: 1.2em;
+	color: #777;
+	padding: 20px;
+	padding-top: 40vh;
+	display: block; /* Hidden by default */
 }
 
 /* Restaurant Cards */
