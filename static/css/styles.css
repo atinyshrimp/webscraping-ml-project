@@ -175,8 +175,13 @@ body {
 	overflow-y: auto;
 }
 
+#restaurant-list-container::-webkit-scrollbar {
+	display: none; /* For Chrome, Safari, and Opera */
+}
+
 #restaurant-list {
 	display: none; /* Hidden by default */
+	padding: 10px 0px 10px 0px; /* Top, Right, Bottom, Left */
 	flex-wrap: wrap;
 	gap: 20px;
 	justify-content: center;
