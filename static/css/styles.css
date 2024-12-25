@@ -6,6 +6,12 @@ body {
 }
 
 /* Search Bar */
+#logo {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	font-weight: bold;
+}
 .search-bar {
 	display: flex;
 	padding: 10px 20px;
@@ -18,7 +24,6 @@ body {
 	padding: 10px;
 	border: 1px solid #ddd;
 	border-radius: 5px;
-	margin-right: 10px;
 }
 
 .search-bar button {
@@ -37,8 +42,8 @@ body {
 #search-results {
 	position: absolute; /* Make it hover */
 	top: 50px; /* Adjust to match the search bar height */
-	left: 20px; /* Align with the search bar */
-	width: calc(100% - 40px); /* Match search bar width */
+	left: 90px; /* Align with the search bar */
+	width: calc(100% - 110px); /* Match search bar width */
 	background-color: #fff; /* Set a background for visibility */
 	/* border: 1px solid #ddd;  */
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a floating effect */
@@ -48,6 +53,16 @@ body {
 	max-height: 200px; /* Limit height with scrolling */
 	overflow-y: auto;
 	z-index: 1001; /* Ensure it stays above other elements */
+}
+
+#search-results::-webkit-scrollbar {
+	width: 10px;
+}
+
+#search-results::-webkit-scrollbar-thumb {
+	background-color: #94bc7d;
+	border-radius: 10px;
+	border: 3px solid #ffffff;
 }
 
 #search-results li {
@@ -188,6 +203,14 @@ body {
 	align-items: flex-start;
 	min-height: 100px; /* Prevent collapsing when empty */
 	background-color: #f9f9f9;
+	position: relative;
+}
+
+#restaurant-list::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 20px; /* Adjust the height as needed */
 }
 
 #empty-placeholder {
@@ -374,6 +397,34 @@ footer a:hover {
 
 .modal button:hover {
 	background-color: #0056b3;
+}
+
+.chatbot-response {
+	max-height: 300px;
+	overflow-y: auto;
+	margin-bottom: 10px;
+}
+
+.chatbot-response .user-message,
+.chatbot-response .bot-message {
+	padding: 10px;
+	margin: 5px 0;
+	border-radius: 10px;
+	max-width: 80%;
+}
+
+.chatbot-response .user-message {
+	background-color: #d1e7dd;
+	align-self: flex-end;
+}
+
+.chatbot-response .bot-message {
+	background-color: #f8d7da;
+	align-self: flex-start;
+}
+
+.hidden {
+	display: none;
 }
 
 /* Chatbot Toggle Button */

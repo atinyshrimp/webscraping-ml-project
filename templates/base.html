@@ -3,6 +3,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Find sustainable restaurants near you with Michelin Green Star Recommander."
+		/>
+		<link
+			rel="icon"
+			href="{{ url_for('static', filename='img/gastronomie-durable.svg') }}"
+			type="image/svg+xml"
+		/>
 		<!-- Leaflet.js CSS -->
 		<link
 			rel="stylesheet"
@@ -30,6 +39,12 @@
 	<body>
 		<!-- Search Bar -->
 		<div class="search-bar">
+			<img
+				src="{{ url_for('static', filename='img/gastronomie-durable.svg') }}"
+				alt="Michelin Green Star Recommander"
+				height="45"
+				id="logo"
+			/>
 			<input type="text" id="search-input" placeholder="Search for places..." />
 			<ul id="search-results"></ul>
 		</div>
@@ -155,12 +170,12 @@
 			</div>
 			<div class="modal-content">
 				<p>Ask me anything about restaurants, reviews, or the project!</p>
+				<div id="chatbot-response"></div>
 				<textarea
 					id="chatbot-input"
 					placeholder="Type your question..."
 				></textarea>
 				<button id="chatbot-send">Send</button>
-				<div id="chatbot-response"></div>
 			</div>
 		</div>
 		<button id="toggle-chatbot" class="chatbot-toggle">

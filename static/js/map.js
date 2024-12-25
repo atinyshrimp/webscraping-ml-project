@@ -140,8 +140,10 @@ function renderRestaurantCards(places) {
                 </div>
 
                 <!-- Restaurant Content -->
-                <div class="restaurant-content">
-                    <div>
+                <div class="restaurant-content" >
+                    <div ${
+											place.distinctions > 0 ? "" : "style='display: none;'"
+										}>
                         <span class="distinction">${"✿".repeat(
 													place.distinctions != -1 ? place.distinctions : 0
 												)}</span>
@@ -153,7 +155,13 @@ function renderRestaurantCards(places) {
 				place.type || "Cuisine"
 			}</p>
                 </div>
-			<a href=${place.website_uri} class="link" target="_blank"></a>
+			<a href=${
+				place.website_uri
+					? place.website_uri
+					: `https://www.google.com/search?q=${`${place.name} ${place.location}`
+							.split(" ")
+							.join("+")}`
+			} class="link" target="_blank"></a>
             </div>`
 		)
 		.join("");
@@ -206,8 +214,8 @@ function updateMapMarkers(places, lat, lon, radius) {
 
 	// Add a circle to the map
 	L.circle([lat, lon], {
-		color: "red",
-		fillColor: "#f03",
+		color: "#94BC7D",
+		fillColor: "#94BC7D",
 		fillOpacity: 0.2,
 		radius: radius * 1e3,
 	}).addTo(map);
