@@ -22,9 +22,7 @@ class Chatbot():
         self.__summarizer = pipeline('summarization', model="t5-small", tokenizer="t5-small")
         
         self.__tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
-        self.__model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")
-        self.history = None
-            
+        self.__model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")            
     
     def chat(self, message, restaurants=None):
         # Check for specific keywords or intents
@@ -36,17 +34,12 @@ class Chatbot():
         self.history = history
         if response:
             return response
-        # if intent == 'recommend restaurant':
-        #     # Get recommendations
-        #     recommendations = recommend_with_embedding(user_input, top_n=3)
-        #     response = recommendations.to_string(index=False)
-        #     return response, history
         
         # Fallback to conversational model
         new_user_input_ids = self.__tokenizer.encode(message + self.__tokenizer.eos_token, return_tensors='pt')
-        bot_input_ids = torch.cat([history, new_user_input_ids], dim=-1) if history is not None else new_user_input_ids
+        bot_input_ids = torch.cat([self.history, new_user_input_ids], dim=-1) if self.history is not None else new_user_input_ids
         self.history = self.__model.generate(bot_input_ids, max_length=1000, pad_token_id=self.__tokenizer.eos_token_id)
-        response = self.__tokenizer.decode(history[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)
+        response = self.__tokenizer.decode(self.history[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)
         return response
     
     def reset(self):
@@ -55,22 +48,23 @@ class Chatbot():
     
     # Function to convert string to tensor
     def __string_to_tensor(self, tensor_string):
-        # Remove 'tensor(' and ')' and split into components
+        # Remove 'tensor([' and '])' and split into components
         tensor_string = tensor_string.replace('tensor([', '').replace('])', '')
+
         # Split the string into individual numeric components
         numbers = [float(x) for x in tensor_string.split(',')]
+
         # Convert to PyTorch tensor
         return torch.tensor(numbers)
 
     def __load_reviews(self):
         self.data = pd.read_csv('data/processed/reviews.csv')
         self.data['embedding'] = self.data['embedding'].apply(self.__string_to_tensor)
+        print(self.data['embedding'].head())
         
     def __get_intent(self, query):
-        candidate_labels = ['recommend restaurant', 'get details', 'get reviews', 'get hours', 'help', 'goodbye', 'chitchat', 'other']
-        intent = self.__intent_classifier(query, candidate_labels=candidate_labels)
+        candidate_labels = ['recommendation', 'details', 'other']
         label = self.__intent_classifier(query, candidate_labels=candidate_labels)['labels'][0]
-        score = intent['scores'][0]
         return label
     
     # Recommend by similarity
@@ -82,14 +76,14 @@ class Chatbot():
         recommended_reviews['similarity'] = recommended_reviews['embedding'].apply(
             lambda x: util.cos_sim(query_embedding, x).item()
         )
-        recommended_reviews = recommended_reviews.groupby('restaurant_id').mean(numeric_only=True).reset_index()
         print(recommended_reviews)
         recommended_reviews = recommended_reviews[recommended_reviews['similarity'] > 0]
-        return recommended_reviews.sort_values(by='similarity', ascending=False).head(top_n)
+        recommended_reviews = recommended_reviews.drop_duplicates(subset=['restaurant_name'])
+        return recommended_reviews.nlargest(top_n, 'similarity')[['restaurant_name', 'text', 'similarity']]
     
     # Define responses for each intent
     def __handle_intent(self, intent, user_input, history, restaurants):
-        if intent == 'recommend restaurant':
+        if intent == 'recommendation':
             if restaurants:
                 # Use the recommendation logic
                 recommendations = self.__recommend_with_embedding(user_input, subset=restaurants, top_n=3)
@@ -103,7 +97,7 @@ class Chatbot():
                 response = "I'd be glad to assist you but you must search for restaurants nearby first."
             return response, history
         
-        elif intent == 'get details':
+        elif intent == 'details':
             # Extract restaurant name from input and fetch details
             restaurant_name = self.__extract_entity(user_input, 'restaurant_name')
             details = self.__fetch_restaurant_details(restaurant_name)  # Assume function defined elsewhere
@@ -113,45 +107,9 @@ class Chatbot():
                 response = f"Sorry, I couldn't find details for {restaurant_name}."
             return response, history
 
-        elif intent == 'get reviews':
-            # Extract restaurant name and fetch reviews
-            restaurant_name = self.__extract_entity(user_input, 'restaurant_name')
-            reviews = self.__fetch_restaurant_reviews(restaurant_name)  # Assume function defined elsewhere
-            if reviews:
-                response = f"Here are some reviews for {restaurant_name}:\n" + "\n".join(reviews[:3])
-            else:
-                response = f"Sorry, I couldn't find reviews for {restaurant_name}."
-            return response, history
-
-        elif intent == 'get hours':
-            # Extract restaurant name and fetch hours
-            restaurant_name = self.__extract_entity(user_input, 'restaurant_name')
-            hours = self.__fetch_opening_hours(restaurant_name)  # Assume function defined elsewhere
-            if hours:
-                response = f"{restaurant_name} is open during these hours:\n{hours}"
-            else:
-                response = f"Sorry, I couldn't find the hours for {restaurant_name}."
-            return response, history
-
-        elif intent == 'help':
-            response = ("I can assist you with the following:\n"
-                        "- Recommend a restaurant\n"
-                        "- Get details about a specific restaurant\n"
-                        "- Fetch reviews\n"
-                        "- Check opening hours\n"
-                        "How can I assist you today?")
-            return response, history
-
-        elif intent == 'goodbye':
-            response = "Goodbye! Let me know if I can assist you again."
-            return response, history
-        
-        # elif intent == 'chitchat':
-        #     return None, history # Placeholder for chitchat logic
-
         else:
             response = "I'm sorry, I didn't understand that. Could you rephrase?"
-            return response, history
+            return None, history
         
     def __extract_entity(self, user_input, entity_type):
         # Example: Simple keyword matching for restaurant names
@@ -171,12 +129,3 @@ class Chatbot():
             return summary[0]['summary_text']
             # return details.iloc[0].to_dict()  # Return details as a dictionary
         return None
-
-    def __fetch_restaurant_reviews(self, restaurant_name):
-        reviews = self.data[self.data['restaurant_name'].str.lower() == restaurant_name.lower()]['text'].tolist()
-        return reviews if reviews else None
-
-    def __fetch_opening_hours(self, restaurant_name):
-        hours = self.__restaurants[self.__restaurants['name'].str.lower() == restaurant_name.lower()]['google_opening_hours'].values
-        return hours[0] if len(hours) > 0 else None
-
