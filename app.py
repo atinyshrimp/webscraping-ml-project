@@ -3,9 +3,11 @@ import requests
 import pandas as pd
 import math
 import json
+from models.chatbot import Chatbot
 
 # Create a Flask application instance
 app = Flask(__name__)
+chatbot = Chatbot()
 
 # URL for the Photon API (used for search functionality)
 PHOTON_API_URL = "https://photon.komoot.io/api/"
@@ -21,6 +23,14 @@ def home():
         A rendered HTML template (base.html).
     """
     return render_template('base.html')
+
+@app.route("/setup_chatbot", methods=["POST"])
+def setup_chatbot():
+    try:
+        chatbot.setup()
+        return jsonify({"message": "Chatbot setup successful"}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
 
 # Haversine formula to calculate distance
 def haversine(lat1, lon1, lat2, lon2):
@@ -100,6 +110,16 @@ def search():
     except requests.RequestException as e:
         # Handle errors during the API request
         return jsonify({"error": str(e)}), 500
+
+@app.route("/chatbot", methods=["POST"])
+def chatbot_endpoint():
+    data = request.json
+    user_message = data.get('message')
+    restaurants = data.get('restaurants')
+    if user_message:
+        response = chatbot.chat(user_message, restaurants)
+        return jsonify({'response': response})
+    return jsonify({'response': 'Sorry, I did not understand that.'})
 
 if __name__ == "__main__":
     app.run(debug=True)

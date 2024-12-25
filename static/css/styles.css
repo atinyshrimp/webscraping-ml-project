@@ -347,7 +347,7 @@ footer a:hover {
 	position: fixed;
 	bottom: 80px;
 	right: 20px;
-	width: 300px;
+	width: 400px;
 	background-color: #fff;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	border-radius: 8px;
@@ -371,9 +371,10 @@ footer a:hover {
 }
 
 .modal-content {
+	height: 100%;
 	padding: 10px;
-	display: flex;
-	flex-direction: column;
+	/* display: flex;
+	flex-direction: column; */
 	gap: 10px;
 }
 
@@ -400,9 +401,16 @@ footer a:hover {
 }
 
 .chatbot-response {
-	max-height: 300px;
+	height: 100%;
 	overflow-y: auto;
 	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.chatbot-response::-webkit-scrollbar {
+	display: none;
 }
 
 .chatbot-response .user-message,
