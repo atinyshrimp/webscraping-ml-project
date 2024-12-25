@@ -16,6 +16,7 @@ const resultsContainer = document.getElementById("search-results");
 const radiusRange = document.getElementById("radius-range");
 const radiusLabel = document.getElementById("selected-radius");
 const restaurantList = document.getElementById("restaurant-list");
+const openNowCheckbox = document.getElementById("open-now");
 
 // Global Variables
 let currentLat, currentLon; // Stores the currently selected latitude and longitude
@@ -41,6 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Default radius value
 	radiusRange.value = 10;
+
+	openNowCheckbox.addEventListener("change", async () => {
+		renderRestaurantCards(places);
+	});
 
 	document.getElementById("sort-options").addEventListener("change", () => {
 		// Trigger re-render with the current list of places
@@ -73,6 +78,51 @@ async function fetchNearbyPlaces(lat, lon, radius) {
 	}
 }
 
+/** Checks if a restaurant is currently open based on its opening hours.
+ *
+ *
+ * @param {Array} openingHours - Array of opening periods, each containing:
+ *   - open: { day: number, hour: number, minute: number }
+ *   - close: { day: number, hour: number, minute: number }
+ *   where day is 0-6 (Sunday-Saturday), hour is 0-23, minute is 0-59
+ *
+ * @returns {boolean} True if the restaurant is currently open, false otherwise
+ *
+ * @example
+ * const openingHours = [
+ *   {
+ *     open: { day: 1, hour: 12, minute: 15 },
+ *     close: { day: 1, hour: 14, minute: 0 }
+ *   }
+ * ];
+ * isCurrentlyOpen(openingHours); // returns true if current time is Monday 13:00
+ *
+ * @throws {TypeError} If openingHours is not an array
+ * @returns {boolean} False if openingHours is null, undefined, or empty
+ */
+function isCurrentlyOpen(openingHours) {
+	if (!openingHours || !Array.isArray(openingHours)) return false;
+
+	const now = new Date();
+	const currentDay = now.getDay();
+	const currentHour = now.getHours();
+	const currentMinute = now.getMinutes();
+
+	// Filter periods for current day
+	const todaysPeriods = openingHours.filter(
+		(period) => period.open.day === currentDay
+	);
+
+	// Check if current time falls within any period
+	return todaysPeriods.some((period) => {
+		const openTime = period.open.hour * 60 + period.open.minute;
+		const closeTime = period.close.hour * 60 + period.close.minute;
+		const currentTime = currentHour * 60 + currentMinute;
+
+		return currentTime >= openTime && currentTime <= closeTime;
+	});
+}
+
 /** Render the restaurant cards in the UI.
  *
  * @param {Array} places - List of places returned from the server.
@@ -80,6 +130,7 @@ async function fetchNearbyPlaces(lat, lon, radius) {
 function renderRestaurantCards(places) {
 	// Sorting based on user selection
 	const sortBy = document.getElementById("sort-options").value;
+	console.log(places.google_opening_hours);
 	const sortedPlaces = [...places]; // Create a copy to avoid mutating the original array
 	const emptyPlaceholder = document.getElementById("empty-placeholder");
 
@@ -94,6 +145,7 @@ function renderRestaurantCards(places) {
 	restaurantList.style.display = "flex"; // Show restaurant list
 	emptyPlaceholder.style.display = "none"; // Hide placeholder
 
+	// Sort the places based on user selection
 	if (sortBy === "rating") {
 		sortedPlaces.sort(
 			(a, b) => (b.google_rating || 0) - (a.google_rating || 0)
@@ -121,7 +173,18 @@ function renderRestaurantCards(places) {
 		});
 	}
 
-	restaurantList.innerHTML = sortedPlaces
+	let filteredPlaces = [...sortedPlaces];
+	console.table(filteredPlaces);
+
+	// Filter for open restaurants if checkbox is checked
+	if (openNowCheckbox.checked) {
+		filteredPlaces = filteredPlaces.filter((place) =>
+			isCurrentlyOpen(place.google_opening_hours)
+		);
+	}
+
+	console.table(filteredPlaces);
+	restaurantList.innerHTML = filteredPlaces
 		.map(
 			(place) => `
             <div class="restaurant-card" data-lat="${
@@ -167,7 +230,7 @@ function renderRestaurantCards(places) {
 		.join("");
 
 	updateMapMarkers(
-		sortedPlaces,
+		filteredPlaces,
 		currentLat,
 		currentLon,
 		parseInt(radiusRange.value)

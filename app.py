@@ -72,6 +72,8 @@ def search_nearby():
                         record[key] = json.loads(value)
                     except json.JSONDecodeError:
                         record[key] = None
+            
+            record["google_opening_hours"] = json.loads(record["google_opening_hours"])
             return record
 
         # Sanitize each row in the filtered data
