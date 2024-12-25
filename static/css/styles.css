@@ -134,12 +134,22 @@ body {
 	margin-top: 0.8rem;
 }
 
-.price-range input {
-	width: 48%;
-	padding: 5px;
-	margin-right: 4%;
+.price-range {
+	display: flex;
+	gap: 10px;
+}
+
+.price-button {
+	padding: 5px 10px;
 	border: 1px solid #ddd;
 	border-radius: 5px;
+	cursor: pointer;
+	background-color: #f8f9fa;
+}
+
+.price-button.active {
+	background-color: #007bff;
+	color: white;
 }
 
 .property-types button,

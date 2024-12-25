@@ -22,6 +22,7 @@ const openNowCheckbox = document.getElementById("open-now");
 let currentLat, currentLon; // Stores the currently selected latitude and longitude
 let map; // Reference to the Leaflet map instance
 let places = [];
+let selectedPriceRange = [];
 
 /** Initialize the Map */
 document.addEventListener("DOMContentLoaded", () => {
@@ -39,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	// Event Listeners
 	setupSearchInput();
 	setupRadiusInput();
+	setupPriceFilter();
 
 	// Default radius value
 	radiusRange.value = 10;
@@ -180,6 +182,13 @@ function renderRestaurantCards(places) {
 	if (openNowCheckbox.checked) {
 		filteredPlaces = filteredPlaces.filter((place) =>
 			isCurrentlyOpen(place.google_opening_hours)
+		);
+	}
+
+	// Filter by selected price range
+	if (selectedPriceRange.length > 0) {
+		filteredPlaces = filteredPlaces.filter((place) =>
+			selectedPriceRange.includes(place.priceCategory)
 		);
 	}
 
@@ -383,6 +392,23 @@ function setupRadiusInput() {
 				parseInt(radiusRange.value)
 			);
 		}
+	});
+}
+
+function setupPriceFilter() {
+	// Add event listeners for price range buttons
+	document.querySelectorAll(".price-button").forEach((button) => {
+		button.addEventListener("click", () => {
+			const price = parseInt(button.dataset.price);
+			if (selectedPriceRange.includes(price)) {
+				selectedPriceRange = selectedPriceRange.filter((p) => p !== price);
+				button.classList.remove("active");
+			} else {
+				selectedPriceRange.push(price);
+				button.classList.add("active");
+			}
+			renderRestaurantCards(places);
+		});
 	});
 }
 
