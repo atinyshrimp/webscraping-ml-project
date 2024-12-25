@@ -23,6 +23,7 @@ let currentLat, currentLon; // Stores the currently selected latitude and longit
 let map; // Reference to the Leaflet map instance
 let places = [];
 let selectedPriceRange = [];
+let selectedCuisineTypes = [];
 
 /** Initialize the Map */
 document.addEventListener("DOMContentLoaded", () => {
@@ -53,6 +54,13 @@ document.addEventListener("DOMContentLoaded", () => {
 		// Trigger re-render with the current list of places
 		renderRestaurantCards(places);
 	});
+
+	// Add event listener for add cuisine button
+	document
+		.getElementById("add-cuisine-button")
+		.addEventListener("click", () => {
+			document.getElementById("cuisine-options").classList.toggle("hidden");
+		});
 });
 
 /** Fetch nearby places and update the map and UI.
@@ -192,6 +200,13 @@ function renderRestaurantCards(places) {
 		);
 	}
 
+	// Filter by selected cuisine types
+	if (selectedCuisineTypes.length > 0) {
+		filteredPlaces = filteredPlaces.filter((place) =>
+			selectedCuisineTypes.includes(place.type)
+		);
+	}
+
 	console.table(filteredPlaces);
 	restaurantList.innerHTML = filteredPlaces
 		.map(
@@ -238,12 +253,49 @@ function renderRestaurantCards(places) {
 		)
 		.join("");
 
+	// Update map markers based on the filtered places
 	updateMapMarkers(
 		filteredPlaces,
 		currentLat,
 		currentLon,
 		parseInt(radiusRange.value)
 	);
+
+	// Show or hide the add cuisine button based on places length
+	const addCuisineButton = document.getElementById("add-cuisine-button");
+	if (places.length > 0) {
+		addCuisineButton.classList.remove("hidden");
+	} else {
+		addCuisineButton.classList.add("hidden");
+	}
+
+	// Call setupCuisineFilter to update cuisine type buttons
+	setupCuisineFilter(places);
+}
+
+// Function to render selected cuisines
+function renderSelectedCuisines() {
+	const selectedCuisinesContainer =
+		document.getElementById("selected-cuisines");
+	selectedCuisinesContainer.innerHTML = selectedCuisineTypes
+		.map(
+			(cuisine) => `
+        <div class="selected-cuisine" data-cuisine="${cuisine}">
+            ${cuisine} <span class="remove-cuisine" data-cuisine="${cuisine}">&times;</span>
+        </div>
+    `
+		)
+		.join("");
+
+	// Add event listeners for remove buttons
+	document.querySelectorAll(".remove-cuisine").forEach((span) => {
+		span.addEventListener("click", () => {
+			const cuisine = span.dataset.cuisine;
+			selectedCuisineTypes = selectedCuisineTypes.filter((c) => c !== cuisine);
+			renderSelectedCuisines();
+			renderRestaurantCards(places);
+		});
+	});
 }
 
 /** Calculate distance between two points (Haversine formula).
@@ -408,6 +460,38 @@ function setupPriceFilter() {
 				button.classList.add("active");
 			}
 			renderRestaurantCards(places);
+		});
+	});
+}
+
+// Function to dynamically create cuisine type filter buttons
+function setupCuisineFilter(places) {
+	// Get unique cuisine types from places and sort them
+	const uniqueCuisines = [
+		...new Set(places.map((place) => place.type).filter(Boolean)),
+	]
+		.filter((cuisine) => !selectedCuisineTypes.includes(cuisine))
+		.sort();
+
+	// Create filter buttons for each unique cuisine type
+	const cuisineOptionsContainer = document.getElementById("cuisine-options");
+	cuisineOptionsContainer.innerHTML = uniqueCuisines
+		.map(
+			(cuisine) => `
+        <button class="cuisine-option" data-cuisine="${cuisine}">${cuisine}</button>
+    `
+		)
+		.join("");
+
+	// Add event listeners for cuisine type buttons
+	document.querySelectorAll(".cuisine-option").forEach((button) => {
+		button.addEventListener("click", () => {
+			const cuisine = button.dataset.cuisine;
+			if (!selectedCuisineTypes.includes(cuisine)) {
+				selectedCuisineTypes.push(cuisine);
+				renderSelectedCuisines();
+				renderRestaurantCards(places);
+			}
 		});
 	});
 }
