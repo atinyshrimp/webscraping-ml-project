@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			// Clear input
 			chatbotInput.value = "";
 
+			chatbotResponse.scrollTop = chatbotResponse.scrollHeight; // Scroll to the bottom
+
 			// Get restaurants' IDs
 			const ids = places.map((place) => place.id);
 
@@ -46,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			// Display bot response
 			const botMessageElement = document.createElement("div");
 			botMessageElement.classList.add("bot-message");
-			botMessageElement.textContent = data.response;
+			botMessageElement.innerHTML = data.response.replace(/\n/g, "<br>");
 			chatbotResponse.appendChild(botMessageElement);
 
 			chatbotResponse.scrollTop = chatbotResponse.scrollHeight; // Scroll to the bottom
