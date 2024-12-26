@@ -26,6 +26,11 @@ def home():
 
 @app.route("/setup_chatbot", methods=["POST"])
 def setup_chatbot():
+    """Sets up the chatbot.
+
+    Returns:
+        JSON response indicating success or failure.
+    """
     try:
         chatbot.setup()
         return jsonify({"message": "Chatbot setup successful"}), 200
@@ -34,6 +39,17 @@ def setup_chatbot():
 
 # Haversine formula to calculate distance
 def haversine(lat1, lon1, lat2, lon2):
+    """Calculates the great-circle distance between two points on the Earth's surface.
+
+    Args:
+        lat1 (float): Latitude of the first point.
+        lon1 (float): Longitude of the first point.
+        lat2 (float): Latitude of the second point.
+        lon2 (float): Longitude of the second point.
+
+    Returns:
+        float: Distance between the two points in kilometers.
+    """
     R = 6371  # Earth radius in kilometers
     phi1 = math.radians(lat1)
     phi2 = math.radians(lat2)
@@ -47,6 +63,16 @@ def haversine(lat1, lon1, lat2, lon2):
 
 @app.route("/search_nearby", methods=["GET"])
 def search_nearby():
+    """Searches for nearby places within a specified radius.
+
+    Query Parameters:
+        lat (float): Latitude of the center point.
+        lon (float): Longitude of the center point.
+        radius (float): Radius in kilometers (default is 5 km).
+
+    Returns:
+        JSON: List of places within the specified radius.
+    """
     try:
         # Get query parameters
         latitude = float(request.args.get("lat"))
@@ -115,6 +141,15 @@ def search():
 
 @app.route("/chatbot", methods=["POST"])
 def chatbot_endpoint():
+    """Handles chatbot interactions.
+
+    Request JSON:
+        message (str): The user's message to the chatbot.
+        restaurants (list): List of restaurants to provide context to the chatbot.
+
+    Returns:
+        JSON: The chatbot's response.
+    """
     data = request.json
     user_message = data.get('message')
     restaurants = data.get('restaurants')

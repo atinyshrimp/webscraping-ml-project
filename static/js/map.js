@@ -287,7 +287,7 @@ function renderRestaurantCards(places) {
 	setupCuisineFilter(places);
 }
 
-// Function to render selected cuisines
+/** Render selected cuisine types. */
 function renderSelectedCuisines() {
 	const selectedCuisinesContainer =
 		document.getElementById("selected-cuisines");
@@ -388,9 +388,7 @@ function updateMapMarkers(places, lat, lon, radius) {
 	map.fitBounds(bounds);
 }
 
-/** Attach event listeners for the search bar input.
- *
- */
+/** Attach event listeners for the search bar input. */
 function setupSearchInput() {
 	const handleInputChange = async () => {
 		const query = input.value;
@@ -461,6 +459,7 @@ function setupRadiusInput() {
 	});
 }
 
+/** Attach event listeners for price filter buttons. */
 function setupPriceFilter() {
 	// Add event listeners for price range buttons
 	document.querySelectorAll(".price-button").forEach((button) => {
@@ -512,6 +511,7 @@ function setupCuisineFilter(places) {
 	});
 }
 
+/** Initialize jQuery UI range slider for rating filter. */
 function setupRatingFilter() {
 	// Initialize jQuery UI range slider
 	$(function () {
@@ -532,6 +532,7 @@ function setupRatingFilter() {
 	});
 }
 
+/** Update review score labels. */
 function updateReviewScoreLabels() {
 	document.getElementById("min-review-score-label").innerText =
 		minReviewScore.toFixed(1);
@@ -539,6 +540,7 @@ function updateReviewScoreLabels() {
 		maxReviewScore.toFixed(1);
 }
 
+/** Reset all filters to their default values. */
 function resetFilters() {
 	// Reset review score range
 	minReviewScore = 4;
@@ -564,7 +566,6 @@ function resetFilters() {
 	document.getElementById("selected-radius").innerText = 10;
 
 	// Re-render restaurant cards with default filter values
-	// renderRestaurantCards(places);
 	fetchNearbyPlaces(currentLat, currentLon, parseInt(radiusRange.value));
 }
 
