@@ -42,6 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Event Listeners
 	setupSearchInput();
+	// Add event listener for clear filters button
+	document
+		.querySelector(".clear-filters")
+		.addEventListener("click", resetFilters);
 	setupRadiusInput();
 	setupPriceFilter();
 	setupRatingFilter();
@@ -533,6 +537,35 @@ function updateReviewScoreLabels() {
 		minReviewScore.toFixed(1);
 	document.getElementById("max-review-score-label").innerText =
 		maxReviewScore.toFixed(1);
+}
+
+function resetFilters() {
+	// Reset review score range
+	minReviewScore = 4;
+	maxReviewScore = 5;
+	$("#slider-range").slider("values", [4, 5]);
+	updateReviewScoreLabels();
+
+	// Reset price range
+	selectedPriceRange = [];
+	document.querySelectorAll(".price-button").forEach((button) => {
+		button.classList.remove("active");
+	});
+
+	// Reset cuisine types
+	selectedCuisineTypes = [];
+	renderSelectedCuisines();
+
+	// Reset open now checkbox
+	document.getElementById("open-now").checked = false;
+
+	// Reset radius range
+	radiusRange.value = 10;
+	document.getElementById("selected-radius").innerText = 10;
+
+	// Re-render restaurant cards with default filter values
+	// renderRestaurantCards(places);
+	fetchNearbyPlaces(currentLat, currentLon, parseInt(radiusRange.value));
 }
 
 /** Debounce function to improve performance of input handling.
