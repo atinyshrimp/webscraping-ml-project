@@ -98,7 +98,7 @@ webscraping-ml-project
 |           map.js
 |
 \---templates
-        base.html
+|       base.html
 |   .env
 |   .gitignore
 |   app.py
@@ -109,9 +109,10 @@ webscraping-ml-project
 
 ## Data Sources
 
-- **Michelin Guide**: Information about Michelin-starred restaurants with the Green Star distinction.
-- **Google Places API**: Details about restaurant locations, ratings, and reviews.
-- **Reddit**: Authentic user discussions on restaurant quality and experience.
+- [**Michelin Guide**](https://guide.michelin.com/en/us/restaurants): Information about Michelin-starred restaurants with the Green Star distinction.
+- [**Photon API**](https://photon.komoot.io/): Implementation of a search-as-you-type search bar for dynamic user experience.
+- [**Google Places API**](https://developers.google.com/maps/documentation/places/web-service/text-search?apix_params=%7B%22fields%22%3A%22places.id%2Cplaces.formattedAddress%2Cplaces.websiteUri%2Cplaces.rating%2Cplaces.reviews%2Cplaces.regularOpeningHours.periods%2Cplaces.googleMapsLinks.directionsUri%22%2C%22resource%22%3A%7B%22textQuery%22%3A%22The%20Inn%20At%20Little%20Washington%2C%20Washington%2C%20USA%22%2C%22includedType%22%3A%22restaurant%22%7D%7D): Details about restaurant locations, ratings, and reviews.
+- [**Reddit**](https://praw.readthedocs.io/en/stable/code_overview/models/subreddit.html#praw.models.Subreddit.search): Authentic user discussions on restaurant quality and experience.
 
 ## Notebooks
 
