@@ -146,8 +146,8 @@ class Chatbot():
                     response = "I couldn't find any recommendations similar enough. Try again with different preferences."
                 else:
                     response = "Based on your preferences, here are some recommendations:\n"
-                    for idx, row in self.__recommendations.iterrows():
-                        response += f"{idx + 1}. {row['name']} - Similarity: {row['similarity']:.2f}\n"
+                    for _, row in self.__recommendations.iterrows():
+                        response += f"{row['name']} located in {row['location']}, {row['country']}\n"
             else:
                 response = "I'd be glad to assist you but you must search for restaurants nearby first."
             return response, history
