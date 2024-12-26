@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+# Michelin Green Star Recommender
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Michelin Green Star](https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2022/10/11/31d3d763e68745dca54c19db6978db5f_Green-Star-hero-image.jpg)
 
-## Available Scripts
+This project is a **web-based recommendation system** designed to help users discover **MICHELIN Green Star restaurants**, an annual award which highlights restaurants at the forefront of the industry when it comes to their **sustainable practices**.\
+It combines data from **Michelin Guide**, **Google Places API**, and **Reddit reviews** to provide personalized restaurant recommendations. The application also features an **interactive chatbot** powered by natural language processing for conversational restaurant suggestions.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+![Landing page](static/img/landing_page.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🌍 **Interactive Map Display**: Visualize restaurant locations and explore nearby options.
+- 🔍 **Advanced Search & Filters**: Search restaurants by location and refine results with criteria such as:
+  - Radius
+  - Price Range
+  - Cuisine Type
+  - Ratings Score
+- 🎯 **Dynamic Sorting**: Sort results by distance, rating, price, or relevance to your preferences.
+- 🤖 **Chatbot Integration**: Interact with "Rekko," the AI-powered chatbot, to receive personalized recommendations.
+- 📊 **AI-Powered Recommendations**: Recommendations driven by state-of-the-art embedding models (HuggingFace, SentenceTransformers).
+- 🧾 **Review Summarization**: Extract insights from Google Reviews and Reddit discussions to understand restaurant popularity and sentiments.
+- 💬 **Conversational UI**: A chatbot integrated seamlessly into the web interface for quick and user-friendly interaction.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Python 3.7 or later
 
-### `npm run build`
+### Steps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```sh
+   git clone https://github.com/atinyshrimp/webscraping-ml-project.git
+   cd webscraping-ml-project
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Set up a virtual environment**:
 
-### `npm run eject`
+   ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows: `venv\Scripts\activate`
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Install the required packages**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Run the Flask application**:
 
-## Learn More
+   ```sh
+   flask run
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Open the application in your browser**:
+   ```
+   http://127.0.0.1:5000/
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Structure
 
-### Code Splitting
+```bash
+webscraping-ml-project
++---data
+|   +---processed
+|   |       expanded_restaurants_google_places.csv
+|   |       restaurants_with_reddit_reviews.csv
+|   |       reviews.csv
+|   |
+|   \---raw
+|           green_star_michelin_restaurants.csv
+|           restaurants_google_places_api_raw.csv
+|
++---models
+|   |   chatbot.py
+|   |
+|   \---__pycache__
+|           chatbot.cpython-312.pyc
+|           data_collection.cpython-312.pyc
+|
++---notebooks
+|       data_collection.ipynb
+|       nlp_pipeline.ipynb
+|
++---static
+|   +---css
+|   |       styles.css
+|   |
+|   +---img
+|   |
+|   \---js
+|           chatbot.js
+|           map.js
+|
+\---templates
+        base.html
+|   .env
+|   .gitignore
+|   app.py
+|   README.md
+|   requirements.txt
+|   structure.txt
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Data Sources
 
-### Analyzing the Bundle Size
+- **Michelin Guide**: Information about Michelin-starred restaurants with the Green Star distinction.
+- **Google Places API**: Details about restaurant locations, ratings, and reviews.
+- **Reddit**: Authentic user discussions on restaurant quality and experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Notebooks
 
-### Making a Progressive Web App
+- **data_collection.ipynb**: Data extraction and cleaning pipeline.
+- **nlp_pipeline.ipynb**: Embedding similarity, and model development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contact
 
-### Advanced Configuration
+For any inquiries, please [contact me](mailto:joyce.lapilus@gmail.com).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Acknowledgements
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Data sourced from Google Places API, Michelin Guide, and Reddit.
+- Developed as part of the Michelin Green Star Recommender Project.
