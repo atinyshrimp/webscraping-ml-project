@@ -22,6 +22,7 @@ const openNowCheckbox = document.getElementById("open-now");
 let currentLat, currentLon; // Stores the currently selected latitude and longitude
 let map; // Reference to the Leaflet map instance
 let places = [];
+let recommendedPlaces = [];
 let selectedPriceRange = [];
 let selectedCuisineTypes = [];
 let minReviewScore = 4;
@@ -148,7 +149,7 @@ function renderRestaurantCards(places) {
 	// Sorting based on user selection
 	const sortBy = document.getElementById("sort-options").value;
 	console.log(places.google_opening_hours);
-	const sortedPlaces = [...places]; // Create a copy to avoid mutating the original array
+	let sortedPlaces = [...places]; // Create a copy to avoid mutating the original array
 	const emptyPlaceholder = document.getElementById("empty-placeholder");
 
 	// Show placeholder if no places are returned
@@ -188,6 +189,9 @@ function renderRestaurantCards(places) {
 			);
 			return distA - distB;
 		});
+	} else if (sortBy === "recommendations") {
+		// Sort by chatbot recommendations
+		sortedPlaces = [...recommendedPlaces];
 	}
 
 	let filteredPlaces = [...sortedPlaces];

@@ -155,7 +155,7 @@ def chatbot_endpoint():
     restaurants = data.get('restaurants')
     if user_message:
         response = chatbot.chat(user_message, restaurants)
-        return jsonify({'response': response})
+        return jsonify(response)
     return jsonify({'response': 'Sorry, I did not understand that.'})
 
 if __name__ == "__main__":

@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 	// Handle Chatbot Input
 	const chatbotInput = document.getElementById("chatbot-input");
 	const chatbotSendButton = document.getElementById("chatbot-send");
-	const chatbotResponse = document.getElementById("chatbot-response");
 
 	chatbotSendButton.addEventListener("click", async () => {
 		const userMessage = chatbotInput.value.trim();
@@ -33,11 +32,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 		if (userMessage) {
 			displayUserMessage(userMessage);
 			chatbotInput.value = ""; // Clear input
-			chatbotResponse.scrollTop = chatbotResponse.scrollHeight; // Scroll to the bottom
 
 			const ids = places.map((place) => place.id); // Get restaurants' IDs
 			const data = await sendMessageToChatbot(userMessage, ids);
+			console.table(data);
 			displayBotMessage(data.response);
+			addRecommendationsToSortingOptions();
+			displayRecommendations(data.recommendations);
 		}
 	});
 
@@ -54,6 +55,7 @@ function displayUserMessage(message) {
 	userMessageElement.classList.add("user-message");
 	userMessageElement.textContent = message;
 	chatbotResponse.appendChild(userMessageElement);
+	scrollToBottom();
 }
 
 /** Sends the user's message to the Flask API and returns the response.
@@ -83,7 +85,7 @@ function displayBotMessage(message) {
 	botMessageElement.classList.add("bot-message");
 	botMessageElement.innerHTML = message.replace(/\n/g, "<br>");
 	chatbotResponse.appendChild(botMessageElement);
-	chatbotResponse.scrollTop = chatbotResponse.scrollHeight; // Scroll to the bottom
+	scrollToBottom();
 }
 
 /** Sets up the chatbot by calling the setup endpoint. */
@@ -100,4 +102,41 @@ async function setupChatbot() {
 	} catch (error) {
 		console.error("Error calling setup chat endpoint:", error);
 	}
+}
+
+/** Scrolls to the bottom of the chatbot response area. */
+function scrollToBottom() {
+	const chatbotResponse = document.getElementById("chatbot-response");
+	chatbotResponse.scrollTop = chatbotResponse.scrollHeight; // Scroll to the bottom
+}
+
+/** Adds chatbot recommendations to the sorting options.
+ *
+ * @param {Array} recommendations - List of recommended restaurant IDs.
+ */
+function addRecommendationsToSortingOptions() {
+	const sortingOptions = document.getElementById("sort-options");
+	const existingOption = Array.from(sortingOptions.options).find(
+		(option) => option.value === "recommendations"
+	);
+
+	if (!existingOption) {
+		const recommendationOption = document.createElement("option");
+		recommendationOption.value = "recommendations";
+		recommendationOption.textContent = "Chatbot Recommendations";
+		sortingOptions.appendChild(recommendationOption);
+
+		// Sort by chatbot recommendations when selected
+		recommendationOption.addEventListener("change", () => {
+			// Trigger re-render with the current list of places
+			renderRestaurantCards(places);
+		});
+	}
+}
+
+function displayRecommendations(recommendations) {
+	recommendedPlaces = recommendations;
+	const sortingOptions = document.getElementById("sort-options");
+	sortingOptions.value = "recommendations";
+	renderRestaurantCards(places);
 }

@@ -8,6 +8,7 @@ class Chatbot():
         """Initializes the Chatbot class and loads necessary data and models."""
         self.__load_reviews()
         self.__restaurants = pd.read_csv('data/processed/restaurants_with_reddit_reviews.csv')
+        self.__recommendations = []
         self.__embedder = None
         self.__intent_classifier = None
         self.__summarizer = None
@@ -43,6 +44,8 @@ class Chatbot():
         
         response, history = self.__handle_intent(intent, message, self.history, restaurants)
         self.history = history
+        if intent == 'recommendation' and response:
+            return {"response": response, "recommendations": self.__recommendations.to_dict(orient="records")}
         if response:
             return response
         
@@ -118,7 +121,9 @@ class Chatbot():
         # print(recommended_reviews)
         recommended_reviews = recommended_reviews[recommended_reviews['similarity'] > 0]
         recommended_reviews = recommended_reviews.drop_duplicates(subset=['restaurant_name'])
-        return recommended_reviews.nlargest(top_n, 'similarity')[['restaurant_name', 'text', 'similarity']]
+        recommended_reviews = recommended_reviews.merge(self.__restaurants, left_on='restaurant_id', right_on='id', how='left')
+        recommended_reviews = recommended_reviews.drop(columns=['text', 'restaurant_name', 'reddit_reviews', 'embedding'])
+        self.__recommendations = recommended_reviews.nlargest(top_n, 'similarity')
     
     # Define responses for each intent
     def __handle_intent(self, intent, user_input, history, restaurants):
@@ -136,13 +141,13 @@ class Chatbot():
         if intent == 'recommendation':
             if restaurants:
                 # Use the recommendation logic
-                recommendations = self.__recommend_with_embedding(user_input, subset=restaurants, top_n=3)
-                if recommendations.empty:
+                self.__recommend_with_embedding(user_input, subset=restaurants, top_n=3)
+                if self.__recommendations.empty:
                     response = "I couldn't find any recommendations similar enough. Try again with different preferences."
                 else:
                     response = "Based on your preferences, here are some recommendations:\n"
-                    for idx, row in recommendations.iterrows():
-                        response += f"{idx + 1}. {row['restaurant_name']} - Similarity: {row['similarity']:.2f}\n"
+                    for idx, row in self.__recommendations.iterrows():
+                        response += f"{idx + 1}. {row['name']} - Similarity: {row['similarity']:.2f}\n"
             else:
                 response = "I'd be glad to assist you but you must search for restaurants nearby first."
             return response, history
