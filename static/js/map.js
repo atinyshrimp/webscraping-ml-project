@@ -24,6 +24,8 @@ let map; // Reference to the Leaflet map instance
 let places = [];
 let selectedPriceRange = [];
 let selectedCuisineTypes = [];
+let minReviewScore = 4;
+let maxReviewScore = 5;
 
 /** Initialize the Map */
 document.addEventListener("DOMContentLoaded", () => {
@@ -42,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	setupSearchInput();
 	setupRadiusInput();
 	setupPriceFilter();
+	setupRatingFilter();
 
 	// Default radius value
 	radiusRange.value = 10;
@@ -206,6 +209,13 @@ function renderRestaurantCards(places) {
 			selectedCuisineTypes.includes(place.type)
 		);
 	}
+
+	// Filter by review score range
+	filteredPlaces = filteredPlaces.filter(
+		(place) =>
+			place.google_rating >= minReviewScore &&
+			place.google_rating <= maxReviewScore
+	);
 
 	console.table(filteredPlaces);
 	restaurantList.innerHTML = filteredPlaces
@@ -464,7 +474,9 @@ function setupPriceFilter() {
 	});
 }
 
-// Function to dynamically create cuisine type filter buttons
+/**Function to dynamically create cuisine type filter buttons
+ *
+ */
 function setupCuisineFilter(places) {
 	// Get unique cuisine types from places and sort them
 	const uniqueCuisines = [
@@ -494,6 +506,33 @@ function setupCuisineFilter(places) {
 			}
 		});
 	});
+}
+
+function setupRatingFilter() {
+	// Initialize jQuery UI range slider
+	$(function () {
+		$("#slider-range").slider({
+			range: true,
+			min: 1,
+			max: 5,
+			step: 0.1,
+			values: [minReviewScore, maxReviewScore],
+			slide: function (event, ui) {
+				minReviewScore = ui.values[0];
+				maxReviewScore = ui.values[1];
+				updateReviewScoreLabels();
+				renderRestaurantCards(places);
+			},
+		});
+		updateReviewScoreLabels();
+	});
+}
+
+function updateReviewScoreLabels() {
+	document.getElementById("min-review-score-label").innerText =
+		minReviewScore.toFixed(1);
+	document.getElementById("max-review-score-label").innerText =
+		maxReviewScore.toFixed(1);
 }
 
 /** Debounce function to improve performance of input handling.

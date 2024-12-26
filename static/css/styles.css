@@ -174,8 +174,14 @@ body {
 	padding: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	z-index: 1000;
-	max-height: 200px;
+	max-width: 400px;
+	max-height: 110px;
 	overflow-y: auto;
+}
+
+#restaurant-list-container::-webkit-scrollbar,
+.cuisine-options::-webkit-scrollbar {
+	display: none;
 }
 
 .cuisine-options.hidden {
@@ -207,19 +213,39 @@ body {
 	cursor: pointer;
 }
 
-.property-types button,
-.review-scores button {
-	margin: 5px 5px 0 0;
-	padding: 5px 10px;
-	background-color: #f8f9fa;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	cursor: pointer;
+#slider-range {
+	margin-top: 10px;
+	height: 8px;
+	background: #e9ecef;
+	border-radius: 4px;
+	position: relative;
 }
 
-.property-types button:hover,
-.review-scores button:hover {
-	background-color: #e9ecef;
+#slider-range .ui-slider-range {
+	background: #007bff;
+	border-radius: 4px;
+}
+
+#slider-range .ui-slider-handle {
+	/* border: 1px solid #007bff; */
+	background: #007bff;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	top: -5px; /* Adjust to center the handle */
+}
+
+#slider-range .ui-slider-horizontal {
+	height: 8px;
+	background: #ddd;
+	border-radius: 4px;
+}
+
+.ui-widget-content,
+.ui-widget {
+	border: none !important;
 }
 
 /* General Container */
@@ -254,10 +280,6 @@ body {
 	background-color: #f9f9f9;
 	padding: 0px 10px 10px 10px;
 	overflow-y: auto;
-}
-
-#restaurant-list-container::-webkit-scrollbar {
-	display: none; /* For Chrome, Safari, and Opera */
 }
 
 #restaurant-list {
