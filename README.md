@@ -104,7 +104,6 @@ webscraping-ml-project
 |   app.py
 |   README.md
 |   requirements.txt
-|   structure.txt
 ```
 
 ## Data Sources
