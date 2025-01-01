@@ -99,6 +99,10 @@ async function setupChatbot() {
 		});
 		const data = await response.json();
 		console.log("Setup chat response:", data);
+		if (response.ok) {
+			const toggleChatbotButton = document.getElementById("toggle-chatbot");
+			toggleChatbotButton.style.display = "inline-block"; // Show chatbot button
+		}
 	} catch (error) {
 		console.error("Error calling setup chat endpoint:", error);
 	}
