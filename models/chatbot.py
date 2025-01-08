@@ -20,7 +20,7 @@ class Chatbot():
         
     def setup(self):
         """Sets up the necessary models for the chatbot."""
-        self.__embedder = SentenceTransformer('distilbert-base-nli-mean-tokens')
+        self.__embedder = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
         self.__intent_classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
         self.__summarizer = pipeline('summarization', model="t5-small", tokenizer="t5-small")
         
