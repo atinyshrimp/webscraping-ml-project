@@ -2,6 +2,7 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer, util
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+from typing import Union
 
 class Chatbot():
     def __init__(self):
@@ -28,7 +29,7 @@ class Chatbot():
         self.__tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
         self.__model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")            
     
-    def chat(self, message, restaurants=None):
+    def chat(self, message: str, restaurants: list = None) -> dict:
         """Handles the chat interaction with the user.
 
         Args:
@@ -63,10 +64,10 @@ class Chatbot():
     def reset(self):
         """Resets the chat history."""
         self.history = None
-        return "Chat history has been reset."
+        print("Chat history has been reset.")
     
     # Function to convert string to tensor
-    def __string_to_tensor(self, tensor_string):
+    def __string_to_tensor(self, tensor_string: str) -> torch.Tensor:
         """Converts a string representation of a tensor to a PyTorch tensor.
 
         Args:
@@ -90,14 +91,14 @@ class Chatbot():
         self.data['embedding'] = self.data['embedding'].apply(self.__string_to_tensor)
         # print(self.data['embedding'].head())
         
-    def __get_intent(self, query):
+    def __get_intent(self, query: str) -> str:
         """Determines the intent of the user's message.
 
         Args:
             query (str): The user's message.
 
         Returns:
-            dict: The detected intent and its confidence score.
+            str: The detected intent.
         """
         # Check for specific estaurant/entity names
         if self.__extract_entity(query, 'restaurant_name'):
@@ -107,7 +108,7 @@ class Chatbot():
         return label
     
     # Recommend by similarity
-    def __recommend_with_embedding(self, query, subset=None, top_n=5):
+    def __recommend_with_embedding(self, query: str, subset: list = None, top_n: int = 5) -> pd.DataFrame:
         """Recommends restaurants based on the similarity of embeddings.
 
         Args:
@@ -133,7 +134,7 @@ class Chatbot():
         self.__recommendations = recommended_reviews.nlargest(top_n, 'similarity')
     
     # Define responses for each intent
-    def __handle_intent(self, intent, user_input, history, restaurants):
+    def __handle_intent(self, intent: str, user_input: str, history: list, restaurants: list) -> tuple:
         """Handles the user's intent and generates a response.
 
         Args:
@@ -173,7 +174,7 @@ class Chatbot():
             response = "I'm sorry, I didn't understand that. Could you rephrase?"
             return None, history
         
-    def __extract_entity(self, user_input, entity_type):
+    def __extract_entity(self, user_input: str, entity_type: str) -> Union[str, None]:
         """Extracts an entity from the user's input.
 
         Args:
@@ -190,7 +191,7 @@ class Chatbot():
                     return restaurant
         return None
         
-    def __fetch_restaurant_details(self, restaurant_name):
+    def __fetch_restaurant_details(self, restaurant_name: str) -> Union[str, None]:
         """Fetches details for a specific restaurant.
 
         Args:
