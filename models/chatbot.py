@@ -22,7 +22,7 @@ class Chatbot():
         """Sets up the necessary models for the chatbot."""
         self.__embedder = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
         self.__intent_classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
-        self.__summarizer = pipeline('summarization', model="t5-small", tokenizer="t5-small")
+        self.__summarizer = pipeline('summarization', model="facebook/bart-large-cnn", tokenizer="facebook/bart-large-cnn")
         
         self.__tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
         self.__model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")            
