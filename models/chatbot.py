@@ -3,6 +3,10 @@ from sentence_transformers import SentenceTransformer, util
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 from typing import Union
+from rank_bm25 import BM25Okapi
+import nltk
+nltk.download('punkt')
+from nltk.tokenize import word_tokenize
 
 class Chatbot():
     def __init__(self):
@@ -10,6 +14,9 @@ class Chatbot():
         self.__load_reviews()
         self.__restaurants = pd.read_csv('data/processed/restaurants_with_reddit_reviews.csv')
         self.__candidate_labels = ['recommendation', 'details', 'other']
+        
+        # Tokenize the reviews
+        self.__tokenized_corpus = [word_tokenize(doc.lower()) for doc in self.__get_grouped_reviews()['text'].tolist()]
         
         self.__recommendations = []
         self.__embedder = None
@@ -27,8 +34,8 @@ class Chatbot():
         self.__summarizer = pipeline('summarization', model="facebook/bart-large-cnn", tokenizer="facebook/bart-large-cnn")
         
         self.__tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
-        self.__model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")            
-    
+        self.__model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")
+        
     def chat(self, message: str, restaurants: list = None) -> dict:
         """Handles the chat interaction with the user.
 
@@ -89,7 +96,6 @@ class Chatbot():
         """Loads restaurant reviews from a CSV file."""
         self.data = pd.read_csv('data/processed/reviews.csv')
         self.data['embedding'] = self.data['embedding'].apply(self.__string_to_tensor)
-        # print(self.data['embedding'].head())
         
     def __get_intent(self, query: str) -> str:
         """Determines the intent of the user's message.
@@ -106,6 +112,17 @@ class Chatbot():
         
         label = self.__intent_classifier(query, candidate_labels=self.__candidate_labels)['labels'][0]
         return label
+    
+    def __get_grouped_reviews(self) -> pd.DataFrame:
+        """Groups the reviews by restaurant and concatenates them.
+
+        Returns:
+            pd.DataFrame: DataFrame containing grouped reviews.
+        """
+        grouped_reviews = self.data.copy()
+        grouped_reviews['text'] = grouped_reviews['text'].fillna('').astype(str)
+        grouped_reviews = grouped_reviews.groupby(['restaurant_id', 'restaurant_name'], as_index=False).agg({'text': ' '.join})
+        return grouped_reviews
     
     # Recommend by similarity
     def __recommend_with_embedding(self, query: str, subset: list = None, top_n: int = 5) -> pd.DataFrame:
@@ -133,6 +150,36 @@ class Chatbot():
         recommended_reviews = recommended_reviews.drop(columns=['text', 'restaurant_name', 'reddit_reviews', 'embedding'])
         self.__recommendations = recommended_reviews.nlargest(top_n, 'similarity')
     
+    def __recommend_with_bm25(self, query: str, subset: list = None, top_n: int = 5) -> pd.DataFrame:
+        """Recommends restaurants based on BM25 similarity.
+
+        Args:
+            query (str): The user's query.
+            subset (list, optional): Subset of restaurant IDs to consider.
+            top_n (int, optional): Number of top recommendations to return.
+
+        Returns:
+            pd.DataFrame: DataFrame containing the top recommended restaurants.
+        """
+        # Tokenize the query
+        tokenized_query = word_tokenize(query.lower())
+
+        # Initialize BM25 and get scores
+        bm25 = BM25Okapi(self.__tokenized_corpus)
+        scores = bm25.get_scores(tokenized_query)
+
+        # Add scores to the DataFrame and get top recommendations
+        recommendations = self.__get_grouped_reviews().copy()
+        recommendations['bm25_score'] = (scores - min(scores)) / (max(scores) - min(scores)) # Normalize scores to [0, 1]
+        recommendations = recommendations.merge(self.__restaurants, left_on='restaurant_id', right_on='id', how='left')
+        if subset:
+            recommendations = recommendations[recommendations['restaurant_id'].isin(subset)]
+        recommendations = recommendations.drop(columns=['text', 'reddit_reviews'])
+        recommendations = recommendations.nlargest(top_n, 'bm25_score')
+        print(recommendations[['restaurant_name', 'bm25_score']])
+
+        self.__recommendations = recommendations.copy()
+    
     # Define responses for each intent
     def __handle_intent(self, intent: str, user_input: str, history: list, restaurants: list) -> tuple:
         """Handles the user's intent and generates a response.
@@ -149,13 +196,13 @@ class Chatbot():
         if intent == 'recommendation':
             if restaurants:
                 # Use the recommendation logic
-                self.__recommend_with_embedding(user_input, subset=restaurants, top_n=3)
+                self.__recommend_with_bm25(user_input, subset=restaurants, top_n=3)
                 if self.__recommendations.empty:
                     response = "I couldn't find any recommendations similar enough. Try again with different preferences."
                 else:
                     response = "Based on your preferences, here are some recommendations:\n"
                     for _, row in self.__recommendations.iterrows():
-                        response += f"{row['name']} located in {row['location']}, {row['country']}\n"
+                        response += f"{row['name']} located in {row['location']}, {(row['bm25_score']*100):.2f}%\n"
             else:
                 response = "I'd be glad to assist you but you must search for restaurants nearby first."
             return response, history
@@ -203,11 +250,11 @@ class Chatbot():
         details = self.data[self.data['restaurant_name'].str.lower() == restaurant_name.lower()]
         details['text'] = details['text'].fillna('')
         if not details.empty:
-            MAX_LENGTH = 2**11
+            MAX_LENGTH = 2**12
             all_reviews = "\n".join(details['text'].tolist())[:MAX_LENGTH]
             all_reviews = f"Information about the restaurant {restaurant_name}:\n" + all_reviews
             try:
-                summary = self.__summarizer(all_reviews, max_length=100, min_length=20, do_sample=False)
+                summary = self.__summarizer(all_reviews, max_length=200, min_length=20, do_sample=False)
                 return summary[0]['summary_text']
             except IndexError as e:
                 print(f"IndexError: {e}")

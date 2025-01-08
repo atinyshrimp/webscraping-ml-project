@@ -22,7 +22,7 @@ const openNowCheckbox = document.getElementById("open-now");
 let currentLat, currentLon; // Stores the currently selected latitude and longitude
 let map; // Reference to the Leaflet map instance
 let places = [];
-let recommendedPlaces = [];
+let recommendedPlaces;
 let selectedPriceRange = [];
 let selectedCuisineTypes = [];
 let minReviewScore = 4;
