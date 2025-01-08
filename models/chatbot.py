@@ -8,6 +8,8 @@ class Chatbot():
         """Initializes the Chatbot class and loads necessary data and models."""
         self.__load_reviews()
         self.__restaurants = pd.read_csv('data/processed/restaurants_with_reddit_reviews.csv')
+        self.__candidate_labels = ['recommendation', 'details', 'other']
+        
         self.__recommendations = []
         self.__embedder = None
         self.__intent_classifier = None
@@ -17,7 +19,6 @@ class Chatbot():
         self.__model = None
         self.history = None
 
-        
     def setup(self):
         """Sets up the necessary models for the chatbot."""
         self.__embedder = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
@@ -44,17 +45,20 @@ class Chatbot():
         
         response, history = self.__handle_intent(intent, message, self.history, restaurants)
         self.history = history
-        if intent == 'recommendation' and response:
-            return {"response": response, "recommendations": self.__recommendations.to_dict(orient="records")}
-        if response:
-            return response
+        content = {}
         
-        # Fallback to conversational model
-        new_user_input_ids = self.__tokenizer.encode(message + self.__tokenizer.eos_token, return_tensors='pt')
-        bot_input_ids = torch.cat([self.history, new_user_input_ids], dim=-1) if self.history is not None else new_user_input_ids
-        self.history = self.__model.generate(bot_input_ids, max_length=1000, pad_token_id=self.__tokenizer.eos_token_id)
-        response = self.__tokenizer.decode(self.history[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)
-        return response
+        if response:
+            if intent == 'recommendation':
+                content["recommendations"] = self.__recommendations.to_dict(orient="records")            
+        else: 
+            # Fallback to conversational model
+            new_user_input_ids = self.__tokenizer.encode(message + self.__tokenizer.eos_token, return_tensors='pt')
+            bot_input_ids = torch.cat([self.history, new_user_input_ids], dim=-1) if self.history is not None else new_user_input_ids
+            self.history = self.__model.generate(bot_input_ids, max_length=1000, pad_token_id=self.__tokenizer.eos_token_id)
+            response = self.__tokenizer.decode(self.history[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)
+            
+        content["response"] = response
+        return content
     
     def reset(self):
         """Resets the chat history."""
@@ -95,8 +99,11 @@ class Chatbot():
         Returns:
             dict: The detected intent and its confidence score.
         """
-        candidate_labels = ['recommendation', 'details', 'other']
-        label = self.__intent_classifier(query, candidate_labels=candidate_labels)['labels'][0]
+        # Check for specific estaurant/entity names
+        if self.__extract_entity(query, 'restaurant_name'):
+            return 'details'
+        
+        label = self.__intent_classifier(query, candidate_labels=self.__candidate_labels)['labels'][0]
         return label
     
     # Recommend by similarity
@@ -155,9 +162,9 @@ class Chatbot():
         elif intent == 'details':
             # Extract restaurant name from input and fetch details
             restaurant_name = self.__extract_entity(user_input, 'restaurant_name')
-            details = self.__fetch_restaurant_details(restaurant_name)  # Assume function defined elsewhere
+            details = self.__fetch_restaurant_details(restaurant_name) 
             if details:
-                response = f"Here are the details for {restaurant_name}:\n{details}"
+                response = details
             else:
                 response = f"Sorry, I couldn't find details for {restaurant_name}."
             return response, history
@@ -176,7 +183,7 @@ class Chatbot():
         Returns:
             str: The extracted entity, if found.
         """
-        # Example: Simple keyword matching for restaurant names
+        # Simple keyword matching for restaurant names
         if entity_type == 'restaurant_name':
             for restaurant in self.data['restaurant_name'].unique():
                 if restaurant.lower() in user_input.lower():
@@ -195,9 +202,13 @@ class Chatbot():
         details = self.data[self.data['restaurant_name'].str.lower() == restaurant_name.lower()]
         details['text'] = details['text'].fillna('')
         if not details.empty:
-            all_reviews = "\n".join(details['text'].tolist())
+            MAX_LENGTH = 2**11
+            all_reviews = "\n".join(details['text'].tolist())[:MAX_LENGTH]
             all_reviews = f"Information about the restaurant {restaurant_name}:\n" + all_reviews
-            summary = self.__summarizer(all_reviews, max_length=100, min_length=20, do_sample=False)
-            return summary[0]['summary_text']
-            # return details.iloc[0].to_dict()  # Return details as a dictionary
-        return None
+            try:
+                summary = self.__summarizer(all_reviews, max_length=100, min_length=20, do_sample=False)
+                return summary[0]['summary_text']
+            except IndexError as e:
+                print(f"IndexError: {e}")
+                print(f"Input to summarizer: {all_reviews}")
+                return None
