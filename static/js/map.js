@@ -364,7 +364,7 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 function updateMapMarkers(places, lat, lon, radius) {
     // Clear existing markers and circles
     map.eachLayer((layer) => {
-        if (layer instanceof L.Marker || layer instanceof L.Circle) {
+        if (!(layer instanceof L.TileLayer || layer instanceof L.Map)) {
             map.removeLayer(layer);
         }
     });
