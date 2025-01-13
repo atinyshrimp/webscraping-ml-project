@@ -1,12 +1,16 @@
-import pandas as pd
-from sentence_transformers import SentenceTransformer, util
-import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+import random
 from typing import Union
-from rank_bm25 import BM25Okapi
+
 import nltk
+import pandas as pd
+import torch
+from rank_bm25 import BM25Okapi
+from sentence_transformers import SentenceTransformer, util
+from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+
 nltk.download('punkt')
 from nltk.tokenize import word_tokenize
+
 
 class Chatbot():
     def __init__(self):
@@ -44,7 +48,7 @@ class Chatbot():
             restaurants (list, optional): List of restaurants to provide context.
 
         Returns:
-            str: The chatbot's response.
+            dict: The chatbot's response.
         """
         # Check for specific keywords or intents
     
@@ -125,31 +129,6 @@ class Chatbot():
         return grouped_reviews
     
     # Recommend by similarity
-    def __recommend_with_embedding(self, query: str, subset: list = None, top_n: int = 5) -> pd.DataFrame:
-        """Recommends restaurants based on the similarity of embeddings.
-
-        Args:
-            query (str): The user's query.
-            subset (list, optional): Subset of restaurant IDs to consider.
-            top_n (int, optional): Number of top recommendations to return.
-
-        Returns:
-            pd.DataFrame: DataFrame containing the top recommended restaurants.
-        """
-        query_embedding = self.__embedder.encode(query, convert_to_tensor=True)
-        recommended_reviews = self.data.copy()
-        if subset:
-            recommended_reviews = recommended_reviews[recommended_reviews['restaurant_id'].isin(subset)]
-        recommended_reviews['similarity'] = recommended_reviews['embedding'].apply(
-            lambda x: util.cos_sim(query_embedding, x).item()
-        )
-        # print(recommended_reviews)
-        recommended_reviews = recommended_reviews[recommended_reviews['similarity'] > 0]
-        recommended_reviews = recommended_reviews.drop_duplicates(subset=['restaurant_name'])
-        recommended_reviews = recommended_reviews.merge(self.__restaurants, left_on='restaurant_id', right_on='id', how='left')
-        recommended_reviews = recommended_reviews.drop(columns=['text', 'restaurant_name', 'reddit_reviews', 'embedding'])
-        self.__recommendations = recommended_reviews.nlargest(top_n, 'similarity')
-    
     def __recommend_with_bm25(self, query: str, subset: list = None, top_n: int = 5) -> pd.DataFrame:
         """Recommends restaurants based on BM25 similarity.
 
@@ -188,7 +167,7 @@ class Chatbot():
             intent (str): The detected intent.
             user_input (str): The user's message.
             history (list): The conversation history.
-            restaurants (list, optional): List of restaurants to provide context.
+            restaurants (list): List of restaurants to provide context.
 
         Returns:
             tuple: The chatbot's response and updated conversation history.
@@ -245,18 +224,20 @@ class Chatbot():
             restaurant_name (str): The name of the restaurant.
 
         Returns:
-            str: The restaurant details.
+            str: The restaurant details, if found.
         """
+        MAX_LENGTH = 2**12 # Maximum length of text to summarize
         details = self.data[self.data['restaurant_name'].str.lower() == restaurant_name.lower()]
         details['text'] = details['text'].fillna('')
         if not details.empty:
-            MAX_LENGTH = 2**12
-            all_reviews = "\n".join(details['text'].tolist())[:MAX_LENGTH]
-            all_reviews = f"Information about the restaurant {restaurant_name}:\n" + all_reviews
+            all_reviews = details['text'].tolist()
+            random.shuffle(all_reviews)
+            combined_reviews = "\n".join(details['text'].tolist())[:MAX_LENGTH]
+            combined_reviews = f"Information about the restaurant {restaurant_name}:\n" + combined_reviews
             try:
-                summary = self.__summarizer(all_reviews, max_length=200, min_length=20, do_sample=False)
+                summary = self.__summarizer(combined_reviews, max_length=200, min_length=20, do_sample=False)
                 return summary[0]['summary_text']
             except IndexError as e:
                 print(f"IndexError: {e}")
-                print(f"Input to summarizer: {all_reviews}")
                 return None
+        return None
