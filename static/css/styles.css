@@ -4,11 +4,11 @@
 
 /* General Styles */
 body {
-	font-family: "Lato", sans-serif; /* Lato for default body text */
-	color: #333; /* Example: Dark gray for body text */
-	line-height: 1.6; /* Improve readability */
-	margin: 0;
-	padding: 0;
+    font-family: "Lato", sans-serif; /* Lato for default body text */
+    color: #333; /* Example: Dark gray for body text */
+    line-height: 1.6; /* Improve readability */
+    margin: 0;
+    padding: 0;
 }
 
 /* Headings */
@@ -18,633 +18,635 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Merriweather", serif; /* Merriweather for headings */
-	color: #222; /* Example: Slightly darker gray for headings */
-	margin-bottom: 1rem; /* Add spacing */
+    font-family: "Merriweather", serif; /* Merriweather for headings */
+    color: #222; /* Example: Slightly darker gray for headings */
+    margin-bottom: 1rem; /* Add spacing */
 }
 
 label {
-	font-family: "Merriweather", serif; /* Merriweather for headings */
-	color: #222; /* Example: Slightly darker gray for headings */
+    font-family: "Merriweather", serif; /* Merriweather for headings */
+    color: #222; /* Example: Slightly darker gray for headings */
 }
 
 /* Navigation Menu */
 nav {
-	font-family: "Lato", sans-serif; /* Clean, modern text for nav */
-	background-color: #fff;
+    font-family: "Lato", sans-serif; /* Clean, modern text for nav */
+    background-color: #fff;
 }
 
 nav a {
-	text-decoration: none;
-	color: #007bff; /* Example: Blue links */
-	font-weight: 700; /* Bold for emphasis */
-	padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #007bff; /* Example: Blue links */
+    font-weight: 700; /* Bold for emphasis */
+    padding: 0.5rem 1rem;
 }
 
 nav a:hover {
-	text-decoration: underline;
-	color: #0056b3; /* Darker blue for hover */
+    text-decoration: underline;
+    color: #0056b3; /* Darker blue for hover */
 }
 
 /* Buttons */
 button {
-	font-family: "Lato", sans-serif; /* Lato for buttons */
-	font-size: 1rem;
-	border: none;
-	padding: 0.5rem 1rem;
-	border-radius: 4px;
-	cursor: pointer;
+    font-family: "Lato", sans-serif; /* Lato for buttons */
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* Blockquote */
 blockquote {
-	font-family: "Merriweather", serif; /* Stylish text for quotes */
-	font-size: 1.25rem;
-	color: #555; /* Light gray text */
-	border-left: 4px solid #007bff; /* Blue accent line */
-	padding-left: 1rem;
-	margin: 1rem 0;
+    font-family: "Merriweather", serif; /* Stylish text for quotes */
+    font-size: 1.25rem;
+    color: #555; /* Light gray text */
+    border-left: 4px solid #007bff; /* Blue accent line */
+    padding-left: 1rem;
+    margin: 1rem 0;
 }
 
 /* Footer */
 footer {
-	font-family: "Lato", sans-serif; /* Clean and modern */
-	text-align: center;
-	color: #666;
-	padding: 1rem 0;
-	background-color: #f8f9fa; /* Light gray background */
+    font-family: "Lato", sans-serif; /* Clean and modern */
+    text-align: center;
+    color: #666;
+    padding: 1rem 0;
+    background-color: #f8f9fa; /* Light gray background */
 }
 
 body::-webkit-scrollbar {
-	width: 10px;
+    width: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: #94bc7d;
-	border-radius: 10px;
-	border: 3px solid #ffffff;
+    background-color: #94bc7d;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
 }
 
 /* Search Bar */
 #logo {
-	display: flex;
-	align-items: center;
-	margin-right: 20px;
-	font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-weight: bold;
 }
 .search-bar {
-	display: flex;
-	padding: 10px 20px;
-	background-color: #f8f9fa;
-	border-bottom: 1px solid #ddd;
+    display: flex;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
 }
 
 .search-bar input {
-	flex: 1;
-	padding: 10px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .search-bar button {
-	padding: 10px 20px;
-	background-color: #007bff;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .search-bar button:hover {
-	background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 #search-results {
-	position: absolute; /* Make it hover */
-	top: 50px; /* Adjust to match the search bar height */
-	left: 90px; /* Align with the search bar */
-	width: calc(100% - 110px); /* Match search bar width */
-	background-color: #fff; /* Set a background for visibility */
-	/* border: 1px solid #ddd;  */
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a floating effect */
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	max-height: 200px; /* Limit height with scrolling */
-	overflow-y: auto;
-	z-index: 1001; /* Ensure it stays above other elements */
+    position: absolute; /* Make it hover */
+    top: 50px; /* Adjust to match the search bar height */
+    left: 90px; /* Align with the search bar */
+    width: calc(100% - 110px); /* Match search bar width */
+    background-color: #fff; /* Set a background for visibility */
+    /* border: 1px solid #ddd;  */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a floating effect */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px; /* Limit height with scrolling */
+    overflow-y: auto;
+    z-index: 1001; /* Ensure it stays above other elements */
 }
 
 #search-results::-webkit-scrollbar,
 .chatbot-response::-webkit-scrollbar {
-	width: 10px;
+    width: 10px;
 }
 
 #search-results::-webkit-scrollbar-thumb {
-	background-color: #94bc7d;
-	border-radius: 10px;
-	border: 3px solid #ffffff;
+    background-color: #94bc7d;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
 }
 
 #search-results li {
-	padding: 10px;
-	border-bottom: 1px solid #f0f0f0;
-	cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
 }
 
 #search-results li:last-child {
-	border-bottom: none;
+    border-bottom: none;
 }
 
 #search-results li:hover {
-	background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 /* Main Container */
 .main-container {
-	display: flex;
-	height: calc(100vh - 70px);
+    display: flex;
+    height: calc(100vh - 70px);
 }
 
 /* Filters Section */
 .filters {
-	width: 30%;
-	padding: 20px;
-	background-color: #f8f9fa;
-	border-right: 1px solid #ddd;
-	overflow-y: auto;
+    width: 30%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
 }
 
 .filter-row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 100%;
-	align-items: center;
-	align-content: center;
-	/* padding-bottom: 1rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    /* padding-bottom: 1rem; */
 }
 
 .filters h3 {
-	margin: 0;
+    margin: 0;
 }
 
 .clear-filters {
-	display: inline-block;
-	margin: 10px 0;
-	padding: 5px 10px;
-	background-color: #e9ecef;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	cursor: pointer;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: #e9ecef;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .filter-group {
-	margin-top: 1.5rem;
-	margin-bottom: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .filter-group label {
-	/* display: block; */
-	margin-bottom: 10px;
-	font-weight: bold;
+    /* display: block; */
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .availability-row {
-	margin-top: 0.8rem;
+    margin-top: 0.8rem;
 }
 
 .price-range {
-	display: flex;
-	gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .price-button {
-	padding: 5px 10px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	cursor: pointer;
-	background-color: #f8f9fa;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f8f9fa;
 }
 
 .price-button.active {
-	background-color: #007bff;
-	color: white;
+    background-color: #007bff;
+    color: white;
 }
 
 .add-cuisine-button {
-	padding: 5px 10px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	cursor: pointer;
-	background-color: #f8f9fa;
-	position: relative;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    position: relative;
 }
 
 .cuisine-options {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
-	margin-top: 10px;
-	position: absolute;
-	background-color: white;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	padding: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	z-index: 1000;
-	max-width: 400px;
-	max-height: 110px;
-	overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 400px;
+    max-height: 110px;
+    overflow-y: auto;
 }
 
 #restaurant-list-container::-webkit-scrollbar,
 .cuisine-options::-webkit-scrollbar {
-	display: none;
+    display: none;
 }
 
 .cuisine-options.hidden {
-	display: none;
+    display: none;
 }
 
 .cuisine-option {
-	padding: 5px 10px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	cursor: pointer;
-	background-color: #f8f9fa;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f8f9fa;
 }
 
 .selected-cuisine {
-	display: inline-flex;
-	align-items: center;
-	padding: 5px 10px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	background-color: #007bff;
-	color: white;
-	margin-right: 5px;
-	margin-top: 5px;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 
 .selected-cuisine .remove-cuisine {
-	margin-left: 5px;
-	cursor: pointer;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
 #slider-range {
-	margin-top: 10px;
-	height: 8px;
-	background: #e9ecef;
-	border-radius: 4px;
-	position: relative;
+    margin-top: 10px;
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    position: relative;
 }
 
 #slider-range .ui-slider-range {
-	background: #007bff;
-	border-radius: 4px;
+    background: #007bff;
+    border-radius: 4px;
 }
 
 #slider-range .ui-slider-handle {
-	/* border: 1px solid #007bff; */
-	background: #007bff;
-	width: 18px;
-	height: 18px;
-	border-radius: 50%;
-	cursor: pointer;
-	position: absolute;
-	top: -5px; /* Adjust to center the handle */
+    /* border: 1px solid #007bff; */
+    background: #007bff;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: -5px; /* Adjust to center the handle */
 }
 
 #slider-range .ui-slider-horizontal {
-	height: 8px;
-	background: #ddd;
-	border-radius: 4px;
+    height: 8px;
+    background: #ddd;
+    border-radius: 4px;
 }
 
 .ui-widget-content,
 .ui-widget {
-	border: none !important;
+    border: none !important;
 }
 
 /* General Container */
 /* Sticky Sorting Container */
 #sorting-container {
-	display: flex;
-	align-content: center;
-	justify-content: end;
-	position: sticky; /* Makes the container stick to the top */
-	top: 0; /* Sticks to the top of its parent container */
-	background-color: #f9f9f9; /* Match the background color */
-	z-index: 10; /* Ensures it stays above other content */
-	padding: 10px; /* Add padding for better spacing */
-	border-bottom: 1px solid #ddd; /* Optional: Add a subtle border for clarity */
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for depth */
+    display: flex;
+    align-content: center;
+    justify-content: end;
+    position: sticky; /* Makes the container stick to the top */
+    top: 0; /* Sticks to the top of its parent container */
+    background-color: #f9f9f9; /* Match the background color */
+    z-index: 10; /* Ensures it stays above other content */
+    padding: 10px; /* Add padding for better spacing */
+    border-bottom: 1px solid #ddd; /* Optional: Add a subtle border for clarity */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for depth */
 }
 
 #sort-options {
-	padding: 2px;
-	border: 1px solid #ddd;
-	background-color: #f8f9fa;
-	border-radius: 5px;
-	margin-left: 0.5rem; /* Push the sort options to the right */
-	cursor: pointer; /* Change cursor to pointer for better UX */
+    padding: 2px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-left: 0.5rem; /* Push the sort options to the right */
+    cursor: pointer; /* Change cursor to pointer for better UX */
 }
 
 /* Restaurant List Section */
 #restaurant-list-container {
-	display: flex;
-	flex-direction: column;
-	width: 30%;
-	background-color: #f9f9f9;
-	padding: 0px 10px 10px 10px;
-	overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 0px 10px 10px 10px;
+    overflow-y: auto;
 }
 
 #restaurant-list {
-	display: none; /* Hidden by default */
-	padding: 10px 0px 10px 0px; /* Top, Right, Bottom, Left */
-	flex-wrap: wrap;
-	gap: 20px;
-	justify-content: center;
-	align-items: flex-start;
-	min-height: 100px; /* Prevent collapsing when empty */
-	background-color: #f9f9f9;
-	position: relative;
+    display: none; /* Hidden by default */
+    padding: 10px 0px 10px 0px; /* Top, Right, Bottom, Left */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100px; /* Prevent collapsing when empty */
+    background-color: #f9f9f9;
+    position: relative;
 }
 
 #restaurant-list::after {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 20px; /* Adjust the height as needed */
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px; /* Adjust the height as needed */
 }
 
 #empty-placeholder {
-	text-align: center;
-	height: 100%;
-	font-size: 1.2em;
-	color: #777;
-	padding: 20px;
-	padding-top: 35vh;
-	display: block; /* Hidden by default */
+    text-align: center;
+    height: 100%;
+    font-size: 1.2em;
+    color: #777;
+    padding: 20px;
+    padding-top: 35vh;
+    display: block; /* Hidden by default */
 }
 
 /* Restaurant Cards */
 .restaurant-card {
-	width: 300px;
-	background-color: #fff;
-	border-radius: 15px;
-	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-	overflow: hidden;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	transition: transform 0.2s ease-in-out;
-	cursor: pointer;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .restaurant-card:hover {
-	transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 /* Restaurant Image */
 .restaurant-card img {
-	width: 100%;
-	height: 200px;
-	object-fit: cover;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 /* Favorite and Check Icons */
 .card-icons {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	display: flex;
-	gap: 8px;
-	z-index: 3;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    z-index: 3;
 }
 
 .card-icons a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .card-icons i {
-	background-color: #fff;
-	border-radius: 50%;
-	padding: 8px;
-	font-size: 16px;
-	color: #333;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-	cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 /* Restaurant Content */
 .restaurant-content {
-	padding: 15px;
+    padding: 15px;
 }
 
 .restaurant-content h3 {
-	margin: 0;
-	font-size: 18px;
-	font-weight: bold;
-	color: #333;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
 }
 
 .restaurant-content p {
-	margin: 5px 0;
-	font-size: 14px;
-	color: #555;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
 }
 
 .restaurant-content .tags {
-	font-size: 14px;
-	color: #777;
+    font-size: 14px;
+    color: #777;
 }
 
 /* Distinction Icon */
 .distinction {
-	display: inline-block;
-	margin-right: 5px;
-	color: #4caf50; /* Red color for Michelin distinction */
-	font-size: 18px;
+    display: inline-block;
+    margin-right: 5px;
+    color: #4caf50; /* Red color for Michelin distinction */
+    font-size: 18px;
 }
 
 .restaurant-card .link {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	z-index: 2;
-	opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
 }
 
 /* Map Section */
 #map {
-	width: 55%;
-	height: 100%;
-	background-color: #e9ecef;
-	border-left: 1px solid #ddd;
+    width: 55%;
+    height: 100%;
+    background-color: #e9ecef;
+    border-left: 1px solid #ddd;
 }
 
 /* Footer */
 footer {
-	/* width: 100%; */
-	background-color: #f8f9fa;
-	padding: 10px;
-	text-align: center;
-	border-top: 1px solid #ddd;
-	position: relative;
-	bottom: 0;
+    /* width: 100%; */
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    position: relative;
+    bottom: 0;
 }
 
 footer a {
-	text-decoration: none;
-	color: #007bff;
+    text-decoration: none;
+    color: #007bff;
 }
 
 footer a:hover {
-	color: #0056b3;
+    color: #0056b3;
 }
 
 /* Chatbot Modal */
 .modal {
-	position: fixed;
-	bottom: 80px;
-	right: 20px;
-	width: 400px;
-	background-color: #fff;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	border-radius: 8px;
-	display: flex;
-	flex-direction: column;
-	/* overflow: hidden;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden;
 	z-index: 1000; */
 }
 
 .modal.hidden {
-	display: none;
+    display: none;
 }
 
 .modal-header {
-	padding: 10px;
-	background-color: #007bff;
-	color: white;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 0;
 }
 
 .modal-header h3 {
-	color: floralwhite;
-	margin: 0;
+    color: floralwhite;
+    margin: 0;
 }
 
 .modal-content {
-	flex: 1;
-	padding: 10px;
-	/* display: flex;
+    flex: 1;
+    padding: 10px;
+    /* display: flex;
 	flex-direction: column; */
-	gap: 10px;
-	overflow-y: hidden;
+    gap: 10px;
+    overflow-y: hidden;
+    border-bottom-left-radius: 0;
 }
 
 .modal textarea {
-	width: 100%;
-	height: 50px;
-	padding: 5px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	resize: none;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
 }
 
 .modal button {
-	padding: 5px 10px;
-	background-color: #007bff;
-	color: white;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .modal button:hover {
-	background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 .chatbot-response {
-	flex: 1;
-	overflow-y: auto;
-	margin-bottom: 10px;
-	display: flex;
-	flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .chatbot-response::before {
-	content: "";
-	margin-bottom: auto;
+    content: "";
+    margin-bottom: auto;
 }
 
 .chatbot-response::-webkit-scrollbar-thumb {
-	background-color: #007bff;
-	border-radius: 10px;
-	border: 3px solid #ffffff;
+    background-color: #007bff;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
 }
 
 .chatbot-response .user-message,
 .chatbot-response .bot-message {
-	padding: 10px;
-	margin: 5px 0;
-	border-radius: 10px;
-	max-width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    max-width: 80%;
 }
 
 .chatbot-response .user-message {
-	background-color: #d1e7dd;
-	align-self: flex-end;
+    background-color: #d1e7dd;
+    align-self: flex-end;
 }
 
 .chatbot-response .bot-message {
-	background-color: #007bff;
-	color: floralwhite;
-	align-self: flex-start;
+    background-color: #007bff;
+    color: floralwhite;
+    align-self: flex-start;
 }
 
 .hidden {
-	display: none;
+    display: none;
 }
 
 /* Chatbot Toggle Button */
 .chatbot-toggle {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	padding: 10px 20px;
-	background-color: #007bff;
-	color: white;
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	z-index: 1000;
-	display: none;
-	animation: fadeIn 0.5s ease-in-out;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .chatbot-toggle:hover {
-	background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 /* Chatbot Toggle Button Animation */
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

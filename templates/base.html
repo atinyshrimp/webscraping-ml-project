@@ -1,203 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Find sustainable restaurants near you with Michelin Green Star Recommander."
-		/>
-		<link
-			rel="icon"
-			href="{{ url_for('static', filename='img/gastronomie-durable.svg') }}"
-			type="image/svg+xml"
-		/>
-		<!-- Leaflet.js CSS -->
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-		/>
-		<!-- Bootstrap CSS -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-			crossorigin="anonymous"
-		/>
-		<!-- Font Awesome -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-		/>
-		<!-- Jquery and Jquery UI -->
-		<link
-			rel="stylesheet"
-			href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="{{ url_for('static', filename='css/styles.css') }}"
-		/>
-		<title>Michelin Green Star Recommander</title>
-	</head>
-	<body>
-		<!-- Search Bar -->
-		<div class="search-bar">
-			<img
-				src="{{ url_for('static', filename='img/gastronomie-durable.svg') }}"
-				alt="Michelin Green Star Recommander"
-				height="45"
-				id="logo"
-			/>
-			<input type="text" id="search-input" placeholder="Search for places..." />
-			<ul id="search-results"></ul>
-		</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Find sustainable restaurants near you with Michelin Green Star Recommander."
+        />
+        <link
+            rel="icon"
+            href="{{ url_for('static', filename='img/gastronomie-durable.svg') }}"
+            type="image/svg+xml"
+        />
+        <!-- Leaflet.js CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        />
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <!-- Jquery and Jquery UI -->
+        <link
+            rel="stylesheet"
+            href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/styles.css') }}"
+        />
+        <title>Michelin Green Star Recommander</title>
+    </head>
+    <body>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <img
+                src="{{ url_for('static', filename='img/gastronomie-durable.svg') }}"
+                alt="Michelin Green Star Recommander"
+                height="45"
+                id="logo"
+            />
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search for places..."
+            />
+            <ul id="search-results"></ul>
+        </div>
 
-		<!-- Main Container -->
-		<div class="main-container">
-			<!-- Filters Section -->
-			<div class="filters">
-				<div class="filter-row">
-					<h3>Filters</h3>
-					<button class="clear-filters">Clear Filters</button>
-				</div>
-				<hr />
+        <!-- Main Container -->
+        <div class="main-container">
+            <!-- Filters Section -->
+            <div class="filters">
+                <div class="filter-row">
+                    <h3>Filters</h3>
+                    <button class="clear-filters">Clear Filters</button>
+                </div>
+                <hr />
 
-				<div class="filter-group">
-					<label>Availability</label>
-					<div class="availability-row">
-						<input type="checkbox" id="open-now" />
-						<label for="open-now">Open Now</label>
-					</div>
-				</div>
-				<hr />
+                <div class="filter-group">
+                    <label>Availability</label>
+                    <div class="availability-row">
+                        <input type="checkbox" id="open-now" />
+                        <label for="open-now">Open Now</label>
+                    </div>
+                </div>
+                <hr />
 
-				<div class="filter-group">
-					<label>Radius: <span id="selected-radius">10</span> km</label>
-					<input
-						type="range"
-						class="form-range"
-						id="radius-range"
-						min="5"
-						max="100"
-						step="5"
-					/>
-				</div>
-				<hr />
+                <div class="filter-group">
+                    <label
+                        >Radius: <span id="selected-radius">10</span> km</label
+                    >
+                    <input
+                        type="range"
+                        class="form-range"
+                        id="radius-range"
+                        min="5"
+                        max="100"
+                        step="5"
+                    />
+                </div>
+                <hr />
 
-				<div class="filter-group">
-					<label>Price Range</label>
-					<div class="price-range">
-						<button class="price-button" data-price="1">$</button>
-						<button class="price-button" data-price="2">$$</button>
-						<button class="price-button" data-price="3">$$$</button>
-						<button class="price-button" data-price="4">$$$$</button>
-					</div>
-				</div>
-				<hr />
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <div class="price-range">
+                        <button class="price-button" data-price="1">$</button>
+                        <button class="price-button" data-price="2">$$</button>
+                        <button class="price-button" data-price="3">$$$</button>
+                        <button class="price-button" data-price="4">
+                            $$$$
+                        </button>
+                    </div>
+                </div>
+                <hr />
 
-				<div class="filter-group">
-					<label>Cuisine Type</label>
-					<div class="cuisine-types" id="selected-cuisines"></div>
-					<button id="add-cuisine-button" class="add-cuisine-button hidden">
-						+
-					</button>
-					<div id="cuisine-options" class="cuisine-options hidden"></div>
-				</div>
-				<hr />
+                <div class="filter-group">
+                    <label>Cuisine Type</label>
+                    <div class="cuisine-types" id="selected-cuisines"></div>
+                    <button
+                        id="add-cuisine-button"
+                        class="add-cuisine-button hidden"
+                    >
+                        +
+                    </button>
+                    <div
+                        id="cuisine-options"
+                        class="cuisine-options hidden"
+                    ></div>
+                </div>
+                <hr />
 
-				<div class="filter-group">
-					<label>Ratings Score</label>
-					<div>
-						<span id="min-review-score-label">1</span> -
-						<span id="max-review-score-label">5</span>
-					</div>
-					<div id="slider-range"></div>
-				</div>
-			</div>
+                <div class="filter-group">
+                    <label>Ratings Score</label>
+                    <div>
+                        <span id="min-review-score-label">1</span> -
+                        <span id="max-review-score-label">5</span>
+                    </div>
+                    <div id="slider-range"></div>
+                </div>
+            </div>
 
-			<!-- Results Section -->
-			<div id="restaurant-list-container">
-				<!-- Sorting Dropdown -->
-				<div id="sorting-container">
-					<label for="sort-options">Sort By:</label>
-					<select id="sort-options">
-						<option value="distance" selected>Distance (Nearest First)</option>
-						<option value="rating">Rating (High to Low)</option>
-						<option value="price">Price (Low to High)</option>
-					</select>
-				</div>
+            <!-- Results Section -->
+            <div id="restaurant-list-container">
+                <!-- Sorting Dropdown -->
+                <div id="sorting-container">
+                    <label for="sort-options">Sort By:</label>
+                    <select id="sort-options">
+                        <option value="distance" selected>
+                            Distance (Nearest First)
+                        </option>
+                        <option value="rating">Rating (High to Low)</option>
+                        <option value="price">Price (Low to High)</option>
+                    </select>
+                </div>
 
-				<!-- Restaurant Cards -->
-				<div id="restaurant-list"></div>
+                <!-- Restaurant Cards -->
+                <div id="restaurant-list"></div>
 
-				<!-- Placeholder -->
-				<div id="empty-placeholder">
-					🍃 Enter a location to find nearby sustainable restaurants.
-				</div>
-			</div>
+                <!-- Placeholder -->
+                <div id="empty-placeholder">
+                    🍃 Enter a location to find nearby sustainable restaurants.
+                </div>
+            </div>
 
-			<!-- Map Section -->
-			<div id="map"></div>
-		</div>
+            <!-- Map Section -->
+            <div id="map"></div>
+        </div>
 
-		<!-- Footer -->
-		<footer>
-			<div class="footer-content">
-				<p>&copy; 2024 Michelin Green Star Recommander Project</p>
-				<p>
-					<a href="https://github.com/atinyshrimp" target="_blank"
-						>GitHub Repository</a
-					>
-				</p>
-				<!-- <p>Developed by [Your Team/Name]</p> -->
-				<p>Data sourced from Google Places API, Michelin Guide, and Reddit.</p>
-				<p>
-					Contactme:
-					<a href="mailto:joyce.lapilus@edu.devinci.fr"
-						>joyce.lapilus@edu.devinci.fr</a
-					>
-				</p>
-				<div class="social-media">
-					<a href="https://linkedin.com/in/joyce-lapilus" target="_blank"
-						>LinkedIn</a
-					>
-				</div>
-			</div>
-		</footer>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Michelin Green Star Recommander Project</p>
+                <p>
+                    <a href="https://github.com/atinyshrimp" target="_blank"
+                        >GitHub Repository</a
+                    >
+                </p>
+                <!-- <p>Developed by [Your Team/Name]</p> -->
+                <p>
+                    Data sourced from Google Places API, Michelin Guide, and
+                    Reddit.
+                </p>
+                <p>
+                    Contactme:
+                    <a href="mailto:joyce.lapilus@edu.devinci.fr"
+                        >joyce.lapilus@edu.devinci.fr</a
+                    >
+                </p>
+                <div class="social-media">
+                    <a
+                        href="https://linkedin.com/in/joyce-lapilus"
+                        target="_blank"
+                        >LinkedIn</a
+                    >
+                </div>
+            </div>
+        </footer>
 
-		<!-- Chatbot Modal -->
-		<div id="chatbot-modal" class="modal hidden">
-			<div class="modal-header">
-				<h3>Chatbot</h3>
-				<button id="close-chatbot" class="close-btn">X</button>
-			</div>
-			<div class="modal-content">
-				<p>Ask me anything about restaurants, reviews, or the project!</p>
-				<div class="chatbot-response" id="chatbot-response"></div>
-				<textarea
-					id="chatbot-input"
-					placeholder="Type your question..."
-				></textarea>
-				<button id="chatbot-send">Send</button>
-			</div>
-		</div>
-		<button id="toggle-chatbot" class="chatbot-toggle">
-			Can't decide? Ask Rekko!
-		</button>
+        <!-- Chatbot Modal -->
+        <div id="chatbot-modal" class="modal hidden">
+            <div class="modal-header">
+                <h3>Chatbot</h3>
+                <button id="close-chatbot" class="close-btn">X</button>
+            </div>
+            <div class="modal-content">
+                <p>
+                    Ask me anything about restaurants, reviews, or the project!
+                </p>
+                <div class="chatbot-response" id="chatbot-response"></div>
+                <textarea
+                    id="chatbot-input"
+                    placeholder="Type your question..."
+                ></textarea>
+                <button id="chatbot-send">Send</button>
+            </div>
+        </div>
+        <button id="toggle-chatbot" class="chatbot-toggle">
+            Can't decide? Ask the Chatbot!
+        </button>
 
-		<script src="{{ url_for('static', filename='js/map.js') }}"></script>
-		<!-- Leaflet.js JavaScript -->
-		<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-		<!-- Bootstrap JavaScript -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"
-		></script>
-		<script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
-		<!-- Jquery and Jquery UI -->
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	</body>
+        <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+        <!-- Leaflet.js JavaScript -->
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+        <!-- Jquery and Jquery UI -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </body>
 </html>
