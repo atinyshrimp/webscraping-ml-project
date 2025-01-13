@@ -24,6 +24,15 @@ def home():
     """
     return render_template('base.html')
 
+@app.route('/restaurant_locations', methods=['GET']) # GET request to fetch global restaurant data
+def get_global_restaurants():
+    """Returns a list of restaurant locations with latitude and longitude.
+
+    Returns:
+        JSON: List of restaurant locations with latitude and longitude.
+    """
+    return jsonify(data[['name', 'latitude', 'longitude']].to_dict(orient='records'))
+
 @app.route("/setup_chatbot", methods=["POST"])
 def setup_chatbot():
     """Sets up the chatbot.
