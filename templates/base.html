@@ -38,17 +38,23 @@
             rel="stylesheet"
             href="{{ url_for('static', filename='css/styles.css') }}"
         />
-        <title>Michelin Green Star Recommander</title>
+        <title>Gastronaut — Michelin Green Star Recommander</title>
     </head>
     <body>
         <!-- Search Bar -->
         <div class="search-bar">
-            <img
-                src="{{ url_for('static', filename='img/gastronomie-durable.svg') }}"
-                alt="Michelin Green Star Recommander"
-                height="45"
-                id="logo"
-            />
+            <div
+                class="logo-container"
+                style="display: flex; align-items: center"
+            >
+                <img
+                    src="{{ url_for('static', filename='img/gastronomie-durable.svg') }}"
+                    alt="Michelin Green Star Recommander"
+                    height="45"
+                    id="logo"
+                />
+                <span style="margin-left: 10px">Gastronaut</span>
+            </div>
             <input
                 type="text"
                 id="search-input"

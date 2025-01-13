@@ -89,9 +89,21 @@ body::-webkit-scrollbar-thumb {
 #logo {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 0px;
     font-weight: bold;
 }
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.logo-container span {
+    font-family: "Merriweather", serif;
+    /* font-weight: bold; */
+    font-size: xx-large;
+    color: #649f42;
+}
+
 .search-bar {
     display: flex;
     padding: 10px 20px;
@@ -122,8 +134,8 @@ body::-webkit-scrollbar-thumb {
 #search-results {
     position: absolute; /* Make it hover */
     top: 50px; /* Adjust to match the search bar height */
-    left: 90px; /* Align with the search bar */
-    width: calc(100% - 110px); /* Match search bar width */
+    left: 275px; /* Align with the search bar */
+    width: calc(100% - 295px); /* Match search bar width */
     background-color: #fff; /* Set a background for visibility */
     /* border: 1px solid #ddd;  */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a floating effect */
