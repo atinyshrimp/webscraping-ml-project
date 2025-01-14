@@ -32,6 +32,14 @@ let maxReviewScore = 5;
 
 /** Initialize the Map */
 document.addEventListener("DOMContentLoaded", () => {
+    // Enable Bootstrap tooltips
+    const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+    );
+    const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+    );
+
     // Initialize the map
     map = L.map("map").setView([0, 0], 2); // Default world view
 
@@ -541,6 +549,14 @@ function setupPriceFilter() {
             }
             renderRestaurantCards(places);
         });
+    });
+
+    // Initialize tooltips for price filter buttons
+    const tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 }
 
