@@ -503,22 +503,34 @@ body::-webkit-scrollbar-thumb {
 
 /* Footer */
 footer {
-    /* width: 100%; */
-    background-color: #f8f9fa;
-    padding: 10px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-    position: relative;
-    bottom: 0;
+    margin-top: auto; /* Push footer to the end */
+    background-color: rgba(31, 49, 20, 0.953);
+    color: white;
+}
+
+footer .container {
+    margin: 0 10rem;
 }
 
 footer a {
+    color: #ffc107;
     text-decoration: none;
-    color: #007bff;
 }
 
 footer a:hover {
-    color: #0056b3;
+    text-decoration: underline;
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+footer i {
+    font-size: 1.2rem;
+}
+
+footer .social-icons a {
+    margin-right: 10px;
 }
 
 /* Chatbot Modal */
