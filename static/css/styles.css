@@ -587,6 +587,14 @@ footer a:hover {
     background-color: #0056b3;
 }
 
+.chatbot-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
 .chatbot-response {
     flex: 1;
     overflow-y: auto;

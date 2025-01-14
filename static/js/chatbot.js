@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         chatbotModal.classList.add("hidden");
     });
 
+    // Handle Chatbot Reset
+    const chatbotResetButton = document.getElementById("chatbot-reset");
+    chatbotResetButton.addEventListener("click", async () => {
+        resetChatbot();
+    });
+
     // Handle Chatbot Input
     const chatbotInput = document.getElementById("chatbot-input");
     const chatbotSendButton = document.getElementById("chatbot-send");
@@ -115,10 +121,7 @@ function scrollToBottom() {
     chatbotResponse.scrollTop = chatbotResponse.scrollHeight; // Scroll to the bottom
 }
 
-/** Adds chatbot recommendations to the sorting options.
- *
- * @param {Array} recommendations - List of recommended restaurant IDs.
- */
+/** Adds chatbot recommendations to the sorting options. */
 function addRecommendationsToSortingOptions() {
     const sortingOptions = document.getElementById("sort-options");
     const existingOption = Array.from(sortingOptions.options).find(
@@ -144,6 +147,38 @@ function displayRecommendations(recommendations) {
     const sortingOptions = document.getElementById("sort-options");
     sortingOptions.value = "recommendations";
     renderRestaurantCards(places);
+}
+
+/** Resets the chatbot by clearing the chatbot response area and input. */
+async function resetChatbot() {
+    // Clear chatbot response area
+    const chatbotResponse = document.getElementById("chatbot-response");
+    chatbotResponse.innerHTML = "";
+
+    // Reset chatbot input
+    const chatbotInput = document.getElementById("chatbot-input");
+    chatbotInput.value = "";
+
+    // Reset chatbot recommendations
+    recommendedPlaces = [];
+
+    // Reset sorting options
+    const sortingOptions = document.getElementById("sort-options");
+    sortingOptions.value = "distance";
+    // Fetch and display default locations
+    await fetchNearbyPlaces(
+        currentLat,
+        currentLon,
+        parseInt(radiusRange.value)
+    );
+
+    // Reset chatbot history on the server side
+    await fetch("/reset_chatbot", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    });
 }
 
 // Example queries for each chatbot functionality

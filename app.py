@@ -46,6 +46,11 @@ def setup_chatbot():
     except Exception as e:
         return jsonify({"error": str(e)}), 400
 
+@app.route("/reset_chatbot", methods=["POST"])
+def reset_chatbot():
+    chatbot.reset()
+    return jsonify({"status": "success"})
+
 # Haversine formula to calculate distance
 def haversine(lat1, lon1, lat2, lon2):
     """Calculates the great-circle distance between two points on the Earth's surface.
