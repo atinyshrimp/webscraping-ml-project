@@ -1,4 +1,19 @@
-# Michelin Green Star Recommender
+# Gastronaut – Michelin Green Star Recommender
+
+![License](https://img.shields.io/github/license/atinyshrimp/webscraping-ml-project?style=for-the-badge)
+![last_commit](https://img.shields.io/github/last-commit/atinyshrimp/webscraping-ml-project/main?style=for-the-badge&logo=GitHub)
+![Python](https://img.shields.io/badge/python-3.12%2B-007bff?style=for-the-badge&logo=Python&logoColor=ffffff)
+![Flask](https://img.shields.io/badge/Flask-3.1.0-007bff?style=for-the-badge&logo=Python&logoColor=ffffff)\
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=white)
+![MICHELIN Guide](https://img.shields.io/badge/michelin_guide-00973A?style=for-the-badge)
+![Google Places API](https://img.shields.io/badge/google_places_api-007bff?style=for-the-badge&logo=google&logoColor=ffffff)
+![Reddit_API](https://img.shields.io/badge/PRAW-FF4500?style=for-the-badge&logo=reddit&logoColor=white)
+![HF](https://img.shields.io/badge/-HuggingFace-FDEE21?style=for-the-badge&logo=HuggingFace&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+
+---
 
 ![Michelin Green Star](https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2022/10/11/31d3d763e68745dca54c19db6978db5f_Green-Star-hero-image.jpg)
 
@@ -25,7 +40,7 @@ It combines data from **Michelin Guide**, **Google Places API**, and **Reddit re
 
 ### Prerequisites
 
--   Python 3.7 or later
+-   Python 3.12 or later
 
 ### Steps
 
