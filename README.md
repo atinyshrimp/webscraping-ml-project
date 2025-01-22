@@ -1,17 +1,7 @@
 # Gastronaut – Michelin Green Star Recommender
 
 ![License](https://img.shields.io/github/license/atinyshrimp/webscraping-ml-project?style=for-the-badge)
-![last_commit](https://img.shields.io/github/last-commit/atinyshrimp/webscraping-ml-project/main?style=for-the-badge&logo=GitHub)
-![Python](https://img.shields.io/badge/python-3.12%2B-007bff?style=for-the-badge&logo=Python&logoColor=ffffff)
-![Flask](https://img.shields.io/badge/Flask-3.1.0-007bff?style=for-the-badge&logo=Python&logoColor=ffffff)\
-![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=white)
-![MICHELIN Guide](https://img.shields.io/badge/michelin_guide-00973A?style=for-the-badge)
-![Google Places API](https://img.shields.io/badge/google_places_api-007bff?style=for-the-badge&logo=google&logoColor=ffffff)
-![Reddit_API](https://img.shields.io/badge/PRAW-FF4500?style=for-the-badge&logo=reddit&logoColor=white)
-![HF](https://img.shields.io/badge/-HuggingFace-FDEE21?style=for-the-badge&logo=HuggingFace&logoColor=black)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Last commit](https://img.shields.io/github/last-commit/atinyshrimp/webscraping-ml-project/main?style=for-the-badge&logo=GitHub)
 
 ---
 
@@ -36,13 +26,29 @@ It combines data from **Michelin Guide**, **Google Places API**, and **Reddit re
 -   🧾 **Review Summarization**: Extract insights from Google Reviews and Reddit discussions to understand restaurant popularity and sentiments.
 -   💬 **Conversational UI**: A chatbot integrated seamlessly into the web interface for quick and user-friendly interaction.
 
+## Technologies and Tools Used
+
+### Core Technologies
+
+![Python](https://img.shields.io/badge/python-3.12%2B-007bff?style=for-the-badge&logo=Python&logoColor=ffffff)
+![Flask](https://img.shields.io/badge/Flask-3.1.0-007bff?style=for-the-badge&logo=Python&logoColor=ffffff)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=Selenium&logoColor=white)
+![HF](https://img.shields.io/badge/-HuggingFace-FDEE21?style=for-the-badge&logo=HuggingFace&logoColor=black)
+
+### Data Sources
+
+[![MICHELIN Guide](https://img.shields.io/badge/michelin_guide-00973A?style=for-the-badge)](https://guide.michelin.com/us/en/restaurants/sustainable_gastronomy)
+[![Google Places API](https://img.shields.io/badge/google_places_api-007bff?style=for-the-badge&logo=google&logoColor=ffffff)](https://developers.google.com/maps/documentation/places/web-service/text-search?apix_params=%7B%22fields%22%3A%22places.id%2Cplaces.formattedAddress%2Cplaces.websiteUri%2Cplaces.rating%2Cplaces.reviews%2Cplaces.regularOpeningHours.periods%2Cplaces.googleMapsLinks.directionsUri%22%2C%22resource%22%3A%7B%22textQuery%22%3A%22The%20Inn%20At%20Little%20Washington%2C%20Washington%2C%20USA%22%2C%22includedType%22%3A%22restaurant%22%7D%7D)
+[![Reddit_API](https://img.shields.io/badge/PRAW-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](<(https://developers.google.com/maps/documentation/places/web-service/text-search?apix_params=%7B%22fields%22%3A%22places.id%2Cplaces.formattedAddress%2Cplaces.websiteUri%2Cplaces.rating%2Cplaces.reviews%2Cplaces.regularOpeningHours.periods%2Cplaces.googleMapsLinks.directionsUri%22%2C%22resource%22%3A%7B%22textQuery%22%3A%22The%20Inn%20At%20Little%20Washington%2C%20Washington%2C%20USA%22%2C%22includedType%22%3A%22restaurant%22%7D%7D)>)
+
+-   [**Michelin Guide**](https://guide.michelin.com/en/us/restaurants): Information about Michelin-starred restaurants with the Green Star distinction.
+-   [**Photon API**](https://photon.komoot.io/): Implementation of a search-as-you-type search bar for dynamic user experience.
+-   [**Google Places API**](https://developers.google.com/maps/documentation/places/web-service/text-search?apix_params=%7B%22fields%22%3A%22places.id%2Cplaces.formattedAddress%2Cplaces.websiteUri%2Cplaces.rating%2Cplaces.reviews%2Cplaces.regularOpeningHours.periods%2Cplaces.googleMapsLinks.directionsUri%22%2C%22resource%22%3A%7B%22textQuery%22%3A%22The%20Inn%20At%20Little%20Washington%2C%20Washington%2C%20USA%22%2C%22includedType%22%3A%22restaurant%22%7D%7D): Details about restaurant locations, ratings, and reviews.
+-   [**Reddit API – PRAW**](https://praw.readthedocs.io/en/stable/code_overview/models/subreddit.html#praw.models.Subreddit.search): Authentic user discussions on restaurant quality and experience.
+
+The resulted files from scraping are available in the `data` folder.
+
 ## Installation
-
-### Prerequisites
-
--   Python 3.12 or later
-
-### Steps
 
 1. **Clone the repository**:
 
@@ -124,13 +130,6 @@ webscraping-ml-project
 |   README.md
 |   requirements.txt
 ```
-
-## Data Sources
-
--   [**Michelin Guide**](https://guide.michelin.com/en/us/restaurants): Information about Michelin-starred restaurants with the Green Star distinction.
--   [**Photon API**](https://photon.komoot.io/): Implementation of a search-as-you-type search bar for dynamic user experience.
--   [**Google Places API**](https://developers.google.com/maps/documentation/places/web-service/text-search?apix_params=%7B%22fields%22%3A%22places.id%2Cplaces.formattedAddress%2Cplaces.websiteUri%2Cplaces.rating%2Cplaces.reviews%2Cplaces.regularOpeningHours.periods%2Cplaces.googleMapsLinks.directionsUri%22%2C%22resource%22%3A%7B%22textQuery%22%3A%22The%20Inn%20At%20Little%20Washington%2C%20Washington%2C%20USA%22%2C%22includedType%22%3A%22restaurant%22%7D%7D): Details about restaurant locations, ratings, and reviews.
--   [**Reddit API – PRAW**](https://praw.readthedocs.io/en/stable/code_overview/models/subreddit.html#praw.models.Subreddit.search): Authentic user discussions on restaurant quality and experience.
 
 ## Notebooks
 
