@@ -76,6 +76,10 @@ webscraping-ml-project
 |           green_star_michelin_restaurants.csv
 |           restaurants_google_places_api_raw.csv
 |
++---deliverables
+|       gastronaut_demo.mkv
+|       Webscraping_ML_Project_LAPILUS_DIA2.pdf
+|
 +---models
 |   |   chatbot.py
 |   |
@@ -111,12 +115,21 @@ webscraping-ml-project
 -   [**Michelin Guide**](https://guide.michelin.com/en/us/restaurants): Information about Michelin-starred restaurants with the Green Star distinction.
 -   [**Photon API**](https://photon.komoot.io/): Implementation of a search-as-you-type search bar for dynamic user experience.
 -   [**Google Places API**](https://developers.google.com/maps/documentation/places/web-service/text-search?apix_params=%7B%22fields%22%3A%22places.id%2Cplaces.formattedAddress%2Cplaces.websiteUri%2Cplaces.rating%2Cplaces.reviews%2Cplaces.regularOpeningHours.periods%2Cplaces.googleMapsLinks.directionsUri%22%2C%22resource%22%3A%7B%22textQuery%22%3A%22The%20Inn%20At%20Little%20Washington%2C%20Washington%2C%20USA%22%2C%22includedType%22%3A%22restaurant%22%7D%7D): Details about restaurant locations, ratings, and reviews.
--   [**Reddit**](https://praw.readthedocs.io/en/stable/code_overview/models/subreddit.html#praw.models.Subreddit.search): Authentic user discussions on restaurant quality and experience.
+-   [**Reddit API – PRAW**](https://praw.readthedocs.io/en/stable/code_overview/models/subreddit.html#praw.models.Subreddit.search): Authentic user discussions on restaurant quality and experience.
 
 ## Notebooks
 
 -   **data_collection.ipynb**: Data extraction and cleaning pipeline.
 -   **nlp_pipeline.ipynb**: Embedding similarity, and model development.
+
+## Deliverables
+
+The `deliverables` folder contains materials that showcase the project's output and functionality:
+
+-   `Webscraping_ML_Project_LAPILUS_DIA2.pdf`: A support for a 5-minute presentation summarizing the project, its goals, methodology, results, and insights.
+-   `gastronaut_demo.mkv`: A recorded demonstration of the project's features, including web scraping, recommendation system, and chatbot functionality.
+
+Feel free to review these materials for a concise overview of the project.
 
 ## Contact
 
